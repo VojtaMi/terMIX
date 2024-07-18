@@ -1,0 +1,71 @@
+body {
+    background-color: #212529;
+}
+.carousel-caption {
+    position: absolute;
+   /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    background-color: rgba(0, 0, 50, 0.4); /* Black background with 50% opacity */
+    padding: 1rem; /* Add some padding for better readability */
+    border-radius: 0.1rem; /* Optional: add rounded corners */
+}
+
+.carousel-caption h1 {
+    font-size: 5rem; /* Default size */
+}
+.carousel-caption p {
+    font-size: 2rem; /* Default size */
+}
+.carousel-caption .btn {
+    font-size: 1.25rem; /* Default size */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    .carousel-caption p {
+        font-size: 1.25rem;
+    }
+    .carousel-caption .btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption .btn {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: 0.875rem;
+    }
+    .carousel-caption .btn {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 1.25rem;
+    }
+    .carousel-caption p {
+        font-size: 0.75rem;
+    }
+    .carousel-caption .btn {
+        font-size: 0.625rem;
+    }
+}
