@@ -3,6 +3,7 @@ body {
 }
 #poster{
     position: relative;
+    width: 100vw;
 }
 .carousel-caption {
     position: absolute;
