@@ -90,12 +90,6 @@ body {
     transform: scale(1.1); /* Scale the image to 120% of its original size */
 }
 
-.large_square {
-    width: 500px;
-    height: 500px;
-    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
-}
-
 /* Featurettes
 ------------------------- */
 
