@@ -1,14 +1,17 @@
 body {
     background-color: #212529;
 }
+#poster{
+    position: relative;
+}
 .carousel-caption {
     position: absolute;
-   /* top: 50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);*/
-    background-color: rgba(20, 0, 50, 0.4); /* Black background with 50% opacity *//*
-    padding: 1rem; *//* Add some padding for better readability *//*
-    border-radius: 0.1rem; *//* Optional: add rounded corners */
+    transform: translate(-50%, -50%);
+    background-color: rgba(20, 0, 50, 0.4);
+    height: 30%;
+    width: 50%;
 }
 
 .carousel-caption h1 {
