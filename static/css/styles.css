@@ -78,4 +78,45 @@ body {
     width: 160px;
     height: 160px;
     object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+    margin-bottom: 10px;
+}
+
+.img-hover {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Scale the image to 120% of its original size */
+}
+
+.large_square {
+    width: 500px;
+    height: 500px;
+    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
