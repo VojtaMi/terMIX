@@ -15,64 +15,37 @@ body {
     width: 50%;
 }
 
-.carousel-caption h1 {
-    font-size: 5rem; /* Default size */
+#header_logo{
+    width: 3rem;
 }
-.carousel-caption p {
+
+.carousel-caption h1 {
     font-size: 2rem; /* Default size */
 }
-.carousel-caption .btn {
-    font-size: 1.25rem; /* Default size */
+.carousel-caption p {
+    font-size: 1.5rem; /* Default size */
 }
 
-/* Media queries for responsive design */
-@media (max-width: 1200px) {
-    .carousel-caption h1 {
-        font-size: 2.5rem;
-    }
-    .carousel-caption p {
-        font-size: 1.25rem;
-    }
-    .carousel-caption .btn {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .carousel-caption h1 {
-        font-size: 2rem;
-    }
-    .carousel-caption p {
-        font-size: 1rem;
-    }
-    .carousel-caption .btn {
-        font-size: 0.875rem;
+@media (max-width: 991px) {
+    #header_logo{
+        width: 2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .carousel-caption h1 {
-        font-size: 1.5rem;
-    }
-    .carousel-caption p {
-        font-size: 0.875rem;
-    }
-    .carousel-caption .btn {
-        font-size: 0.75rem;
+    .carousel-caption{
+        height: 40%;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 630px) {
     .carousel-caption h1 {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
     .carousel-caption p {
-        font-size: 0.75rem;
+        font-size: 1rem; /* Default size */
     }
-    .carousel-caption .btn {
-        font-size: 0.625rem;
-    }
-}
+ }
 
 .rounded-circle {
     border-radius: 50%;
