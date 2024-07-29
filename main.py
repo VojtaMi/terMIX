@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    lang = request.args.get('lang', 'en')
+    lang = request.args.get('lang')
     if lang == 'en':
         return render_template('en/index.html')
     return render_template('cz/index.html')
