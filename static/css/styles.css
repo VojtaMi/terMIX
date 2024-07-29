@@ -48,24 +48,7 @@ body {
     display: none; /* Hide line break on larger screens */
 }
 
-@media (max-width: 991px) {
-    #header_logo{
-        width: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .responsive-br {
-        display: inline;
-    }
-}
-
-@media (max-width: 630px) {
-    .poster-caption{
-        width: 70%;
-    }
- }
-
+/* fast links bellow title image */
 .rounded-circle {
     border-radius: 50%;
     width: 160px;
@@ -82,9 +65,6 @@ body {
     transform: scale(1.1); /* Scale the image to 120% of its original size */
 }
 
-/* Featurettes
-------------------------- */
-
 .featurette-divider {
   margin: 5rem; /* Space out the Bootstrap <hr> more */
 }
@@ -99,18 +79,33 @@ body {
     font-size: 50px;
 }
 
-@media (max-width: 992px) {
-  .featurette-heading {
+@media (max-width: 991px) {
+    #header_logo{
+        width: 2rem;
+    }
+    .featurette-heading {
     font-size: 40px;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
+    /*homepage title text splits for smaller screens*/
+    .responsive-br {
+        display: inline;
+    }
     .img-fluid{
         height: auto;
         width: 100%;
         object-fit: cover;
     }
 }
+
+@media (max-width: 630px){
+     /*home page title text field is wider for smaller screens*/
+    .poster-caption{
+        width: 70%;
+    }
+ }
 @media (max-width: 576px) {
   .featurette-heading {
     font-size: 30px;
