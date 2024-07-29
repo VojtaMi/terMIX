@@ -1,6 +1,9 @@
+/*dark backgroung color*/
 body {
     background-color: #212529;
 }
+
+/*homepage title image*/
 #poster{
     height: 100vh;
     position: relative;
@@ -13,6 +16,7 @@ body {
     object-position: center; /* Ensures the center of the image is always visible */
 }
 
+/* text field within the poster image*/
 .poster-caption {
     position: absolute;
     top: 50%;
@@ -39,6 +43,7 @@ body {
     font-size: 1.5rem; /* Default size */
 }
 
+/* split title  */
 .responsive-br {
     display: none; /* Hide line break on larger screens */
 }
