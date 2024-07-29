@@ -3,6 +3,10 @@ body {
     background-color: #212529;
 }
 
+.lang-link {
+    font-size: 1.25rem; /* Increase the font size */
+}
+
 /*homepage title image*/
 #poster{
     height: 100vh;
