@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block title %} Club Termix {% endblock %}
+{% block content %}
+
+<!--poster image-->
+<div id="poster" class="mb-5">
+    <img src="static/assets/img/poster.jpg" class="d-block w-100 poster-img" alt="Bar">
+    <div class="poster-caption">
+        <h1>Club Termix</h1>
+        <p>Gay bar <span class="responsive-br"><br></span>v centru Prahy</p>
+    </div>
+</div>
+
+<div class="container marketing pt-3">
+    <!-- Three columns of text below the carousel -->
+    <div id="feature_list" class="row">
+      <div class="col-lg-4 col-sm-6 d-flex flex-column align-items-center text-center">
+        <img src="static/assets/img/drinks.jpg" alt="glasses with drinks" class="rounded-circle img-hover" >
+        <h2 class="fw-normal">Lahodné drinky</h2>
+        <p>Široká nabídka výborných nápojů. <br>Přijďte ochutnat naše vychlazené koktejly.</p>
+        <p><a class="btn btn-secondary" href="#">Nápoje»</a></p>
+      </div><!-- /.col-lg-4 -->
+       <div class="col-lg-4 col-sm-6 d-flex flex-column align-items-center text-center">
+        <img src="static/assets/img/karaoke.jpg" alt="microphone" class="rounded-circle img-hover">
+        <h2 class="fw-normal">Zábava</h2>
+        <p>Přidejte se do rytmu s populárními hity. <br> Středa až sobota od 10 večer</p>
+        <p><a class="btn btn-secondary" href="#">Kontakty »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center text-center">
+        <img src="static/assets/img/party.jpg" alt="man with costume" class="rounded-circle img-hover">
+        <h2 class="fw-normal">Tématické párty</h2>
+        <p>O akce u nás není nouze. <br> Přijďte zažít pořádnou zábavu.</p>
+        <p><a class="btn btn-secondary" href="#">Galerie »</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Umíme to roztřepat. <span class="text-body-secondary">Přiďte se o tom přesvědčit.</span></h2>
+        <p class="lead">Naši barmani jsou profíci. <br>Dokáží vám namixovat prvotřídní chuťový zážitek.</p>
+      </div>
+      <div class="col-md-5">
+           <picture>
+              <source media="(min-width: 400px) and (max-width: 767.5px)" srcset="static/assets/img/barman_wide.jpg"/>
+              <img src="static/assets/img/barman.jpg" alt="barman" class="img-fluid mx-auto ">
+          </picture>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Interiér, který baví. <span class="text-body-secondary">čekáme na vás.</span></h2>
+        <p class="lead">Místo na posezení s přáteli, nebo pořádnou oslavu? <br> Jsme připraveni.</p>
+        <p class="lead">Najdete nás na Třebízského 4a na Praze 2</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+          <picture>
+              <source media="(min-width: 400px) and (max-width: 767.5px)" srcset="static/assets/img/car_wide.jpg"/>
+              <img src="static/assets/img/car.jpg" alt="interier" class="img-fluid mx-auto">
+          </picture>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">U nás jedeme i po půlnoci. <span class="text-body-secondary">Ukaž, jak to umíš rozjet.</span></h2>
+        <p class="lead">Roztočit to u nás můžes od středy do soboty <br>Otevřeno máme od desíti až do rána</p>
+      </div>
+      <div class="col-md-5">
+          <picture>
+              <source media="(min-width: 400px) and (max-width: 767.5px)" srcset="static/assets/img/night_life_wide.jpg"/>
+              <img src="static/assets/img/night_life.jpg" alt="party" class="img-fluid mx-auto">
+          </picture>
+      </div>
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div>
+
+
+
+
+
+{% endblock %}
+
+

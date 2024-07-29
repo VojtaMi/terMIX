@@ -79,6 +79,10 @@ body {
     font-size: 50px;
 }
 
+.footer-logo{
+    height: 1.4rem;
+}
+
 @media (max-width: 991px) {
     #header_logo{
         width: 2rem;
