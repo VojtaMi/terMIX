@@ -1,12 +1,14 @@
 <img src="static/assets/dark_gray_logo.svg" class="navbar-brand" id="header_logo" role="img"
      aria-label="Termix Logo" alt="Termix Logo">
 <div class="d-flex align-items-center">
-    <a class="nav-link lang-link px-1" href="{{ url_for('home', lang='cz') }}">
-        cs
-    </a>
-    <a class="nav-link lang-link px-3" href="{{ url_for('home', lang='en') }}">
-        en
-    </a>
+    <div class="navbar-nav d-flex flex-row">
+        <a class="nav-link lang-link px-1" href="{{ url_for('home', lang='cz') }}">
+            cs
+        </a>
+        <a class="nav-link lang-link px-3" href="{{ url_for('home', lang='en') }}">
+            en
+        </a>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
             aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
