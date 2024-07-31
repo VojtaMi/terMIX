@@ -12,8 +12,8 @@ def home():
         return redirect(url_for('home', lang='en'))
 
     if lang == 'cs':
-        return render_template('en/index.html')
-    return render_template('cs/index.html')
+        return render_template('cs/index.html')
+    return render_template('en/index.html')
 
 if __name__ == "__main__":
 
