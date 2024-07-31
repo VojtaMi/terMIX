@@ -34,6 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Edu AU VIC WA NT Hand', sans-serif;
 }
 
 #header_logo{
@@ -41,7 +42,8 @@ body {
 }
 
 .poster-caption h1 {
-    font-size: 2.5rem; /* Default size */
+    font-size: 3rem; /* Default size */
+    font-weight: bold;
 }
 .poster-caption p {
     font-size: 1.5rem; /* Default size */
