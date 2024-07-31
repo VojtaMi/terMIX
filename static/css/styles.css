@@ -38,6 +38,7 @@ body {
 
 #header_logo{
     width: 3rem;
+
 }
 
 .poster-caption h1 {
@@ -82,10 +83,6 @@ body {
   margin: 5rem; /* Space out the Bootstrap <hr> more */
 }
 
-/* Thin out the marketing headings*/
-/*.featurette-heading {
-  letter-spacing: -.05rem;
-}*/
 
 
 .featurette-heading {
