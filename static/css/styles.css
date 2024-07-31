@@ -92,8 +92,18 @@ body {
 .text-body-secondary-custom {
     color: #8354d5; /* Sets the text color */
 }
+.lead{
+     padding-top: 1rem;
+     font-size: 1.7rem;
+}
 
-.footer-logo{
+
+.card-header{
+    background-color: #6F42C1; /* purple */
+    height: 2.2rem;
+}
+
+.svg-icon{
     height: 1.4rem;
 }
 
@@ -104,7 +114,11 @@ body {
     .featurette-heading {
     font-size: 40px;
   }
+  .lead{
+     font-size: 1.25rem;
+    }
 }
+
 
 @media (max-width: 767px) {
     /*homepage title text splits for smaller screens*/
@@ -115,6 +129,9 @@ body {
         height: auto;
         width: 100%;
         object-fit: cover;
+    }
+    .lead{
+     padding-top: 0;
     }
 }
 
