@@ -64,6 +64,12 @@ body {
     margin-bottom: 10px;
 }
 
+.btn-secondary {
+    background-color: #6F42C1; /* purple */
+    border-color: #6F42C1;
+
+}
+
 .img-hover {
     transition: transform 0.3s ease; /* Smooth transition */
 }
@@ -84,6 +90,10 @@ body {
 
 .featurette-heading {
     font-size: 50px;
+}
+
+.text-body-secondary-custom {
+    color: #8354d5; /* Sets the text color */
 }
 
 .footer-logo{
