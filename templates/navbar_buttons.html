@@ -2,10 +2,13 @@
      aria-label="Termix Logo" alt="Termix Logo">
 <div class="d-flex align-items-center">
     <div class="navbar-nav d-flex flex-row">
-        <a class="nav-link lang-link px-1" href="{{ url_for('home', lang='cs') }}">
+         {% set current_url = request.full_path %}
+        {% set cs_url = current_url.replace('lang=en', 'lang=cs') %}
+        {% set en_url = current_url.replace('lang=cs', 'lang=en') %}
+        <a class="nav-link lang-link px-1" href="{{ cs_url }}">
             cs
         </a>
-        <a class="nav-link lang-link px-3" href="{{ url_for('home', lang='en') }}">
+        <a class="nav-link lang-link px-3" href="{{ en_url }}">
             en
         </a>
     </div>
