@@ -15,6 +15,14 @@ def home():
         return render_template('cs/index.html')
     return render_template('en/index.html')
 
+@app.route('/gallery')
+def gallery():
+    lang = request.args.get('lang')
+
+    if lang == 'cs':
+        return render_template('cs/gallery.html')
+    return render_template('en/gallery.html')
+
 if __name__ == "__main__":
 
     app.run(debug=True)

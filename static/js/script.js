@@ -1,14 +1,20 @@
 // Function to highlight the active page link
 document.addEventListener("DOMContentLoaded", function() {
     var navLinks = document.querySelectorAll('.nav-link');
-    var currentUrl = window.location.pathname;
+    var currentUrl = new URL(window.location.href).pathname;
 
     navLinks.forEach(function(link) {
-        if (link.getAttribute('href') === currentUrl) {
-            link.classList.add('active');
+        if (link.getAttribute('href') && link.getAttribute('href') !== '#') {
+            var linkUrl = new URL(link.href).pathname;
+            if (linkUrl === currentUrl) {
+                link.classList.add('active');
+                link.setAttribute('aria-current', 'page');
+            }
         }
     });
 });
+
+
 
 // Function to highlight the active language link
 document.addEventListener("DOMContentLoaded", function() {
