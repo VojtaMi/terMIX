@@ -1,0 +1,27 @@
+.large-contact-content{
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+.location_details{
+    font-size: 1.4rem;
+}
+.location_detail{
+     margin-bottom: 2rem; /* Adjust the value as needed */
+}
+
+.contact-heading{
+    margin-bottom: 4rem; /* Adjust the value as needed */
+}
+
+@media (max-width: 767px) {
+    /*homepage title text splits for smaller screens*/
+  .location_detail{
+     margin-bottom: 0; /* Adjust the value as needed */
+  }
+  .contact-heading{
+    margin-bottom: 1rem; /* Adjust the value as needed */
+    margin-top: 1rem; /* Adjust the value as needed */
+  }
+}
