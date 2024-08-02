@@ -19,3 +19,36 @@
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
+
+.instagram-frame {
+    position: relative;
+    width: 100%;
+    padding-top: 65.56%; /* Aspect ratio (341.5 / 521 * 100) */
+    height: 5rem; /* Make the height same as width for square aspect ratio */
+    border-radius: 8px; /* Optional: make the frame corners rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+#large-instagram-icon{
+    height: 5rem;
+}
+
+.btn-ig{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    font-size: 2rem;
+}
+
+.btn-ig {
+    background-color: #6F42C1; /* Background color */
+    border-color: #d0c7f0; /* Border color */
+}
+
+.btn-ig:hover {
+    background-color: #6038a7; /* Background color on hover */
+    border-color: #b9a8e0; /* Border color on hover */
+    color: #fff; /* Text color on hover */
+}
