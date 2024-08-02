@@ -23,6 +23,14 @@ def gallery():
         return render_template('cs/gallery.html')
     return render_template('en/gallery.html')
 
+@app.route('/contacts')
+def contacts():
+    lang = request.args.get('lang')
+
+    if lang == 'cs':
+        return render_template('cs/contacts.html')
+    return render_template('en/contacts.html')
+
 if __name__ == "__main__":
 
     app.run(debug=True)
