@@ -1,6 +1,7 @@
 from datetime import datetime
 
 from flask import Flask, render_template, request, redirect, url_for, json
+import os
 
 app = Flask(__name__)
 
@@ -16,7 +17,7 @@ def load_all_translations():
 
 
 def load_translations(lang):
-    file_path = f'translations/{lang}.json'
+    file_path = os.path.join(app.root_path, 'translations', f'{lang}.json')
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
