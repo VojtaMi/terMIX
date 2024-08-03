@@ -59,7 +59,7 @@
       },
       {
         "heading": ["U nás jedeme i po půlnoci.", "Ukaž, jak to umíš rozjet."],
-        "description": ["Roztočit to u nás můžes od středy do soboty", "Otevřeno máme od desíti až do rána."],
+        "description": ["Roztočit to u nás můžes od středy do soboty.", "Otevřeno máme od desíti až do rána."],
         "image": {
           "altText": "Párty",
           "src": "assets/img/night_life.jpg",

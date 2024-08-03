@@ -34,21 +34,21 @@ def load_translations(lang):
         return json.load(f)
 
 
-def match_browser_lang():
+def redirect_browser_lang():
     # czech for czech and slovak, else english
     browser_lang = request.accept_languages.best_match(['en', 'cs', 'sk'])
     if browser_lang in ['cs', 'sk']:
-        return 'cs'
-    return 'en'
+        return redirect(url_for("home", lang='cs'))
+    return redirect(url_for("home", lang='en'))
 
 
 @app.route('/')
 def home():
     lang = request.args.get('lang')
     if not lang:
-        lang = match_browser_lang()
+        redirect_browser_lang()
     translations = load_translations(lang)
-    return render_template('index.html', translations=translations)
+    return render_template('index.html', translations=translations, lang=lang)
 
 
 @app.route('/gallery')

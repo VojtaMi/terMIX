@@ -63,16 +63,16 @@
                         <table class="table table-bordered mb-2">
                             <tbody>
                             <tr>
-                                <td class="address text-center">Třebízského 4a, 120 00 Vinohrady</td>
+                                <td class="address text-center">{{ translations.contact.location.address }}</td>
                             </tr>
                             </tbody>
                         </table>
                         <i class="bi bi-person-check-fill mb-1"></i>
-
+                        {% set info = translations.home.info %}
                         <table class="table table-bordered mb-2">
                             <tbody>
                             <tr>
-                                <td class="address text-center">Vstup od 18 let</td>
+                                <td class="address text-center">{{ info.ageRestriction }}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -81,10 +81,10 @@
                         <table class="table table-bordered mb-2">
                             <tbody>
                             <tr>
-                                <td class="address text-center">Pouze hotovost</td>
+                                <td class="address text-center">{{ info.payments[0] }}</td>
                             </tr>
                             <tr>
-                                <td class="address text-center">Vstupné</td>
+                                <td class="address text-center">{{ info.payments[1] }}</td>
                             </tr>
                             </tbody>
                         </table>
