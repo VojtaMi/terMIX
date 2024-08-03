@@ -2,10 +2,10 @@
 {% block content %}
 <!--poster image-->
 <div id="poster" class="mb-5">
-    <img src="static/assets/img/poster.jpg" class="d-block w-100 poster-img" alt="Bar">
+    <img src="static/assets/img/poster.jpg" class="d-block w-100 poster-img" alt="{{translations.home.poster.altText}}">
     <div class="poster-caption">
         <h1>Club Termix</h1>
-        <p>Gay bar <span class="responsive-br"><br></span>v centru Prahy</p>
+        <p>{{translations.home.poster.caption.subtitle_part_1}} <span class="responsive-br"><br></span>{{translations.home.poster.caption.subtitle_part_2}}</p>
     </div>
 </div>
 
@@ -13,15 +13,15 @@
     <!-- Three columns of text below the carousel -->
     <div id="feature_list" class="row">
         <div class="col-lg-4 col-sm-6 d-flex flex-column align-items-center text-center">
-            <img src="static/assets/img/drinks.jpg" alt="glasses with drinks" class="rounded-circle img-hover">
-            <h2 class="fw-normal">Lahodné drinky</h2>
-            <p>Široká nabídka výborných nápojů. <br>Přijďte ochutnat naše vychlazené koktejly.</p>
-            <p><a class="btn btn-secondary" href="#">Nápoje»</a></p>
+            <img src="{{ url_for('static', filename='assets/img/drinks.jpg') }}" alt="{{ translations.home.features[0].altText }}" class="rounded-circle img-hover">
+            <h2 class="fw-normal">{{ translations.home.features[0].title }}</h2>
+            <p>{{ translations.home.features[0].description_part_1 }} <br>{{ translations.home.features[0].description_part_2 }}</p>
+            <p><a class="btn btn-secondary" href="#">{{ translations.home.features[0].buttonText }}</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 col-sm-6 d-flex flex-column align-items-center text-center">
-            <img src="static/assets/img/karaoke.jpg" alt="microphone" class="rounded-circle img-hover">
-            <h2 class="fw-normal">Zábava</h2>
-            <p>Přidejte se do rytmu s populárními hity. <br> Středa až sobota od 10 večer</p>
+            <img src="{{ url_for('static', filename='assets/img/karaoke.jpg') }}" alt="microphone" class="rounded-circle img-hover">
+            <h2 class="fw-normal">{{ translations.home.features[1].title }}</h2>
+            <p>{{ translations.home.features[1].description_part_1 }} <br>{{ translations.home.features[1].description_part_2 }}</p>
             <p><a class="btn btn-secondary" href="{{ url_for('home', lang='cs') }}">Kontakty »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center text-center">

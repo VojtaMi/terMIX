@@ -105,6 +105,7 @@ body {
 
 .svg-icon{
     height: 1.4rem;
+    color: #AEB2B6;
 }
 
 @media (max-width: 991px) {

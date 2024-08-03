@@ -12,16 +12,16 @@
       "altText": "Bar",
       "caption": {
         "title": "Club Termix",
-        "subtitle": [
-
-        ],"Gay bar v centru Prahy"
+        "subtitle_part_1": "Gay bar",
+        "subtitle_part_2": "v centru Prahy"
       }
     },
     "features": [
       {
         "altText": "Tác s drinky",
         "title": "Lahodné drinky",
-        "description": "Široká nabídka výborných nápojů. Přijďte ochutnat naše vychlazené koktejly.",
+        "description_part_1": "Široká nabídka výborných nápojů.",
+        "description_part_2": "Přijďte ochutnat naše vychlazené koktejly.",
         "buttonText": "Nápoje»"
       },
       {
