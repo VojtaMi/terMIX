@@ -13,6 +13,7 @@
 
 .contact-heading{
     margin-bottom: 4rem; /* Adjust the value as needed */
+    color: #a490de;
 }
 
 @media (max-width: 767px) {
