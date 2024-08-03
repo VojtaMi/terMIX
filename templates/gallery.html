@@ -1,3 +1,11 @@
+{% extends "base.html" %}
+
+{% block extra_styles %}
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/gallery_styles.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
@@ -110,5 +118,4 @@
     <!-- Gallery -->
 </div>
 
-
-
+{% endblock %}

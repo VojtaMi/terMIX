@@ -4,6 +4,29 @@ from flask import Flask, render_template, request, redirect, url_for, json
 
 app = Flask(__name__)
 
+# Global dictionary to store translations
+translations = {}
+
+
+def load_all_translations():
+    global translations
+    # Load translations for all languages and store in the global dictionary
+    translations['en'] = load_translations('en')
+    translations['cs'] = load_translations('cs')
+
+
+def load_translations(lang):
+    file_path = f'translations/{lang}.json'
+    with open(file_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+# Call this function when the application starts
+load_all_translations()
+
+def get_translations(lang):
+    return translations.get(lang)
+
 
 # url for different language variants
 def get_localized_urls():
@@ -28,12 +51,6 @@ def inject_current_year():
     return {'current_year': datetime.now().year}
 
 
-def load_translations(lang):
-    file_path = f'translations/{lang}.json'
-    with open(file_path, 'r', encoding='utf-8') as f:
-        return json.load(f)
-
-
 def redirect_browser_lang():
     # czech for czech and slovak, else english
     browser_lang = request.accept_languages.best_match(['en', 'cs', 'sk'])
@@ -46,27 +63,25 @@ def redirect_browser_lang():
 def home():
     lang = request.args.get('lang')
     if not lang:
-        redirect_browser_lang()
-    translations = load_translations(lang)
-    return render_template('index.html', translations=translations, lang=lang)
+        return redirect_browser_lang()
+    return render_template('index.html', translations=get_translations(lang), lang=lang)
 
 
 @app.route('/gallery')
 def gallery():
     lang = request.args.get('lang')
-
-    if lang == 'cs':
-        return render_template('cs/gallery.html')
-    return render_template('en/gallery.html')
+    return render_template('gallery.html', translations=get_translations(lang), lang=lang)
 
 
 @app.route('/contacts')
 def contacts():
     lang = request.args.get('lang')
+    return render_template('contacts.html', translations=get_translations(lang), lang=lang)
 
-    if lang == 'cs':
-        return render_template('cs/contacts.html')
-    return render_template('en/contacts.html')
+@app.route('/drink_menu')
+def drink_menu():
+    lang = request.args.get('lang')
+    return render_template('drink_menu.html', translations=get_translations(lang), lang=lang)
 
 
 if __name__ == "__main__":

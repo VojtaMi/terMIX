@@ -21,6 +21,7 @@
         "title": "Lahodné drinky",
         "description": ["Široká nabídka výborných nápojů.", "Přijďte ochutnat naše vychlazené koktejly."],
         "buttonText": "Nápoje »",
+        "buttonLink": "drink_menu",
         "image": "drinks.jpg"
       },
       {
@@ -28,6 +29,7 @@
         "title": "Zábava",
         "description": ["Přidejte se do rytmu s populárními hity.", "Středa až sobota od 10 večer."],
         "buttonText": "Kontakty »",
+        "buttonLink": "contacts",
         "image": "karaoke.jpg"
       },
       {
@@ -35,6 +37,7 @@
         "title": "Tématické párty",
         "description": ["O akce u nás není nouze.", "Přijďte zažít pořádnou zábavu."],
         "buttonText": "Galerie »",
+        "buttonLink": "gallery",
         "image": "party.jpg"
       }
     ],

@@ -21,6 +21,7 @@
         "title": "Amazing beverages",
         "description": ["Wide selection of excellent drinks.", "Come taste our chilled cocktails."],
         "buttonText": "Drinks »",
+        "buttonLink": "drink_menu",
         "image": "drinks.jpg"
       },
       {
@@ -28,6 +29,7 @@
         "title": "Entertainment",
         "description": ["Dance to the rhythm of popular songs..", "Wednesday to Saturday from 10 PM."],
         "buttonText": "Contacts »",
+        "buttonLink": "contacts",
         "image": "karaoke.jpg"
       },
       {
@@ -35,6 +37,7 @@
         "title": "Themed Parties",
         "description": ["There is no shortage of events with us.", "Come and experience great fun."],
         "buttonText": "Gallery »",
+        "buttonLink": "gallery",
         "image": "party.jpg"
       }
     ],
