@@ -12,56 +12,62 @@
       "altText": "Bar",
       "caption": {
         "title": "Club Termix",
-        "subtitle_part_1": "Gay bar",
-        "subtitle_part_2": "v centru Prahy"
+        "subtitle": ["Gay bar", "v centru Prahy"]
       }
     },
     "features": [
       {
         "altText": "Tác s drinky",
         "title": "Lahodné drinky",
-        "description_part_1": "Široká nabídka výborných nápojů.",
-        "description_part_2": "Přijďte ochutnat naše vychlazené koktejly.",
-        "buttonText": "Nápoje»"
+        "description": ["Široká nabídka výborných nápojů.", "Přijďte ochutnat naše vychlazené koktejly."],
+        "buttonText": "Nápoje »",
+        "image": "drinks.jpg"
       },
       {
-        "altText": "mikrofon",
+        "altText": "Mikrofon",
         "title": "Zábava",
-        "description": "Přidejte se do rytmu s populárními hity. Středa až sobota od 10 večer",
-        "buttonText": "Kontakty »"
+        "description": ["Přidejte se do rytmu s populárními hity.", "Středa až sobota od 10 večer."],
+        "buttonText": "Kontakty »",
+        "image": "karaoke.jpg"
       },
       {
-        "altText": "muž s maskou čerta",
+        "altText": "Muž s maskou čerta",
         "title": "Tématické párty",
-        "description": "O akce u nás není nouze. Přijďte zažít pořádnou zábavu.",
-        "buttonText": "Galerie »"
+        "description": ["O akce u nás není nouze.", "Přijďte zažít pořádnou zábavu."],
+        "buttonText": "Galerie »",
+        "image": "party.jpg"
       }
     ],
     "featurettes": [
       {
-        "heading": "Umíme to roztřepat. Přijďte se o tom přesvědčit.",
-        "description": "Naši barmani jsou profíci. Dokáží vám namixovat prvotřídní chuťový zážitek.",
+        "heading": ["Umíme to roztřepat.", "Přijďte se o tom přesvědčit."],
+        "description": ["Naši barmani jsou profíci.", "Dokáží vám namixovat prvotřídní chuťový zážitek."],
         "image": {
-          "altText": "barman"
+          "altText": "barman",
+          "src": "assets/img/barman.jpg",
+          "src_wide": "assets/img/barman_wide.jpg"
         }
       },
       {
-        "heading": "Interiér, který baví. čekáme na vás.",
-        "description": "Místo na posezení s přáteli, nebo pořádnou oslavu? Jsme připraveni.",
+        "heading": ["Interiér, který baví.", "čekáme na vás."],
+        "description": ["Místo na posezení s přáteli, nebo pořádnou oslavu?", "Jsme připraveni."],
         "image": {
-          "altText": "Interiér"
+          "altText": "Interiér",
+          "src": "assets/img/car.jpg",
+          "src_wide": "assets/img/car_wide.jpg"
         }
       },
       {
-        "heading": "U nás jedeme i po půlnoci. Ukaž, jak to umíš rozjet.",
-        "description": "Roztočit to u nás můžes od středy do soboty Otevřeno máme od desíti až do rána",
+        "heading": ["U nás jedeme i po půlnoci.", "Ukaž, jak to umíš rozjet."],
+        "description": ["Roztočit to u nás můžes od středy do soboty", "Otevřeno máme od desíti až do rána."],
         "image": {
-          "altText": "Párty"
+          "altText": "Párty",
+          "src": "assets/img/night_life.jpg",
+          "src_wide": "assets/img/night_life_wide.jpg"
         }
       }
     ],
-    "contact": {
-      "address": "Třebízského 4a, 120 00 Vinohrady",
+    "info": {
       "ageRestriction": "Vstup od 18 let",
       "payments": [
         "Pouze hotovost",

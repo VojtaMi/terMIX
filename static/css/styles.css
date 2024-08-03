@@ -103,9 +103,8 @@ body {
     height: 2.2rem;
 }
 
-.svg-icon{
-    height: 1.4rem;
-    color: #AEB2B6;
+.bi{
+    font-size: 1.4rem;
 }
 
 @media (max-width: 991px) {

@@ -1,20 +1,9 @@
-<table class="table table-bordered">
+<table class="table table-bordered mb-2" >
     <tbody>
+     {% for record in translations.openingHours %}
     <tr>
-        <td>Středa</td>
-        <td>22:00 - 5:00</td>
-    </tr>
-    <tr>
-        <td>Čtvrtek</td>
-        <td>22:00 - 5:00</td>
-    </tr>
-    <tr>
-        <td>Pátek</td>
-        <td>22:00 - 6:00</td>
-    </tr>
-    <tr>
-        <td>Sobota</td>
-        <td>22:00 - 6:00</td>
+        <td>record.day</td>
+        <td>record.hours</td>
     </tr>
     </tbody>
 </table>
