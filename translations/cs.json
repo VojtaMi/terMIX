@@ -1,0 +1,110 @@
+{
+  "navbar": {
+    "label": "Zobrazit navigaci",
+    "home": "Domů",
+    "about": "O Nás",
+    "contacts": "Kontakty",
+    "drinks": "Nápojový Lístek",
+    "gallery": "Galerie"
+  },
+  "home": {
+    "poster": {
+      "altText": "Bar",
+      "caption": {
+        "title": "Club Termix",
+        "subtitle": [
+
+        ],"Gay bar v centru Prahy"
+      }
+    },
+    "features": [
+      {
+        "altText": "Tác s drinky",
+        "title": "Lahodné drinky",
+        "description": "Široká nabídka výborných nápojů. Přijďte ochutnat naše vychlazené koktejly.",
+        "buttonText": "Nápoje»"
+      },
+      {
+        "altText": "mikrofon",
+        "title": "Zábava",
+        "description": "Přidejte se do rytmu s populárními hity. Středa až sobota od 10 večer",
+        "buttonText": "Kontakty »"
+      },
+      {
+        "altText": "muž s maskou čerta",
+        "title": "Tématické párty",
+        "description": "O akce u nás není nouze. Přijďte zažít pořádnou zábavu.",
+        "buttonText": "Galerie »"
+      }
+    ],
+    "featurettes": [
+      {
+        "heading": "Umíme to roztřepat. Přijďte se o tom přesvědčit.",
+        "description": "Naši barmani jsou profíci. Dokáží vám namixovat prvotřídní chuťový zážitek.",
+        "image": {
+          "altText": "barman"
+        }
+      },
+      {
+        "heading": "Interiér, který baví. čekáme na vás.",
+        "description": "Místo na posezení s přáteli, nebo pořádnou oslavu? Jsme připraveni.",
+        "image": {
+          "altText": "Interiér"
+        }
+      },
+      {
+        "heading": "U nás jedeme i po půlnoci. Ukaž, jak to umíš rozjet.",
+        "description": "Roztočit to u nás můžes od středy do soboty Otevřeno máme od desíti až do rána",
+        "image": {
+          "altText": "Párty"
+        }
+      }
+    ],
+    "contact": {
+      "address": "Třebízského 4a, 120 00 Vinohrady",
+      "ageRestriction": "Vstup od 18 let",
+      "payments": [
+        "Pouze hotovost",
+        "Vstupné"
+      ]
+    }
+  },
+  "openingHours": [
+    {
+      "day": "Středa",
+      "hours": "22:00 - 5:00"
+    },
+    {
+      "day": "Čtvrtek",
+      "hours": "22:00 - 5:00"
+    },
+    {
+      "day": "Pátek",
+      "hours": "22:00 - 6:00"
+    },
+    {
+      "day": "Sobota",
+      "hours": "22:00 - 6:00"
+    }
+  ],
+  "contact": {
+    "heading": "Spojení",
+    "location": {
+      "address": "Třebízského 4a, Praha 2",
+      "tram_stop": {
+        "name": "Vinohradská tržnice (tram)",
+        "distance": "100m"
+      },
+      "metro": {
+        "name": "Jiřího z Poděbrad",
+        "distance": "500m"
+      }
+    },
+    "entrance_image": {
+      "alt": "Hlavní vchod"
+    },
+    "opening_hours": {
+      "heading": "Otevírací doba"
+    }
+  }
+}

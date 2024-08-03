@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% block content %}
+<!--poster image-->
+<div id="poster" class="mb-5">
+    <img src="static/assets/img/poster.jpg" class="d-block w-100 poster-img" alt="Bar">
+    <div class="poster-caption">
+        <h1>Club Termix</h1>
+        <p>Gay bar <span class="responsive-br"><br></span>v centru Prahy</p>
+    </div>
+</div>
+
+<div class="container marketing pt-3">
+    <!-- Three columns of text below the carousel -->
+    <div id="feature_list" class="row">
+        <div class="col-lg-4 col-sm-6 d-flex flex-column align-items-center text-center">
+            <img src="static/assets/img/drinks.jpg" alt="glasses with drinks" class="rounded-circle img-hover">
+            <h2 class="fw-normal">Lahodné drinky</h2>
+            <p>Široká nabídka výborných nápojů. <br>Přijďte ochutnat naše vychlazené koktejly.</p>
+            <p><a class="btn btn-secondary" href="#">Nápoje»</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-sm-6 d-flex flex-column align-items-center text-center">
+            <img src="static/assets/img/karaoke.jpg" alt="microphone" class="rounded-circle img-hover">
+            <h2 class="fw-normal">Zábava</h2>
+            <p>Přidejte se do rytmu s populárními hity. <br> Středa až sobota od 10 večer</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('home', lang='cs') }}">Kontakty »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center text-center">
+            <img src="static/assets/img/party.jpg" alt="man with costume" class="rounded-circle img-hover">
+            <h2 class="fw-normal">Tématické párty</h2>
+            <p>O akce u nás není nouze. <br> Přijďte zažít pořádnou zábavu.</p>
+            <p><a class="btn btn-secondary" href="{{ url_for('gallery', lang='cs') }}">Galerie »</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Umíme to roztřepat. <span class="text-body-secondary-custom">Přijďte se o tom přesvědčit.</span>
+            </h2>
+            <p class="lead">Naši barmani jsou profíci. <br>Dokáží vám namixovat prvotřídní chuťový zážitek.</p>
+        </div>
+        <div class="col-md-5">
+            <picture>
+                <source media="(min-width: 400px) and (max-width: 767.5px)" srcset="static/assets/img/barman_wide.jpg"/>
+                <img src="static/assets/img/barman.jpg" alt="barman" class="img-fluid mx-auto ">
+            </picture>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Interiér, který baví. <span
+                    class="text-body-secondary-custom">čekáme na vás.</span></h2>
+            <p class="lead">Místo na posezení s přáteli, nebo pořádnou oslavu? <br> Jsme připraveni.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <picture>
+                <source media="(min-width: 400px) and (max-width: 767.5px)" srcset="static/assets/img/car_wide.jpg"/>
+                <img src="static/assets/img/car.jpg" alt="interier" class="img-fluid mx-auto">
+            </picture>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">U nás jedeme i po půlnoci. <span
+                    class="text-body-secondary-custom">Ukaž, jak to umíš rozjet.</span></h2>
+            <p class="lead">Roztočit to u nás můžes od středy do soboty <br>Otevřeno máme od desíti až do rána</p>
+        </div>
+        <div class="col-md-5">
+            <picture>
+                <source media="(min-width: 400px) and (max-width: 767.5px)"
+                        srcset="static/assets/img/night_life_wide.jpg"/>
+                <img src="static/assets/img/night_life.jpg" alt="party" class="img-fluid mx-auto">
+            </picture>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-12 col-lg-8 col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                    </div>
+                    <div class="card-body pt-2">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                 class="bi bi-clock svg-icon mb-2" viewBox="0 0 16 16">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                            </svg>
+                            {% include "cs/opening_hours.html" %}
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                 class="bi bi-pin-map svg-icon mb-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                                <path fill-rule="evenodd"
+                                      d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                            </svg>
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td class="address text-center">Třebízského 4a, 120 00 Vinohrady</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                 class="bi bi-person-check-fill svg-icon mb-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            </svg>
+
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td class="address text-center">Vstup od 18 let</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                 class="bi bi-cash-coin svg-icon mb-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+                            </svg>
+
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td class="address text-center">Pouze hotovost</td>
+                                </tr>
+                                 <tr>
+                                    <td class="address text-center">Vstupné</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+

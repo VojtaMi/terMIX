@@ -1,6 +1,33 @@
+from datetime import datetime
+
 from flask import Flask, render_template, request, redirect, url_for
 
+
+# url for different language variants
+def get_localized_urls():
+    current_url = request.full_path
+    if 'lang=en' in current_url:
+        cs_url = current_url.replace('lang=en', 'lang=cs')
+        en_url = current_url  # Already in English
+    else:
+        cs_url = current_url  # Already in Czech
+        en_url = current_url.replace('lang=cs', 'lang=en')
+    return cs_url, en_url
+
+
 app = Flask(__name__)
+
+
+@app.context_processor
+def inject_localized_urls():
+    cs_url, en_url = get_localized_urls()
+    return dict(cs_url=cs_url, en_url=en_url)
+
+
+@app.context_processor
+def inject_current_year():
+    return {'current_year': datetime.now().year}
+
 
 @app.route('/')
 def home():
@@ -15,6 +42,7 @@ def home():
         return render_template('cs/index.html')
     return render_template('en/index.html')
 
+
 @app.route('/gallery')
 def gallery():
     lang = request.args.get('lang')
@@ -22,6 +50,7 @@ def gallery():
     if lang == 'cs':
         return render_template('cs/gallery.html')
     return render_template('en/gallery.html')
+
 
 @app.route('/contacts')
 def contacts():
@@ -31,6 +60,6 @@ def contacts():
         return render_template('cs/contacts.html')
     return render_template('en/contacts.html')
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     app.run(debug=True)
