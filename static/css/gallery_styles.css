@@ -30,21 +30,33 @@
 }
 
 #large-instagram-icon{
-    height: 5rem;
+    font-size: 8rem;
+    margin-right: 1.5rem;
 }
 
 .btn-ig{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
     top: 0%;
     left: 0%;
-    font-size: 2rem;
-}
-
-.btn-ig {
+    font-size: 4rem;
     background-color: #6F42C1; /* Background color */
     border-color: #d0c7f0; /* Border color */
+}
+
+@media (max-width: 767px) {
+    /*homepage title text splits for smaller screens*/
+  #large-instagram-icon{
+    font-size: 5rem;
+    margin-right: 0.5rem;
+  }
+  .btn-ig{
+    font-size: 2rem;
+  }
 }
 
 .btn-ig:hover {
