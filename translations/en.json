@@ -27,7 +27,7 @@
       {
         "altText": "Microphone",
         "title": "Entertainment",
-        "description": ["Dance to the rhythm of popular songs..", "Wednesday to Saturday from 10 PM."],
+        "description": ["Dance to the popular songs.", "Wed-Sat, from 10 PM."],
         "buttonText": "Contacts »",
         "buttonLink": "contacts",
         "image": "karaoke.jpg"
@@ -35,7 +35,7 @@
       {
         "altText": "Man with devil mask",
         "title": "Themed Parties",
-        "description": ["There is no shortage of events with us.", "Come and experience great fun."],
+        "description": ["No shortage of events.", "Come and experience great fun."],
         "buttonText": "Gallery »",
         "buttonLink": "gallery",
         "image": "party.jpg"

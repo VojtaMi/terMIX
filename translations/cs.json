@@ -19,7 +19,7 @@
       {
         "altText": "Tác s drinky",
         "title": "Lahodné drinky",
-        "description": ["Široká nabídka výborných nápojů.", "Přijďte ochutnat naše vychlazené koktejly."],
+        "description": ["Široká nabídka nápojů.", "Ochutnejte naše vychlazené koktejly."],
         "buttonText": "Nápoje »",
         "buttonLink": "drink_menu",
         "image": "drinks.jpg"
@@ -27,7 +27,7 @@
       {
         "altText": "Mikrofon",
         "title": "Zábava",
-        "description": ["Přidejte se do rytmu s populárními hity.", "Středa až sobota od 10 večer."],
+        "description": ["Zatancujte si s populárními hity.", "Středa až sobota od 10 večer."],
         "buttonText": "Kontakty »",
         "buttonLink": "contacts",
         "image": "karaoke.jpg"
