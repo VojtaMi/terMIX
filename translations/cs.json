@@ -19,7 +19,7 @@
       {
         "altText": "Tác s drinky",
         "title": "Lahodné drinky",
-        "description": ["Široká nabídka nápojů.", "Ochutnejte naše vychlazené koktejly."],
+        "description": ["Široká nabídka nápojů.", "Vyzkoušejte vychlazené koktejly."],
         "buttonText": "Nápoje »",
         "buttonLink": "drink_menu",
         "image": "drinks.jpg"

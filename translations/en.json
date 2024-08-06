@@ -18,8 +18,8 @@
     "features": [
       {
         "altText": "Tray with drinks",
-        "title": "Amazing beverages",
-        "description": ["Wide selection of excellent drinks.", "Come taste our chilled cocktails."],
+        "title": "Amazing drinks",
+        "description": ["Wide selection of beverages.", "Try out our chilled cocktails."],
         "buttonText": "Drinks »",
         "buttonLink": "drink_menu",
         "image": "drinks.jpg"
