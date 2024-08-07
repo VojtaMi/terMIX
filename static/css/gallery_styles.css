@@ -43,12 +43,12 @@
 }
 
 .btn-ig {
-    background-color: #6F42C1; /* Background color */
+     background-color: #6038a7; /* Background color on hover */
     border-color: #d0c7f0; /* Border color */
 }
 
 .btn-ig:hover {
-    background-color: #6038a7; /* Background color on hover */
+    background-color: #6F42C1; /* Background color */
     border-color: #b9a8e0; /* Border color on hover */
     color: #fff; /* Text color on hover */
 }

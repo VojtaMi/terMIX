@@ -115,5 +115,169 @@
     "opening_hours": {
       "heading": "Otevírací doba"
     }
+  },
+  "drink_menu": {
+    "title": "Nápojový lístek",
+    "main_drinks": [
+    {
+      "subsection_name": "Aperitivy",
+      "products": [
+        {"name": "Campari", "measure": "0.04 l", "price": "60"},
+        {"name": "Artspritz", "measure": "0.04 l", "price": "65"},
+        {"name": "Martini", "measure": "0.1 l", "price": "65"}
+      ]
+    },
+    {
+      "subsection_name": "Bourbon, Whiskey",
+      "products": [
+        {"name": "Jim Beam White", "measure": "0.04 l", "price": "60"},
+        {"name": "Four Roses", "measure": "0.04 l", "price": "60"},
+        {"name": "Jack Daniel's", "measure": "0.04 l", "price": "80"},
+        {"name": "Jack Daniel's Fire/Honey", "measure": "0.04 l", "price": "80"}
+      ]
+    },
+    {
+      "subsection_name": "Whisky",
+      "products": [
+        {"name": "Johny Walker Red Label", "measure": "0.04 l", "price": "60"},
+        {"name": "Ballantine's", "measure": "0.04 l", "price": "60"},
+        {"name": "Tullamore Dew", "measure": "0.04 l", "price": "60"},
+        {"name": "Jameson", "measure": "0.04 l", "price": "60"},
+        {"name": "Whisky 10-20 YO dle nabídky", "measure": "0.04 l", "price": "95"}
+      ]
+    },
+    {
+      "subsection_name": "Gin",
+      "products": [
+        {"name": "SAVOY Dry Gin", "measure": "0.04 l", "price": "60"},
+        {"name": "RIVES Pink", "measure": "0.04 l", "price": "60"},
+        {"name": "Bombay Sapphire", "measure": "0.04 l", "price": "70"},
+        {"name": "Star of Bombay 47.5%", "measure": "0.04 l", "price": "85"},
+        {"name": "Botanist Islay Dry Gin 46%", "measure": "0.04 l", "price": "85"}
+      ]
+    },
+    {
+      "subsection_name": "Vodka",
+      "products": [
+        {"name": "SAVOY vodka", "measure": "0.04 l", "price": "60"},
+        {"name": "Flavoured vodka /dle nabídky/", "measure": "0.04 l", "price": "60"},
+        {"name": "Grey goose premium", "measure": "0.04 l", "price": "95"},
+        {"name": "Xellent Swiss ultra premium", "measure": "0.04 l", "price": "95"}
+      ]
+    },
+    {
+      "subsection_name": "Rum",
+      "products": [
+        {"name": "AREHUCAS blanco, oro", "measure": "0.04 l", "price": "60"},
+        {"name": "Bacardi Oakhart", "measure": "0.04 l", "price": "60"},
+        {"name": "Cortez Spiced / Bacardi Oakheart", "measure": "0.04 l", "price": "60"},
+        {"name": "Ypióca Prata", "measure": "0.04 l", "price": "60"},
+        {"name": "Malibu", "measure": "0.04 l", "price": "60"},
+        {"name": "Arehucas 7 aňos", "measure": "0.04 l", "price": "70"},
+        {"name": "The Kraken Black Spiced rum", "measure": "0.04 l", "price": "70"},
+        {"name": "El Comandante (80%)", "measure": "0.04 l", "price": "70"},
+        {"name": "Legendario – Elixir de Cuba", "measure": "0.04 l", "price": "70"},
+        {"name": "Bacardí 8 aňos", "measure": "0.04 l", "price": "80"},
+        {"name": "El Comandante 18 YO", "measure": "0.04 l", "price": "95"},
+        {"name": "Zacapa Centenario 23y.o.", "measure": "0.04 l", "price": "150"},
+        {"name": "Zacapa Centenario 25 YO", "measure": "0.04 l", "price": "250"}
+      ]
+    },
+    {
+      "subsection_name": "Koňak, Brandy",
+      "products": [
+        {"name": "Armagnac Lalanne Napoleon", "measure": "0.04 l", "price": "90"},
+        {"name": "Armagnac Lalanne XO", "measure": "0.04 l", "price": "130"},
+        {"name": "Metaxa 5*", "measure": "0.04 l", "price": "60"},
+        {"name": "Metaxa 7*", "measure": "0.04 l", "price": "70"},
+        {"name": "Metaxa 12*", "measure": "0.04 l", "price": "110"}
+      ]
+    },
+    {
+      "subsection_name": "Tequila",
+      "products": [
+        {"name": "Sierra silver", "measure": "0.04 l", "price": "80"},
+        {"name": "Sierra reposado", "measure": "0.04 l", "price": "80"},
+        {"name": "Sierra Antiquo Plata", "measure": "0.04 l", "price": "95"},
+        {"name": "Sierra Antiquo aňejo", "measure": "0.04 l", "price": "95"}
+      ]
+    },
+    {
+      "subsection_name": "Likéry",
+      "products": [
+        {"name": "Jägermeister", "measure": "0.04 l", "price": "65"},
+        {"name": "Baileys", "measure": "0.04 l", "price": "60"},
+        {"name": "Kahlua", "measure": "0.04 l", "price": "60"},
+        {"name": "Sambuca Antica", "measure": "0.04 l", "price": "60"},
+        {"name": "Southern Comfort", "measure": "0.04 l", "price": "60"},
+        {"name": "Kwai Feh Lychee / likér z lychee", "measure": "0.04 l", "price": "60"},
+        {"name": "Cointreau", "measure": "0.04 l", "price": "60"},
+        {"name": "Fernet Stock, Fernet Stock Citrus", "measure": "0.04 l", "price": "50"},
+        {"name": "Karlovarská Becherovka, Lemond", "measure": "0.04 l", "price": "50"},
+        {"name": "Bartida Zelená", "measure": "0.04 l", "price": "50"},
+        {"name": "Peach Tree", "measure": "0.04 l", "price": "50"},
+        {"name": "Trojka Pink", "measure": "0.04 l", "price": "50"},
+        {"name": "Trojka Green", "measure": "0.04 l", "price": "50"},
+        {"name": "Trojka Devil", "measure": "0.04 l", "price": "50"},
+        {"name": "Trojka Gold", "measure": "0.04 l", "price": "50"}
+      ]
+    },
+    {
+      "subsection_name": "Ostatní lihoviny",
+      "products": [
+        {"name": "Baron Hildprandt slivovice", "measure": "0.04 l", "price": "60"},
+        {"name": "Baron Hildprandt hruškovice", "measure": "0.04 l", "price": "60"},
+        {"name": "Baron Hildprandt hruška", "measure": "0.04 l", "price": "65"},
+        {"name": "Baron Hildprandt malina", "measure": "0.04 l", "price": "60"},
+        {"name": "Absinth Bestie 60%", "measure": "0.04 l", "price": "60"},
+        {"name": "Tuzemák Bartida", "measure": "0.04 l", "price": "50"},
+        {"name": "Smirnoff Ice", "measure": "0.275 l", "price": "90"}
+      ]
+    },
+    {
+      "subsection_name": "TATRATEA",
+      "products": [
+        {"name": "TATRATEA", "measure": "0.04 l", "price": "60"},
+        {"name": "TATRATEA peach 42%", "measure": "0.04 l", "price": "60"},
+        {"name": "TATRATEA original 52%", "measure": "0.04 l", "price": "65"},
+        {"name": "TATRATEA forest fruit 62%", "measure": "0.04 l", "price": "65"},
+        {"name": "TATRATEA outlaw 72%", "measure": "0.04 l", "price": "65"}
+      ]
+    },
+    {
+      "subsection_name": "Pivo",
+      "products": [
+        {"name": "Staropramen 10° točené/draft", "measure": "0.5 l", "price": "45"},
+        {"name": "Staropramen 10° točené/draft", "measure": "0.3 l", "price": "27"},
+        {"name": "Carling Cider cherry točený/draft", "measure": "0.3 l", "price": "45"},
+        {"name": "Stella artois ležák 12°", "measure": "0.33 l", "price": "50"},
+        {"name": "Stella artois nealko", "measure": "0.33 l", "price": "40"},
+        {"name": "Carling Cider dle nabídky", "measure": "0.33 l", "price": "50"},
+        {"name": "Frisco dle nabídky", "measure": "0.33 l", "price": "50"},
+        {"name": "Corona", "measure": "0.33 l", "price": "90"},
+        {"name": "Desperado", "measure": "0.33 l", "price": "90"}
+      ]
+    },
+    {
+      "subsection_name": "Nealkoholické nápoje",
+      "products": [
+        {"name": "Pepsi Cola (postmix)", "measure": "0.1 l", "price": "15"},
+        {"name": "Tonic, 7UP, Soda (postmix)", "measure": "0.1 l", "price": "15"},
+        {"name": "Mirinda", "measure": "0.33 l", "price": "40"},
+        {"name": "PEPSI Sugar free", "measure": "0.33 l", "price": "40"},
+        {"name": "Ginger Ale/Zázvorová limo", "measure": "0.25 l", "price": "40"},
+        {"name": "Ice tea - citron, broskev, zelený čaj", "measure": "0.2 l", "price": "40"},
+        {"name": "Juice rozlévané (dle nabídky)", "measure": "0.1 l", "price": "15"},
+        {"name": "Juice TOMA - sklo (dle nabídky)", "measure": "0.25 l", "price": "40"},
+        {"name": "Juice Pfanner - sklo (dle nabídky)", "measure": "0.2 l", "price": "40"},
+        {"name": "TOMA - jemně perlivá, neperlivá", "measure": "0.3 l", "price": "35"},
+        {"name": "KORUNNÍ – minerální voda jemně perlivá", "measure": "0.33 l", "price": "35"},
+        {"name": "Evian", "measure": "0.33 l", "price": "45"},
+        {"name": "RED BULL, RED BULL light", "measure": "0.25 l", "price": "65"},
+        {"name": "RED BULL EDITION silver/red,/blue", "measure": "0.25 l", "price": "65"},
+        {"name": "Espresso, mléko", "measure": "9g", "price": "40"}
+      ]
+    }
+    ]
   }
 }

@@ -1,4 +1,48 @@
 {% extends "base.html" %}
+
+{% block extra_styles %}
+<!-- Custom CSS -->
+<link href="{{ url_for('static', filename='css/drink_menu_styles.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
+<img src="{{ url_for('static', filename='assets/img/wine.jpg') }}" class="d-block w-100 poster-img"
+     alt="">
+
+{% set drink_menu = translations.drink_menu %}
+<!-- main menu -->
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h1 class="heading mt-5 text-center">{{ drink_menu.title }}</h1>
+        <div class="col-md-12 col-xl-8">
+            {% for subsection in drink_menu.main_drinks %}
+            <div class="card">
+                <div class="card-header-dark">
+                    <button class="btn button-header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}" aria-expanded="false"
+                            aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
+                        {{ subsection.subsection_name }}
+                    </button>
+                </div>
+                <div class="card-body pt-1 collapse" id="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            {% for product in subsection.products %}
+                            <tr>
+                                <td>{{ product.name }} <span class="measure_text">({{ product.measure }})</span></td>
+                                <td>{{ product.price }},-</td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}

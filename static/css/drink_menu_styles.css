@@ -1,0 +1,30 @@
+.card-header-dark{
+    position: relative;
+    height: 2.2rem;
+}
+.button-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button-header {
+
+    background-color: #212529; /* Background color on hover */
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.button-header:hover {
+    background-color: #6F42C1; /* Background color */
+    border-color: #b9a8e0; /* Border color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.measure_text{
+    font-size: 0.7rem;
+}
+
