@@ -21,14 +21,14 @@
 
 .button-header:hover {
     background-color: var(--purple); /* Background color */
-    border-color: #b9a8e0; /* Border color on hover */
-    color: #fff; /* Text color on hover */
+    border-color: var(--whitey-purple); /* Border color on hover */
+    color: white; /* Text color on hover */
 }
 
 .button-header.clicked {
     background-color: var(--purple); /* Background color on click */
-    border-color: #b9a8e0; /* Border color on click */
-    color: #fff; /* Text color on click */
+    border-color: var(--whitey-purple); /* Border color on click */
+    color: white; /* Text color on click */
 }
 
 .measure_text{
@@ -79,7 +79,7 @@
 
 .custom-tooltip {
     --bs-tooltip-bg: var(--purple);
-    --bs-tooltip-color: #ffffff;
+    --bs-tooltip-color: white;
 }
 
 #info_inline{
@@ -87,5 +87,9 @@
 }
 
 #menu_disclaimer{
-    color: var(--white-purple);
+    color: var(--light-gray);
+}
+
+footer{
+    margin-top: 2rem;
 }

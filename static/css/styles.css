@@ -1,13 +1,18 @@
 /*dark backgroung color*/
 body {
-    background-color: #212529;
+    background-color: "Black Pearl";
 }
 
 /*css variables*/
 :root {
+    --dark_purple: #6038a7;
     --purple: #6f42c1;
     --lighter-purple: #8354d5;
+    --cream-purple: #a490de;
+    --whitey-purple: #b9a8e0;
     --white-purple: #d0c7f0;
+    --purple-gray-transparent: #14003266;
+    --light-gray: #AEB2B6;
 }
 
 .lang-link {
@@ -29,10 +34,13 @@ body {
 
 .heading{
     margin-bottom: 4rem; /* Adjust the value as needed */
-    color: #a490de;
+    color: var(--cream-purple);
 }
 
 .card-header{
     background-color: var(--purple); /* purple */
     height: 2.2rem;
+}
+footer{
+    margin-top: 5rem;
 }
