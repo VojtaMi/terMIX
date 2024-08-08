@@ -1015,6 +1015,41 @@
           ]
         }
       ]
+    },
+    "supplementary_sales": {
+      "title": "Doplňkový prodej",
+      "groups": [
+        {
+          "subsection_name": "Doplňkový prodej",
+          "products": [
+            {
+              "name": "Arašídy – solené",
+              "measure": "balení",
+              "price": "25"
+            },
+            {
+              "name": "Chipsy / dle nabídky",
+              "measure": "balení",
+              "price": "35"
+            },
+            {
+              "name": "Tic Tac",
+              "measure": "1 ks",
+              "price": "25"
+            },
+            {
+              "name": "Zapalovač",
+              "measure": "1 ks",
+              "price": "20"
+            },
+            {
+              "name": "Cigaretové papírky",
+              "measure": "1 ks",
+              "price": "30"
+            }
+          ]
+        }
+      ]
     }
   }
 }
