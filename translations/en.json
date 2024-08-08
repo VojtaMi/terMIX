@@ -104,8 +104,10 @@
       "ageRestriction": "Entry from 18 years old",
       "payments": [
         "Cash only",
+        "ATM inside",
         "Entry fee"
-      ]
+      ],
+      "cloakroom": "Cloakroom"
     }
   },
   "openingHours": [
