@@ -149,7 +149,7 @@
   "drink_menu": {
     "title": "Drink Menu",
     "altText": "An assortment of wine bottles on a wooden table",
-    "main_drinks": [
+    "groups": [
       {
         "subsection_name": "Aperitifs",
         "products": [
@@ -688,7 +688,7 @@
     ],
     "wine_menu": {
       "title": "Wines",
-      "drinks": [
+      "groups": [
         {
           "subsection_name": "Sparkling wines",
           "products": [
@@ -833,7 +833,7 @@
     },
     "cocktail_menu": {
       "title": "Cocktails",
-      "drinks": [
+      "groups": [
         {
           "subsection_name": "Cocktails",
           "products": [

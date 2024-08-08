@@ -16,7 +16,7 @@
     <div class="row justify-content-center align-items-center">
         <h1 class="heading mt-5 text-center">{{ drink_menu.title }}</h1>
         <div class="col-md-12 col-xl-8">
-            {% for subsection in drink_menu.main_drinks %}
+            {% for subsection in drink_menu.groups %}
             <div class="card">
                 <div class="card-header-dark">
                     <button class="btn button-header" type="button" data-bs-toggle="collapse"
@@ -58,7 +58,7 @@
     <div class="row justify-content-center align-items-center">
         <h2 class="heading mt-5 mb-3 text-center">{{ wine_menu.title }}</h2>
         <div class="col-md-12 col-xl-8">
-            {% for subsection in wine_menu.drinks %}
+            {% for subsection in wine_menu.groups %}
             <div class="card">
                 <div class="card-header-dark">
                     <button class="btn button-header" type="button" data-bs-toggle="collapse"
@@ -102,7 +102,7 @@
     <div class="row justify-content-center align-items-center">
         <h2 class="heading mt-5 mb-3 text-center">{{ cocktail_menu.title }}</h2>
         <div class="col-md-12 col-xl-8">
-            {% for subsection in cocktail_menu.drinks %}
+            {% for subsection in cocktail_menu.groups %}
             <div class="card mb-3">
                 <div class="card-header-dark">
                     <button class="btn button-header" type="button" data-bs-toggle="collapse"
@@ -146,6 +146,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 {% endblock %}

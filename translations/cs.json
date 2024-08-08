@@ -149,7 +149,7 @@
   "drink_menu": {
     "title": "Nápojový lístek",
     "altText": "Servítování vína",
-    "main_drinks": [
+    "groups": [
       {
         "subsection_name": "Aperitivy",
         "products": [
@@ -688,7 +688,7 @@
     ],
     "wine_menu": {
       "title": "Vína",
-      "drinks": [
+      "groups": [
         {
           "subsection_name": "Šumivá vína",
           "products": [
@@ -833,7 +833,7 @@
     },
     "cocktail_menu": {
       "title": "Koktejly",
-      "drinks": [
+      "groups": [
         {
           "subsection_name": "Koktejly",
           "products": [
