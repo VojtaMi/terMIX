@@ -22,6 +22,7 @@
                             data-bs-target="#{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}" aria-expanded="false"
                             aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
                         {{ subsection.subsection_name }}
+                        <i class="bi bi-caret-down"></i>
                     </button>
                 </div>
                 <div class="card-body pt-1 collapse" id="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
@@ -43,6 +44,98 @@
         </div>
     </div>
 </div>
+
+<!-- wine menu -->
+{% set wine_menu = translations.drink_menu.wine_menu %}
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h2 class="heading mt-5 mb-3 text-center">{{ wine_menu.title }}</h2>
+        <div class="col-md-12 col-xl-8">
+            {% for subsection in wine_menu.drinks %}
+            <div class="card">
+                <div class="card-header-dark">
+                    <button class="btn button-header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}" aria-expanded="false"
+                            aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
+                        {{ subsection.subsection_name }}
+                        <i class="bi bi-caret-down"></i>
+                    </button>
+                </div>
+                <div class="card-body pt-1 collapse" id="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            {% for product in subsection.products %}
+                            <tr>
+                                <td>{{ product.name }} <span class="measure_text">({{ product.measure }})</span></td>
+                                <td>{{ product.price }},-</td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- cocktail menu -->
+{% set cocktail_menu = translations.drink_menu.cocktail_menu %}
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h2 class="heading mt-5 mb-3 text-center">{{ cocktail_menu.title }}</h2>
+        <div class="col-md-12 col-xl-8">
+            {% for subsection in cocktail_menu.drinks %}
+            <div class="card mb-3">
+                <div class="card-header-dark">
+                    <button class="btn button-header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#{{ subsection.subsection_name | replace(' ', '_') | replace(',', '') }}"
+                            aria-expanded="false"
+                            aria-controls="{{ subsection.subsection_name | replace(' ', '_') | replace(',', '') }}">
+                        {{ subsection.subsection_name }}
+                        <i class="bi bi-caret-down"></i>
+                    </button>
+                </div>
+                <div class="card-body pt-1 collapse"
+                     id="{{ subsection.subsection_name | replace(' ', '_') | replace(',', '') }}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            {% for product in subsection.products %}
+                            <tr>
+                                <td>
+                                    {% if product.ingredients %}
+                                    <button class="btn button-ingredients" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#ingredients-{{ loop.index }}"
+                                            aria-expanded="false"
+                                            aria-controls="ingredients-{{ loop.index }}">
+                                        {{ product.name }}
+                                        <i class="bi bi-info-circle"></i>
+                                    </button>
+                                    <div class="collapse" id="ingredients-{{ loop.index }}">
+                                        <div class="info-panel">
+                                            Ingredients: {{ product.ingredients }}
+                                        </div>
+                                    </div>
+                                    {% else %}
+                                    <span class="product-name">{{ product.name }}</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ product.price }},-</td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 
 
 {% endblock %}

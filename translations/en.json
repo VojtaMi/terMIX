@@ -684,6 +684,336 @@
           }
         ]
       }
-    ]
+    ],
+    "wine_menu": {
+      "title": "Wines",
+      "drinks": [
+        {
+          "subsection_name": "Sparkling wines",
+          "products": [
+            {
+              "name": "Martini Prosecco",
+              "measure": "0.75 l",
+              "price": "375"
+            },
+            {
+              "name": "Prosecco di Valdobbiadene brut D.O.C.G.",
+              "measure": "0.75 l",
+              "price": "450"
+            },
+            {
+              "name": "Bohemia Sect demi sec, brut",
+              "measure": "0.75 l",
+              "price": "280"
+            },
+            {
+              "name": "Bohemia Sect demi sec, brut",
+              "measure": "0.375 l",
+              "price": "160"
+            }
+          ]
+        },
+        {
+          "subsection_name": "House wines",
+          "products": [
+            {
+              "name": "According to Offer",
+              "measure": "0.2 l",
+              "price": "50"
+            },
+            {
+              "name": "Wine Spritzer 2:1",
+              "measure": "0.3 l",
+              "price": "65"
+            },
+            {
+              "name": "Martini Prosecco",
+              "measure": "0.15 l",
+              "price": "75"
+            }
+          ]
+        },
+        {
+          "subsection_name": "White Wines",
+          "products": [
+            {
+              "name": "Pinot Gris (Trpělka Oulehla)",
+              "measure": "0.75 l",
+              "price": "215"
+            },
+            {
+              "name": "Grüner Veltliner (Trpělka Oulehla)",
+              "measure": "0.75 l",
+              "price": "215"
+            },
+            {
+              "name": "Welschriesling Late Harvest (Horák)",
+              "measure": "0.75 l",
+              "price": "310"
+            },
+            {
+              "name": "Chardonnay del Veneto „Preludio“ (Italy)",
+              "measure": "0.75 l",
+              "price": "310"
+            },
+            {
+              "name": "Torres Mas Rabell Blanco (Spain)",
+              "measure": "0.75 l",
+              "price": "370"
+            },
+            {
+              "name": "Riesling Trocken Pfaffmann (Germany)",
+              "measure": "0.75 l",
+              "price": "410"
+            },
+            {
+              "name": "Pinot Grigio del Veneto „L'Elfo“ (Italy)",
+              "measure": "0.75 l",
+              "price": "410"
+            },
+            {
+              "name": "Calliterra Reserva Sauvignon Blanc (Chile)",
+              "measure": "0.75 l",
+              "price": "410"
+            }
+          ]
+        },
+        {
+          "subsection_name": "Rosé Wines",
+          "products": [
+            {
+              "name": "According to Offer (CZ)",
+              "measure": "0.75 l",
+              "price": "310"
+            }
+          ]
+        },
+        {
+          "subsection_name": "Red Wines",
+          "products": [
+            {
+              "name": "According to Offer (CZ)",
+              "measure": "0.75 l",
+              "price": "210"
+            }
+          ]
+        },
+        {
+          "subsection_name": "Champagne",
+          "products": [
+            {
+              "name": "Lanson White Label Dry Sec",
+              "measure": "0.75 l",
+              "price": "1890"
+            },
+            {
+              "name": "Lanson Rosé Label Brut",
+              "measure": "0.75 l",
+              "price": "1890"
+            },
+            {
+              "name": "Moët & Chandon Brut Imperial",
+              "measure": "0.75 l",
+              "price": "1990"
+            },
+            {
+              "name": "Moët & Chandon Brut Imperial",
+              "measure": "0.375 l",
+              "price": "995"
+            },
+            {
+              "name": "AMOUR de Deutz 2005",
+              "measure": "0.75 l",
+              "price": "5990"
+            }
+          ]
+        }
+      ]
+    },
+    "cocktail_menu": {
+      "title": "Cocktails",
+      "drinks": [
+        {
+          "subsection_name": "Cocktails",
+          "products": [
+            {
+              "name": "SPRITZ",
+              "ingredients": "Art spritz aperitivo, prosecco, soda, orange",
+              "price": "115"
+            },
+            {
+              "name": "PINK PARADISE",
+              "ingredients": "Trojka PINK, soda, lime",
+              "price": "70"
+            },
+            {
+              "name": "B 52",
+              "ingredients": "Bailey's, Kahlúa, El Commandante rum",
+              "price": "80"
+            },
+            {
+              "name": "Bavorák",
+              "ingredients": "Fernet Stock, tonic",
+              "price": "80"
+            },
+            {
+              "name": "Beton",
+              "ingredients": "Becherovka, tonic",
+              "price": "80"
+            },
+            {
+              "name": "Black Russian",
+              "ingredients": "Vodka, Kahlúa",
+              "price": "90"
+            },
+            {
+              "name": "Bloody Mary",
+              "ingredients": "Vodka, tomato juice, tabasco",
+              "price": "100"
+            },
+            {
+              "name": "Caipirinha",
+              "ingredients": "Ypióca Prata, lime, sugar",
+              "price": "70"
+            },
+            {
+              "name": "Campari Orange",
+              "ingredients": "",
+              "price": "90"
+            },
+            {
+              "name": "Cosmopolitan",
+              "ingredients": "Vodka, Cointreau, cranberry juice, lime juice",
+              "price": "105"
+            },
+            {
+              "name": "Cuba Libre",
+              "ingredients": "Rum, Pepsi, lime juice",
+              "price": "90"
+            },
+            {
+              "name": "Devil's Sin",
+              "ingredients": "apple vodka, apple juice, soda, lemon syrup",
+              "price": "90"
+            },
+            {
+              "name": "Gin Tonic",
+              "ingredients": "",
+              "price": "90"
+            },
+            {
+              "name": "Strawberry Gin Tonic",
+              "ingredients": "Rives Pink gin, tonic",
+              "price": "90"
+            },
+            {
+              "name": "Long Beach Ice Tea",
+              "ingredients": "Gin, Vodka, Rum, Tequila, Triple sec, lemon juice, sugar, cranberry juice",
+              "price": "155"
+            },
+            {
+              "name": "Long Island Ice Tea",
+              "ingredients": "Gin, Vodka, Rum, Tequila, Triple sec, lemon juice, sugar, cola",
+              "price": "155"
+            },
+            {
+              "name": "Tokyo Ice Tea",
+              "ingredients": "Gin, Vodka, Rum, Tequila, melon liqueur, lemon juice, sugar, sprite",
+              "price": "155"
+            },
+            {
+              "name": "Margarita",
+              "ingredients": "Tequila, Cointreau, lime juice",
+              "price": "110"
+            },
+            {
+              "name": "Mojito",
+              "ingredients": "Rum Don Q, lime, mint, cane sugar, soda",
+              "price": "135"
+            },
+            {
+              "name": "Piña Colada",
+              "ingredients": "Rum Don Q, pineapple juice, coconut, cream",
+              "price": "105"
+            },
+            {
+              "name": "PINK Mojito",
+              "ingredients": "Savoy vodka, 3 PINK, lime, mint, soda",
+              "price": "125"
+            },
+            {
+              "name": "Red Bull + Savoy Vodka",
+              "ingredients": "",
+              "price": "125"
+            },
+            {
+              "name": "Screwdriver",
+              "ingredients": "Savoy Vodka, orange juice",
+              "price": "90"
+            },
+            {
+              "name": "Sex on the Beach",
+              "ingredients": "Vodka, Peach Tree, orange juice, grenadine",
+              "price": "115"
+            },
+            {
+              "name": "Tequila Sunrise",
+              "ingredients": "Tequila, orange juice, grenadine",
+              "price": "110"
+            },
+            {
+              "name": "Mr. Lychee",
+              "ingredients": "Lychee liqueur, tonic, cucumber",
+              "price": "90"
+            },
+            {
+              "name": "Mojito TEA",
+              "ingredients": "Tatratea 32% citrus, lime, mint, sugar, soda",
+              "price": "90"
+            },
+            {
+              "name": "Chupito",
+              "ingredients": "Savoy vodka, lime juice, cocktail cherry",
+              "price": "35"
+            },
+            {
+              "name": "Tatrapito",
+              "ingredients": "Tatratea 32%, lime juice, cocktail",
+              "price": "35"
+            },
+            {
+              "name": "MAXI MOJITO",
+              "ingredients": "0.5 l Rum Arehucas Blanco, limes, mint, cane sugar, 0.6 l club soda",
+              "price": "900"
+            },
+            {
+              "name": "MAXI CUBA LIBRE",
+              "ingredients": "0.5 l Rum Arehucas Oro, limes, 1 l Pepsi",
+              "price": "900"
+            },
+            {
+              "name": "Savoy Vodka 0.5 l + 4x Red Bull",
+              "ingredients": "",
+              "price": "810"
+            },
+            {
+              "name": "Savoy Vodka 0.7 l + 5x Red Bull",
+              "ingredients": "",
+              "price": "1095"
+            },
+            {
+              "name": "Grey Goose 1 l + 6x Red Bull",
+              "ingredients": "",
+              "price": "2765"
+            },
+            {
+              "name": "Xellent Swiss 1 l + 6x Red Bull",
+              "ingredients": "",
+              "price": "2765"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

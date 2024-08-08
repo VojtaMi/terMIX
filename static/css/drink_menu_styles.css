@@ -11,8 +11,8 @@
 }
 
 .button-header {
-
-    background-color: #212529; /* Background color on hover */
+    position: relative;
+    padding-right: 2rem; /* Add padding to the right to avoid text overlap */
     border: none;
     width: 100%;
     height: 100%;
@@ -26,5 +26,44 @@
 
 .measure_text{
     font-size: 0.7rem;
+    color: #d0c7f0;
+}
+
+.ingredients_text{
+    font-size: 0.9rem;
+    color: #d0c7f0;
+}
+
+
+.button-header i {
+    position: absolute;
+    right: 1rem; /* Adjust as necessary */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button-ingredients {
+    position: relative;
+    padding-right: 2rem; /* Add padding to the right to avoid text overlap */
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.button-ingredients:hover {
+    background-color: #6F42C1; /* Background color */
+    border-color: #b9a8e0; /* Border color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.button-ingredients i {
+    position: absolute;
+    right: 1rem; /* Adjust as necessary */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-panel {
+    padding: 10px;
 }
 
