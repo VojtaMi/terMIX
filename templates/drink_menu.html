@@ -190,12 +190,13 @@
     </div>
 </div>
 
+
 <div class="container" id="menu_disclaimer">
     <div class="d-flex justify-content-center">
         <ul class="mt-5 mb-0">
-            <li>Seznam alergenů u obsluhy na baru.</li>
-            <li>Veškeré nápoje jsou podávány s ledem.</li>
-            <li>Platnost od 1.8. 2017.</li>
+            {% for disclaimer in translations.drink_menu.disclaimers %}
+            <li>{{ disclaimer }}</li>
+            {% endfor %}
         </ul>
     </div>
 </div>

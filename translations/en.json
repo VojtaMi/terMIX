@@ -1050,6 +1050,11 @@
           ]
         }
       ]
-    }
+    },
+    "disclaimers": [
+      "List of allergens with the bar staff.",
+      "All drinks are served with ice.",
+      "Valid from August 1, 2017."
+    ]
   }
 }
