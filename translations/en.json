@@ -1015,6 +1015,41 @@
           ]
         }
       ]
+    },
+    "supplementary_sales": {
+      "title": "Supplementary Sales",
+      "groups": [
+        {
+          "subsection_name": "Supplementary Sales",
+          "products": [
+            {
+              "name": "Peanuts – salted",
+              "measure": "pack",
+              "price": "25"
+            },
+            {
+              "name": "Chips / according to offer",
+              "measure": "pack",
+              "price": "35"
+            },
+            {
+              "name": "Tic Tac",
+              "measure": "1 pc.",
+              "price": "25"
+            },
+            {
+              "name": "Lighter",
+              "measure": "1 pc.",
+              "price": "20"
+            },
+            {
+              "name": "Cigarette papers",
+              "measure": "1 pc.",
+              "price": "30"
+            }
+          ]
+        }
+      ]
     }
   }
 }
