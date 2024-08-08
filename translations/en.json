@@ -148,6 +148,7 @@
   },
   "drink_menu": {
     "title": "Drink Menu",
+    "altText": "An assortment of wine bottles on a wooden table",
     "main_drinks": [
       {
         "subsection_name": "Aperitifs",

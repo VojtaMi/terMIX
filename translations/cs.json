@@ -148,6 +148,7 @@
   },
   "drink_menu": {
     "title": "Nápojový lístek",
+    "altText": "Servítování vína",
     "main_drinks": [
       {
         "subsection_name": "Aperitivy",
