@@ -52,8 +52,8 @@
 }
 
 .btn-secondary {
-    background-color: #6F42C1; /* purple */
-    border-color: #6F42C1;
+    background-color: var(--purple); /* purple */
+    border-color: var(--purple);
 
 }
 
@@ -76,7 +76,7 @@
 }
 
 .text-body-secondary-custom {
-    color: #8354d5; /* Sets the text color */
+    color: var(--lighter-purple); /* Sets the text color */
 }
 .lead{
      padding-top: 1rem;

@@ -20,25 +20,25 @@
 }
 
 .button-header:hover {
-    background-color: #6F42C1; /* Background color */
+    background-color: var(--purple); /* Background color */
     border-color: #b9a8e0; /* Border color on hover */
     color: #fff; /* Text color on hover */
 }
 
 .button-header.clicked {
-    background-color: #6F42C1; /* Background color on click */
+    background-color: var(--purple); /* Background color on click */
     border-color: #b9a8e0; /* Border color on click */
     color: #fff; /* Text color on click */
 }
 
 .measure_text{
     font-size: 0.7rem;
-    color: #d0c7f0;
+    color: var(--white-purple);
 }
 
 .ingredients_text{
     font-size: 0.9rem;
-    color: #d0c7f0;
+    color: var(--white-purple);
 }
 
 
@@ -78,10 +78,14 @@
 }
 
 .custom-tooltip {
-    --bs-tooltip-bg: #6f42c1;
+    --bs-tooltip-bg: var(--purple);
     --bs-tooltip-color: #ffffff;
 }
 
 #info_inline{
     font-size: 1rem;
+}
+
+#menu_disclaimer{
+    color: var(--white-purple);
 }

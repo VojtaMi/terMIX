@@ -3,6 +3,13 @@ body {
     background-color: #212529;
 }
 
+/*css variables*/
+:root {
+    --purple: #6f42c1;
+    --lighter-purple: #8354d5;
+    --white-purple: #d0c7f0;
+}
+
 .lang-link {
     font-size: 1.25rem; /* Increase the font size */
 }
@@ -26,6 +33,6 @@ body {
 }
 
 .card-header{
-    background-color: #6F42C1; /* purple */
+    background-color: var(--purple); /* purple */
     height: 2.2rem;
 }
