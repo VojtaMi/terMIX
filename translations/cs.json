@@ -101,10 +101,10 @@
       }
     ],
     "info": {
-      "ageRestriction": "Vstup od 18 let",
+      "ageRestriction": "Vstup od 18",
       "payments": [
         "Pouze hotovost",
-        "Bankomat uvnitř",
+        "Bankomat",
         "Vstupné"
       ],
       "cloakroom": "Šatna"

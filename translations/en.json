@@ -101,10 +101,10 @@
       }
     ],
     "info": {
-      "ageRestriction": "Entry from 18 years old",
+      "ageRestriction": "Entry 18+",
       "payments": [
         "Cash only",
-        "ATM inside",
+        "ATM",
         "Entry fee"
       ],
       "cloakroom": "Cloakroom"
