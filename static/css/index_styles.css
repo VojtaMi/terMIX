@@ -28,7 +28,6 @@
 }
 
 .poster-caption h1 {
-    font-size: 3rem; /* Default size */
     font-family: 'Edu AU VIC WA NT Hand', sans-serif;
     font-weight: bold;
 }
@@ -114,7 +113,6 @@
         width: 70%;
     }
     .poster-caption h1 {
-    font-size: 2.5rem; /* Default size */
     font-weight: bold;
 }
  }

@@ -19,16 +19,6 @@
     width: 3rem;
 
 }
-
-.heading{
-    margin-bottom: 4rem; /* Adjust the value as needed */
-    color: var(--cream-purple);
-}
-
-.card-header{
-    background-color: var(--purple); /* purple */
-    height: 2.2rem;
-}
 footer{
     margin-top: 5rem;
 }
@@ -41,6 +31,26 @@ footer{
 /*base styles end*/
 
 /*shared styles*/
+h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+}
+/*heading - purple h1*/
+.heading{
+    margin-bottom: 4rem;
+    color: var(--cream-purple);
+}
+
+@media (max-width: 991px) {
+    .heading{
+        margin-bottom: 1rem;
+    }
+}
+
+.card-header{
+    background-color: var(--purple); /* purple */
+    height: 2.2rem;
+}
+
 .bi{
     font-size: 1.4rem;
 }
