@@ -154,6 +154,9 @@
     },
     "operator": "Operator"
   },
+  "gallery": {
+    "title": "Gallery"
+  },
   "drink_menu": {
     "title": "Drink Menu",
     "altText": "An assortment of wine bottles on a wooden table",

@@ -3,11 +3,12 @@
 {% block extra_styles %}
 <!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/gallery_styles.css') }}" rel="stylesheet">
+<script src="{{ url_for('static', filename='js/script_gallery.js') }}"></script>
 {% endblock %}
 
 {% block content %}
 <div class="container">
-    <h1 class="heading mt-0 text-center">Galerie</h1>
+    <h1 class="heading mt-0 text-center">{{ translations.gallery.title }}</h1>
     <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
             <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
@@ -118,5 +119,7 @@
     </div>
     <!-- Gallery -->
 </div>
-
 {% endblock %}
+
+
+
