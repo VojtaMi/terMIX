@@ -1,7 +1,13 @@
-.large-contact-content{
+.large-contact-content {
     object-fit: cover;
-    height: 50vh;
-    width: 100%;
+    height: 100%; /* Ensure the iframe takes full height */
+    width: 100%; /* Ensure the iframe takes full width */
+}
+
+/* Optional: Ensure the text content does not overflow */
+.location_details {
+    margin-top: auto; /* Aligns the content to take up remaining space */
+    margin-bottom: auto; /* Keeps content centered */
 }
 
 .location_details{

@@ -139,7 +139,8 @@
       "metro": {
         "name": "Jiřího z Poděbrad",
         "distance": "500m"
-      }
+      },
+      "map_button_text": "Zobrazit na mapě"
     },
     "entrance_image": {
       "alt": "Hlavní vchod"
