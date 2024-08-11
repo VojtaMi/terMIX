@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block extra_styles %}
-    <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename='css/contact_styles.css') }}" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="{{ url_for('static', filename='css/contact_styles.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -20,13 +20,23 @@
                     <li class="location_detail">{{ location.tram_stop.name }} - {{ location.tram_stop.distance }}</li>
                     <li class="location_detail">
                         {{ location.metro.name }}
-                        <img src="{{ url_for('static', filename='assets/logos/metro-a.svg') }}" alt="metro A" class="icon">
+                        <img src="{{ url_for('static', filename='assets/logos/metro-a.svg') }}" alt="metro A"
+                             class="icon">
                         - {{ location.metro.distance }}
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-6">
-                <iframe class="large-contact-content" style="border:none" src="https://en.frame.mapy.cz/s/casumubehu" frameborder="0"></iframe>
+            <!-- Embedded map for larger screens -->
+            <div class="col-12 col-md-6  d-none d-md-block">
+                <iframe class="large-contact-content" style="border:none"
+                        src="https://en.frame.mapy.cz/s/casumubehu" frameborder="0"></iframe>
+            </div>
+
+            <!-- Display button for small screens -->
+            <div class="d-block d-md-none text-center mt-3">
+                <a href="https://mapy.cz/s/dodegamezo" target="_blank" class="btn btn btn-outline-purple">
+                    <i class="bi bi-geo-alt-fill"></i> View on Map
+                </a>
             </div>
         </div>
     </div>
@@ -36,7 +46,8 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-md-6">
-                <img src="static/assets/img/entrance.jpg" alt="{{ contact.entrance_image.alt }}" class="large-contact-content">
+                <img src="static/assets/img/entrance.jpg" alt="{{ contact.entrance_image.alt }}"
+                     class="large-contact-content">
             </div>
             <div class="col-12 col-md-6">
                 <h2 class="contact-heading">{{ contact.opening_hours.heading }}</h2>

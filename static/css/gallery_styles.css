@@ -43,7 +43,7 @@
 }
 
 .btn-ig {
-    background-color:var(--dark-purple); /* Background color on hover */
+    background-color: var(--dark-purple); /* Background color on hover */
     border-color: var(--white-purple); /* Border color */
 }
 

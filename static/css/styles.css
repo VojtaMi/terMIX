@@ -1,11 +1,8 @@
-/*dark backgroung color*/
-body {
-    background-color: "Black Pearl";
-}
+
 
 /*css variables*/
 :root {
-    --dark_purple: #6038a7;
+    --dark-purple: #6038a7;
     --purple: #6f42c1;
     --lighter-purple: #8354d5;
     --cream-purple: #a490de;
@@ -15,6 +12,7 @@ body {
     --light-gray: #AEB2B6;
 }
 
+/*base styles*/
 .lang-link {
     font-size: 1.25rem; /* Increase the font size */
 }
@@ -22,14 +20,6 @@ body {
 #header_logo{
     width: 3rem;
 
-}
-
-.bi{
-    font-size: 1.4rem;
-}
-
-.icon{
-    height: 1.4rem;
 }
 
 .heading{
@@ -44,3 +34,25 @@ body {
 footer{
     margin-top: 5rem;
 }
+/*base styles end*/
+
+/*shared styles*/
+.bi{
+    font-size: 1.4rem;
+}
+
+.icon{
+    height: 1.4rem;
+}
+.btn-outline-purple {
+    color: var(--cream-purple); /* Text color */
+    border: 1px solid var(--cream-purple); /* Border color */
+    background-color: transparent; /* No background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-outline-purple:hover {
+    background-color: var(--purple); /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+/*shared styles end*/
