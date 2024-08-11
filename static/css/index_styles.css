@@ -84,9 +84,6 @@
 }
 
 @media (max-width: 991px) {
-    #header_logo{
-        width: 2rem;
-    }
     .featurette-heading {
     font-size: 40px;
   }
