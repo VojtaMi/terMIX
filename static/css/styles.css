@@ -59,4 +59,9 @@ footer{
     background-color: var(--purple); /* Background color on hover */
     color: white; /* Text color on hover */
 }
+
+#disclaimer{
+    color: var(--light-gray);
+}
+
 /*shared styles end*/

@@ -85,11 +85,6 @@
 #info_inline{
     font-size: 1rem;
 }
-
-#menu_disclaimer{
-    color: var(--light-gray);
-}
-
 footer{
     margin-top: 2rem;
 }

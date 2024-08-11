@@ -9,12 +9,13 @@
 
 <div class="container">
     {% set contact = translations.contact %}
+    <h1 class="heading mt-0 text-center">{{ contact.title }}</h1>
     <hr class="mb-0">
     <div class="container mt-5">
         <div class="row">
             <div class="row">
                 <div class="col-12 col-md-6 d-flex flex-column">
-                    <h2 class="heading">{{ contact.heading }}</h2>
+                    <h2 class="heading">{{ contact.connections }}</h2>
                     {% set location = contact.location %}
                     <ul class="location_details flex-grow-1">
                         <li class="location_detail">{{ location.address }}</li>
@@ -30,7 +31,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 d-flex">
-                    <iframe class="large-contact-content flex-grow-1" style="border:none"
+                    <iframe class="large-contact-content flex-grow-1 d-none d-md-block" style="border:none"
                             src="https://en.frame.mapy.cz/s/casumubehu" frameborder="0"></iframe>
                 </div>
             </div>
@@ -60,6 +61,47 @@
         </div>
     </div>
 
+    <hr>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="contact-heading"> {{ contact.reservations.heading }} </h2>
+                <a href="tel:+420 222 710 462" class="btn btn-outline-purple">
+                    <i class="bi bi-telephone-fill"></i> +420 222 710 462
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2 class="contact-heading"> Email </h2>
+                <a href="mailto:club-termix@club-termix.cz" class="btn btn-outline-purple">
+                    <i class="bi bi-envelope-at-fill"></i> club-termix@club-termix.cz
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="container mt-3" id="disclaimer">
+    <hr class="mt-5">
+    <div class="d-flex justify-content-center">
+        <table class="mt-0 mb-0 text-center">
+            <tr>
+                <td>{{ contact.operator }}:</td>
+                <td>Termix Praha s.r.o.</td>
+            </tr>
+            <tr>
+                <td>IČO:</td>
+                <td>03956245</td>
+            </tr>
+            <tr>
+                <td>DIČ:</td>
+                <td>CZ03956245</td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 {% endblock %}

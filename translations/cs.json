@@ -129,7 +129,8 @@
     }
   ],
   "contact": {
-    "heading": "Spojení",
+    "title": "Kontakty",
+    "connections": "Spojení",
     "location": {
       "address": "Třebízského 4a, Praha 2",
       "tram_stop": {
@@ -147,7 +148,11 @@
     },
     "opening_hours": {
       "heading": "Otevírací doba"
-    }
+    },
+    "reservations": {
+      "heading": "Rezervace"
+    },
+    "operator": "Provozovatel"
   },
   "drink_menu": {
     "title": "Nápojový lístek",
