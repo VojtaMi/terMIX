@@ -1,7 +1,7 @@
 // Home Links at home page scroll to top instead of reloading
 document.addEventListener('DOMContentLoaded', function() {
         // Get all home button elements
-        var homeButtons = document.querySelectorAll('.home-button');
+        var homeButtons = document.querySelectorAll('.home-scroll-up');
 
         // Define the scroll-to-top function
         function scrollToTop(event) {

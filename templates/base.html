@@ -37,7 +37,7 @@
 <nav class="navbar navbar-dark bg-dark" aria-label="Navigation">
     <div class="container-fluid">
         <!-- Logo -->
-        <a href="{{ url_for('home', lang=lang) }}" class="home-button">
+        <a href="{{ url_for('home', lang=lang) }}">
             <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="navbar-brand"
                  id="header_logo"
                  role="img" aria-label="Termix Logo" alt="Termix Logo">
@@ -58,7 +58,7 @@
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarsExample01">
             <ul class="navbar-nav me-auto mb-2">
-                <li class="nav-item"><a class="nav-link home-button" href="{{ url_for('home', lang=lang) }}">{{
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('home', lang=lang) }}">{{
                     translations.navbar.home }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('about', lang=lang) }}">{{ translations.navbar.about }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('contacts', lang=lang) }}">{{
@@ -81,13 +81,13 @@
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">© 2003–{{ current_year }} Termix Praha s.r.o.</p>
         <a href="{{ url_for('home', lang=lang) }} "
-           class="col-md-4 d-flex justify-content-center home-button">
+           class="col-md-4 d-flex justify-content-center home-scroll-up">
             <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="bi me-2" width="40"
                  aria-label="Termix Logo" alt="Termix Logo">
         </a>
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item footer-logo">
-                <a href="{{ url_for('home', lang=lang) }}" class="nav-link px-3 text-body-secondary home-button">
+                <a href="{{ url_for('home', lang=lang) }}" class="nav-link px-3 text-body-secondary home-scroll-up">
                     <i class="bi bi-house svg-icon"></i>
                 </a>
             </li>
