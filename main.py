@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from flask import Flask, render_template, request, redirect, url_for, json
 import os
 
@@ -84,6 +83,12 @@ def drink_menu():
     lang = request.args.get('lang')
     return render_template('drink_menu.html', translations=get_translations(lang), lang=lang)
 
+@app.route('/about')
+def about():
+    lang = request.args.get('lang')
+    return render_template('about.html', translations=get_translations(lang), lang=lang)
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+    # app.run(debug=True)

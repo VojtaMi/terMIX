@@ -1,4 +1,205 @@
 {% extends "base.html" %}
+
+{% block extra_styles %}
+<!-- Custom CSS -->
+<link href="{{ url_for('static', filename='css/drink_menu_styles.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
+{% set drink_menu = translations.drink_menu %}
+
+<img src="{{ url_for('static', filename='assets/img/wine.jpg') }}" class="d-block w-100 poster-img"
+     alt="{{ drink_menu.altText }}">
+
+<!-- main menu -->
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h1 class="heading mt-5 text-center">{{ drink_menu.title }}</h1>
+        <div class="col-md-12 col-xl-8">
+            {% for subsection in drink_menu.groups %}
+            <div class="card">
+                <div class="card-header-dark">
+                    <button class="btn button-header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
+                            aria-expanded="false"
+                            aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
+                            aria-label="Toggle {{ subsection.subsection_name }}">
+                        {{ subsection.subsection_name }}
+                        <i class="bi bi-caret-down"></i>
+                    </button>
+                </div>
+                <div class="card-body pt-1 collapse"
+                     id="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            {% for product in subsection.products %}
+                            <tr>
+                                <td><span class="btn button-style-blank">
+                                    {{ product.name }}
+                                    <span class="measure_text">({{ product.measure }})</span>
+                                </span></td>
+                                <td><span class="btn button-style-blank">{{ product.price }},-</span></td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- wine menu -->
+{% set wine_menu = translations.drink_menu.wine_menu %}
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h2 class="heading mt-5 mb-3 text-center">{{ wine_menu.title }}</h2>
+        <div class="col-md-12 col-xl-8">
+            {% for subsection in wine_menu.groups %}
+            <div class="card">
+                <div class="card-header-dark">
+                    <button class="btn button-header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
+                            aria-expanded="false"
+                            aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
+                            aria-label="Toggle {{ subsection.subsection_name }}">
+                        {{ subsection.subsection_name }}
+                        <i class="bi bi-caret-down"></i>
+                    </button>
+                </div>
+                <div class="card-body pt-1 collapse"
+                     id="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            {% for product in subsection.products %}
+                            <tr>
+                                <td>
+                                    <span class="btn button-style-blank">
+                                        {{ product.name }}
+                                        <span class="measure_text">({{ product.measure }})</span>
+                                    </span>
+                                </td>
+                                <td><span class="btn button-style-blank">{{ product.price }},-</span></td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- cocktail menu -->
+{% set cocktail_menu = translations.drink_menu.cocktail_menu %}
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h2 class="heading mt-5 mb-3 text-center">{{ cocktail_menu.title }}</h2>
+        <div class="col-md-12 col-xl-8">
+            {% for subsection in cocktail_menu.groups %}
+            <div class="card mb-3">
+                <div class="card-header-dark">
+                    <button class="btn button-header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#{{ subsection.subsection_name | replace(' ', '_') | replace(',', '') }}"
+                            aria-expanded="false"
+                            aria-controls="{{ subsection.subsection_name | replace(' ', '_') | replace(',', '') }}"
+                            aria-label="Toggle {{ subsection.subsection_name }}">
+                        {{ subsection.subsection_name }}
+                        <i class="bi bi-caret-down"></i>
+                    </button>
+                </div>
+                <div class="card-body pt-1 collapse"
+                     id="{{ subsection.subsection_name | replace(' ', '_') | replace(',', '') }}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            {% for product in subsection.products %}
+                            <tr>
+                                <td>
+                                    {% if product.ingredients %}
+                                    <button type="button" class="btn button-drink"
+                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                            data-bs-custom-class="custom-tooltip"
+                                            data-bs-title="{{ product.ingredients }}">
+                                        {{ product.name }}
+                                        <i class="bi bi-info-circle" id="info_inline"></i>
+                                    </button>
+                                    {% else %}
+                                    <span class="btn button-style-blank">{{ product.name }}</span>
+                                    {% endif %}
+                                </td>
+                                <td><span class="btn button-style-blank">{{ product.price }},-</span></td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% set supplementary_sales = translations.drink_menu.supplementary_sales %}
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h2 class="heading mt-5 mb-3 text-center">{{ supplementary_sales.title }}</h2>
+        <div class="col-md-12 col-xl-8">
+            {% for subsection in supplementary_sales.groups %}
+            <div class="card">
+                <div class="card-header-dark">
+                    <button class="btn button-header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
+                            aria-expanded="false"
+                            aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
+                            aria-label="Toggle {{ subsection.subsection_name }}">
+                        {{ subsection.subsection_name }}
+                        <i class="bi bi-caret-down"></i>
+                    </button>
+                </div>
+                <div class="card-body pt-1 collapse"
+                     id="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            {% for product in subsection.products %}
+                            <tr>
+                                <td>
+                                    <span class="btn button-style-blank">
+                                        {{ product.name }}
+                                        <span class="measure_text">({{ product.measure }})</span>
+                                    </span>
+                                </td>
+                                <td><span class="btn button-style-blank">{{ product.price }},-</span></td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="menu_disclaimer">
+    <div class="d-flex justify-content-center">
+        <ul class="mt-5 mb-0">
+            {% for disclaimer in translations.drink_menu.disclaimers %}
+            <li>{{ disclaimer }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
 
 {% endblock %}

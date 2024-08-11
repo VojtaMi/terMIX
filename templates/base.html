@@ -37,7 +37,7 @@
 <nav class="navbar navbar-dark bg-dark" aria-label="Navigation">
     <div class="container-fluid">
         <!-- Logo -->
-        <a href="{{ url_for('home', lang=lang) }}">
+        <a href="{{ url_for('home', lang=lang) }}" class="home-button">
             <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="navbar-brand"
                  id="header_logo"
                  role="img" aria-label="Termix Logo" alt="Termix Logo">
@@ -58,12 +58,12 @@
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarsExample01">
             <ul class="navbar-nav me-auto mb-2">
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('home', lang=lang) }}">{{
+                <li class="nav-item"><a class="nav-link home-button" href="{{ url_for('home', lang=lang) }}">{{
                     translations.navbar.home }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">{{ translations.navbar.about }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('about', lang=lang) }}">{{ translations.navbar.about }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('contacts', lang=lang) }}">{{
                     translations.navbar.contacts }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">{{ translations.navbar.drinks }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('drink_menu', lang=lang) }}">{{ translations.navbar.drinks }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('gallery', lang=lang) }}">{{
                     translations.navbar.gallery }}</a></li>
             </ul>
@@ -78,16 +78,16 @@
 
 <!-- Footer -->
 <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-5 border-top">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">© 2003–{{ current_year }} Termix Praha s.r.o.</p>
-        <a href="{{ url_for('home', lang=lang) }}"
-           class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <a href="{{ url_for('home', lang=lang) }} "
+           class="col-md-4 d-flex justify-content-center home-button">
             <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="bi me-2" width="40"
                  aria-label="Termix Logo" alt="Termix Logo">
         </a>
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item footer-logo">
-                <a href="{{ url_for('home', lang=lang) }}" class="nav-link px-3 text-body-secondary">
+                <a href="{{ url_for('home', lang=lang) }}" class="nav-link px-3 text-body-secondary home-button">
                     <i class="bi bi-house svg-icon"></i>
                 </a>
             </li>
@@ -112,5 +112,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% block extra_scripts %}{% endblock %}
 </body>
 </html>
