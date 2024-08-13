@@ -110,6 +110,18 @@
       "cloakroom": "Šatna"
     }
   },
+  "about": {
+    "title": "O Nás",
+    "quote": [
+      "Jsme otevřený bar, kde si užije zábavu každý bez ohledu na původ, nebo orientaci.",
+      "Přátelské prostředí a skvělá muzika."
+    ],
+    "fb_button_text": "Pro novinky nás sledujte",
+    "other_bars_title": [
+      "Líbí se vám TerMix?",
+      "Navštivte i naše další kluby v Praze."
+    ]
+  },
   "openingHours": [
     {
       "day": "Středa",

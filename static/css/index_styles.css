@@ -41,27 +41,11 @@
     display: none; /* Hide line break on larger screens */
 }
 
-/* fast links bellow title image */
-.rounded-circle {
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
-    margin-bottom: 10px;
-}
 
 .btn-secondary {
     background-color: var(--purple); /* purple */
     border-color: var(--purple);
 
-}
-
-.img-hover {
-    transition: transform 0.3s ease; /* Smooth transition */
-}
-
-.img-hover:hover {
-    transform: scale(1.1); /* Scale the image to 120% of its original size */
 }
 
 .featurette-divider {
