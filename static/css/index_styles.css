@@ -41,13 +41,6 @@
     display: none; /* Hide line break on larger screens */
 }
 
-
-.btn-secondary {
-    background-color: var(--purple); /* purple */
-    border-color: var(--purple);
-
-}
-
 .featurette-divider {
   margin: 5rem; /* Space out the Bootstrap <hr> more */
 }
