@@ -27,7 +27,7 @@
 
             <h2>{{ feature.title }}</h2>
             <p>{{ feature.description[0] }}<br>{{ feature.description[1] }}</p>
-            <p><a class="btn btn-secondary" href="{{ url_for(feature.buttonLink, lang=lang) }}">{{ feature.buttonText
+            <p><a class="btn btn-primary-purple" href="{{ url_for(feature.buttonLink, lang=lang) }}">{{ feature.buttonText
                 }}</a></p>
         </div>
         {% endfor %}

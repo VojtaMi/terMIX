@@ -11,6 +11,7 @@
     {% set contact = translations.contact %}
     <h1 class="heading mt-0 text-center">{{ contact.title }}</h1>
     <hr class="mb-0">
+<!--    location details-->
     <div class="container mt-5">
         <div class="row">
             <div class="row">
@@ -29,14 +30,29 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center d-none d-md-block">
+                    <!-- Buttons to display map or open in a new window -->
+                    <div id="map-button-container" class="d-flex flex-column text-center large-contact-content ">
+                        <button id="display-map-button" class="btn btn-outline-purple mb-5">
+                            <span class="d-block map-button-text">
+                                {{ location.map_frame_button_text }}
+                                <i class="bi bi-geo-alt-fill"></i></span>
+                            <span class="d-block cookie-text">({{ location.cookie_disclaimer }})</span>
+                        </button>
+                        <a href="https://mapy.cz/s/dodegamezo" target="_blank" id="open-new-window-button" class="btn btn-outline-purple mt-2">
+                            <span class="d-block map-button-text">
+                               {{ location.map_button_text }} <i class="bi bi-box-arrow-up-right"></i>
+                            </span>
+                        </a>
+                    </div>
 
-                <div class="col-12 col-md-6 d-flex">
-                    <iframe class="large-contact-content flex-grow-1 d-none d-md-block" style="border:none"
-                            src="https://en.frame.mapy.cz/s/casumubehu" frameborder="0"></iframe>
+                    <!-- iFrame container, hidden initially -->
+                    <div id="map-iframe-container" class="large-contact-content flex-grow-1 d-none">
+                        <iframe id="map-iframe" class="flex-grow-1" style="border:none;width:100%;height:400px;"
+                                src="https://en.frame.mapy.cz/s/casumubehu" frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
-
-
             <!-- Display button for small screens -->
             <div class="d-block d-md-none text-center mt-3">
                 <a href="https://mapy.cz/s/dodegamezo" target="_blank" class="btn btn btn-outline-purple">
@@ -103,5 +119,8 @@
         </table>
     </div>
 </div>
+{% endblock %}
 
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/script_contact.js') }}"></script>
 {% endblock %}
