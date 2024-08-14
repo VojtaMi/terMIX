@@ -43,6 +43,10 @@
   margin: 0 auto; /* Center the table */
 }
 
+.bi-box-arrow-up-right{
+    margin-left: 0.3rem;
+}
+
 footer {
   margin-top: 1rem;
 }

@@ -153,7 +153,9 @@
         "name": "Jiřího z Poděbrad",
         "distance": "500m"
       },
-      "map_button_text": "View on Map"
+      "map_frame_button_text": "View map here",
+      "cookie_disclaimer": "uses cookies",
+      "map_button_text": "Open with mapy.cz"
     },
     "entrance_image": {
       "alt": "Main entrance"
