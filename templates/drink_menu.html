@@ -14,7 +14,10 @@
 <!-- main menu -->
 <div class="container">
     <div class="row justify-content-center align-items-center">
-        <h1 class="heading mt-5 text-center">{{ drink_menu.title }}</h1>
+        <h1 class="heading mt-5 text-center">
+            {{ drink_menu.title }}
+        </h1>
+
         <div class="col-md-12 col-xl-8">
             {% for subsection in drink_menu.groups %}
             <div class="card">
@@ -25,7 +28,7 @@
                             aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
                             aria-label="Toggle {{ subsection.subsection_name }}">
                         {{ subsection.subsection_name }}
-                        <i class="bi bi-caret-down"></i>
+                        <i class="bi bi-caret-down normal-icon"></i>
                     </button>
                 </div>
                 <div class="card-body pt-1 collapse"
@@ -67,7 +70,7 @@
                             aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
                             aria-label="Toggle {{ subsection.subsection_name }}">
                         {{ subsection.subsection_name }}
-                        <i class="bi bi-caret-down"></i>
+                        <i class="bi bi-caret-down normal-icon"></i>
                     </button>
                 </div>
                 <div class="card-body pt-1 collapse"
@@ -111,7 +114,7 @@
                             aria-controls="{{ subsection.subsection_name | replace(' ', '_') | replace(',', '') }}"
                             aria-label="Toggle {{ subsection.subsection_name }}">
                         {{ subsection.subsection_name }}
-                        <i class="bi bi-caret-down"></i>
+                        <i class="bi bi-caret-down normal-icon"></i>
                     </button>
                 </div>
                 <div class="card-body pt-1 collapse"
@@ -128,7 +131,7 @@
                                             data-bs-custom-class="custom-tooltip"
                                             data-bs-title="{{ product.ingredients }}">
                                         {{ product.name }}
-                                        <i class="bi bi-info-circle" id="info_inline"></i>
+                                        <i class="bi bi-info-circle normal-icon" id="info_inline"></i>
                                     </button>
                                     {% else %}
                                     <span class="btn button-style-blank">{{ product.name }}</span>
@@ -161,7 +164,7 @@
                             aria-controls="{{subsection.subsection_name | replace(' ', '_') | replace(',', '')}}"
                             aria-label="Toggle {{ subsection.subsection_name }}">
                         {{ subsection.subsection_name }}
-                        <i class="bi bi-caret-down"></i>
+                        <i class="bi bi-caret-down normal-icon"></i>
                     </button>
                 </div>
                 <div class="card-body pt-1 collapse"
@@ -189,6 +192,16 @@
         </div>
     </div>
 </div>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <a href="{{ url_for('static', filename='assets/drink_menu.pdf') }}" target="_blank"
+           class="text-center btn btn-primary-purple" id="pdf-logo-large">
+            {{ translations.drink_menu.download }} <i class="bi bi-filetype-pdf"></i>
+        </a>
+    </div>
+</div>
+
 
 <div class="container" id="menu_disclaimer">
     <div class="d-flex justify-content-center">

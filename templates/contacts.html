@@ -35,13 +35,13 @@
                     <button id="display-map-button" class="btn btn-outline-purple mb-5">
                             <span class="d-block map-button-text">
                                 {{ location.map_frame_button_text }}
-                                <i class="bi bi-geo-alt-fill"></i></span>
+                                <i class="bi bi-geo-alt-fill normal-icon"></i></span>
                         <span class="d-block cookie-text">({{ location.cookie_disclaimer }})</span>
                     </button>
                     <a href="https://mapy.cz/s/dodegamezo" target="_blank" id="open-new-window-button"
                        class="btn btn-outline-purple mt-2">
                             <span class="d-block map-button-text">
-                               {{ location.map_button_text }} <i class="bi bi-box-arrow-up-right"></i>
+                               {{ location.map_button_text }} <i class="bi bi-box-arrow-up-right normal-icon"></i>
                             </span>
                     </a>
                 </div>
@@ -53,7 +53,7 @@
             <!-- Display button for small screens -->
             <div class="d-block d-md-none text-center mt-3">
                 <a href="https://mapy.cz/s/dodegamezo" target="_blank" class="btn btn btn-outline-purple">
-                    <i class="bi bi-geo-alt-fill"></i> {{ location.map_button_text }}
+                    <i class="bi bi-geo-alt-fill normal-icon"></i> {{ location.map_button_text }}
                 </a>
             </div>
         </div>
@@ -86,7 +86,7 @@
                     <div class="card-body pt-1">
                         <div class="d-flex flex-column justify-content-center align-items-center">
 
-                            <i class="bi bi-person-check-fill mb-1"></i>
+                            <i class="bi bi-person-check-fill normal-icon mb-1"></i>
                             {% set info = translations.info %}
                             <table class="table table-bordered mb-2">
                                 <tbody>
@@ -96,7 +96,7 @@
                                 </tbody>
                             </table>
 
-                            <i class="bi bi-cash-coin mb-1"></i>
+                            <i class="bi bi-cash-coin normal-icon mb-1"></i>
                             <table class="table table-bordered mb-2">
                                 <tbody>
                                 {% for payment in info.payments %}
@@ -107,7 +107,7 @@
                                 </tbody>
                             </table>
 
-                            <i class="bi bi-duffle-fill mb-1"></i>
+                            <i class="bi bi-duffle-fill mb-1 normal-icon"></i>
                             <table class="table table-bordered mb-2">
                                 <tbody>
                                 <tr>
@@ -123,14 +123,14 @@
                  <div>
                     <h2 class="contact-heading"> Email </h2>
                     <a href="mailto:termixclub@gmail.com" class="btn btn-outline-purple">
-                        <i class="bi bi-envelope-at-fill"></i> termixclub@gmail.com
+                        <i class="bi bi-envelope-at-fill normal-icon"></i> termixclub@gmail.com
                     </a>
 
                 </div>
                 <div>
                     <h2 class="contact-heading"> Chat </h2>
                     <a href="https://www.instagram.com/direct/t/17842514916029460" class="btn btn-outline-purple" target="_blank">
-                        <i class="bi bi-chat-dots-fill"></i> Instagram
+                        <i class="bi bi-chat-dots-fill normal-icon"></i> Instagram
                     </a>
                 </div>
             </div>

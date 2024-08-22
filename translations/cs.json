@@ -170,6 +170,7 @@
   "drink_menu": {
     "title": "Nápojový lístek",
     "altText": "Servítování vína",
+    "download": "Stáhnout",
     "groups": [
       {
         "subsection_name": "Aperitivy",
