@@ -99,16 +99,16 @@
           "src_wide": "assets/img/night_life_wide.jpg"
         }
       }
+    ]
+  },
+  "info": {
+    "ageRestriction": "Vstup od 18",
+    "payments": [
+      "Pouze hotovost",
+      "Bankomat",
+      "Vstupné"
     ],
-    "info": {
-      "ageRestriction": "Vstup od 18",
-      "payments": [
-        "Pouze hotovost",
-        "Bankomat",
-        "Vstupné"
-      ],
-      "cloakroom": "Šatna"
-    }
+    "cloakroom": "Šatna"
   },
   "about": {
     "title": "O Nás",

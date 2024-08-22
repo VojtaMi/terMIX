@@ -99,16 +99,16 @@
           "src_wide": "assets/img/night_life_wide.jpg"
         }
       }
+    ]
+  },
+  "info": {
+    "ageRestriction": "Entry 18+",
+    "payments": [
+      "Cash only",
+      "ATM",
+      "Entry fee"
     ],
-    "info": {
-      "ageRestriction": "Entry 18+",
-      "payments": [
-        "Cash only",
-        "ATM",
-        "Entry fee"
-      ],
-      "cloakroom": "Cloakroom"
-    }
+    "cloakroom": "Cloakroom"
   },
   "about": {
     "title": "About Us",

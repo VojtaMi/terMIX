@@ -14,43 +14,42 @@
     <!--    location details-->
     <div class="container mt-5">
         <div class="row">
-            <div class="row">
-                <div class="col-12 col-md-6 d-flex flex-column">
-                    <h2 class="heading">{{ contact.connections }}</h2>
-                    {% set location = contact.location %}
-                    <ul class="location_details flex-grow-1">
-                        <li class="location_detail">{{ location.address }}</li>
-                        <li class="location_detail">{{ location.tram_stop.name }} - {{ location.tram_stop.distance }}
-                        </li>
-                        <li class="location_detail">
-                            {{ location.metro.name }}
-                            <img src="{{ url_for('static', filename='assets/logos/metro-a.svg') }}" alt="metro A"
-                                 class="icon">
-                            - {{ location.metro.distance }}
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center d-none d-md-block">
-                    <!-- Buttons to display map or open in a new window -->
-                    <div id="map-button-container" class="d-flex flex-column text-center large-contact-content ">
-                        <button id="display-map-button" class="btn btn-outline-purple mb-5">
+            <div class="col-12 col-md-6 d-flex flex-column">
+                <h2 class="heading">{{ contact.connections }}</h2>
+                {% set location = contact.location %}
+                <ul class="location_details flex-grow-1">
+                    <li class="location_detail">{{ location.address }}</li>
+                    <li class="location_detail">{{ location.tram_stop.name }} - {{ location.tram_stop.distance }}
+                    </li>
+                    <li class="location_detail">
+                        {{ location.metro.name }}
+                        <img src="{{ url_for('static', filename='assets/logos/metro-a.svg') }}" alt="metro A"
+                             class="icon">
+                        - {{ location.metro.distance }}
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center d-none d-md-block">
+                <!-- Buttons to display map or open in a new window -->
+                <div id="map-button-container" class="d-flex flex-column text-center large-contact-content ">
+                    <button id="display-map-button" class="btn btn-outline-purple mb-5">
                             <span class="d-block map-button-text">
                                 {{ location.map_frame_button_text }}
                                 <i class="bi bi-geo-alt-fill"></i></span>
-                            <span class="d-block cookie-text">({{ location.cookie_disclaimer }})</span>
-                        </button>
-                        <a href="https://mapy.cz/s/dodegamezo" target="_blank" id="open-new-window-button"
-                           class="btn btn-outline-purple mt-2">
+                        <span class="d-block cookie-text">({{ location.cookie_disclaimer }})</span>
+                    </button>
+                    <a href="https://mapy.cz/s/dodegamezo" target="_blank" id="open-new-window-button"
+                       class="btn btn-outline-purple mt-2">
                             <span class="d-block map-button-text">
                                {{ location.map_button_text }} <i class="bi bi-box-arrow-up-right"></i>
                             </span>
-                        </a>
-                    </div>
-
-                    <!-- Placeholder for iframe, initially empty -->
-                    <div id="iframe-container" class="large-contact-content flex-grow-1 d-none"></div>
+                    </a>
                 </div>
+
+                <!-- Placeholder for iframe, initially empty -->
+                <div id="iframe-container" class="large-contact-content flex-grow-1 d-none"></div>
             </div>
+
             <!-- Display button for small screens -->
             <div class="d-block d-md-none text-center mt-3">
                 <a href="https://mapy.cz/s/dodegamezo" target="_blank" class="btn btn btn-outline-purple">
@@ -61,7 +60,7 @@
     </div>
 
     <hr>
-
+    <!--opening hours-->
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -76,25 +75,66 @@
     </div>
 
     <hr>
-
+    <!--additional info + contacts-->
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12 col-md-6 text-center">
-                <h2 class="contact-heading"> {{ contact.phone.heading }} </h2>
-                <a href="tel:+420 222 710 462" class="btn btn-outline-purple">
-                    <i class="bi bi-telephone-fill"></i> +420 222 710 462
-                </a>
-            </div>
-            <div class="col-12 col-md-6 text-center">
-                <h2 class="contact-heading"> Email </h2>
-                <a href="mailto:termixclub@gmail.com" class="btn btn-outline-purple">
-                    <i class="bi bi-envelope-at-fill"></i> termixclub@gmail.com
-                </a>
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body pt-1">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
 
+                            <i class="bi bi-person-check-fill mb-1"></i>
+                            {% set info = translations.info %}
+                            <table class="table table-bordered mb-2">
+                                <tbody>
+                                <tr>
+                                    <td class="address text-center">{{ info.ageRestriction }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <i class="bi bi-cash-coin mb-1"></i>
+                            <table class="table table-bordered mb-2">
+                                <tbody>
+                                {% for payment in info.payments %}
+                                <tr>
+                                    <td class="address text-center">{{ payment }}</td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+
+                            <i class="bi bi-duffle-fill mb-1"></i>
+                            <table class="table table-bordered mb-2">
+                                <tbody>
+                                <tr>
+                                    <td class="address text-center">{{ info.cloakroom }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 text-center contact-container">
+                 <div>
+                    <h2 class="contact-heading"> Email </h2>
+                    <a href="mailto:termixclub@gmail.com" class="btn btn-outline-purple">
+                        <i class="bi bi-envelope-at-fill"></i> termixclub@gmail.com
+                    </a>
+
+                </div>
+                <div>
+                    <h2 class="contact-heading"> {{ contact.phone.heading }} </h2>
+                    <a href="tel:+420 222 710 462" class="btn btn-outline-purple">
+                        <i class="bi bi-telephone-fill"></i> +420 222 710 462
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
+    </div>
 
 </div>
 

@@ -47,6 +47,17 @@
     margin-left: 0.3rem;
 }
 
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+}
+.contact-heading{
+    margin-bottom: 2rem;
+}
+
 footer {
   margin-top: 1rem;
 }

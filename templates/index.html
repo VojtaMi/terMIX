@@ -78,31 +78,11 @@
                             </table>
 
                             <i class="bi bi-person-check-fill mb-1"></i>
-                            {% set info = translations.home.info %}
+                            {% set info = translations.info %}
                             <table class="table table-bordered mb-2">
                                 <tbody>
                                 <tr>
                                     <td class="address text-center">{{ info.ageRestriction }}</td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <i class="bi bi-cash-coin mb-1"></i>
-                            <table class="table table-bordered mb-2">
-                                <tbody>
-                                {% for payment in info.payments %}
-                                <tr>
-                                    <td class="address text-center">{{ payment }}</td>
-                                </tr>
-                                {% endfor %}
-                                </tbody>
-                            </table>
-
-                            <i class="bi bi-duffle-fill mb-1"></i>
-                            <table class="table table-bordered mb-2">
-                                <tbody>
-                                <tr>
-                                    <td class="address text-center">{{ info.cloakroom }}</td>
                                 </tr>
                                 </tbody>
                             </table>
