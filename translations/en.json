@@ -105,8 +105,7 @@
     "ageRestriction": "Entry 18+",
     "payments": [
       "Cash only",
-      "ATM",
-      "Entry fee"
+      "ATM"
     ],
     "cloakroom": "Cloakroom"
   },
