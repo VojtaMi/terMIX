@@ -47,8 +47,33 @@
     margin-left: 0.3rem;
 }
 
+#opening_hours_table {
+    min-height: 80%;
+}
+#opening_hours_table td {
+    text-align: center;        /* Horizontal centering */
+    vertical-align: middle;    /* Vertical centering */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+}
+.contact-heading{
+    margin-bottom: 2rem;
+}
+
 footer {
   margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    #opening_hours_table td {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 991px) {

@@ -99,16 +99,15 @@
           "src_wide": "assets/img/night_life_wide.jpg"
         }
       }
+    ]
+  },
+  "info": {
+    "ageRestriction": "Entry 18+",
+    "payments": [
+      "Cash only",
+      "ATM"
     ],
-    "info": {
-      "ageRestriction": "Entry 18+",
-      "payments": [
-        "Cash only",
-        "ATM",
-        "Entry fee"
-      ],
-      "cloakroom": "Cloakroom"
-    }
+    "cloakroom": "Cloakroom"
   },
   "about": {
     "title": "About Us",
@@ -163,9 +162,6 @@
     "opening_hours": {
       "heading": "Opening Hours"
     },
-    "reservations": {
-      "heading": "Reservations"
-    },
     "operator": "Operator"
   },
   "gallery": {
@@ -174,6 +170,7 @@
   "drink_menu": {
     "title": "Drink Menu",
     "altText": "An assortment of wine bottles on a wooden table",
+    "download": "Download",
     "groups": [
       {
         "subsection_name": "Aperitifs",
