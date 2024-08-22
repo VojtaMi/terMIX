@@ -33,12 +33,26 @@
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="Navigation">
     <div class="container-fluid">
-        <!-- Logo -->
-        <a href="{{ url_for('home', lang=lang) }}">
-            <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="navbar-brand"
-                 id="header_logo"
-                 role="img" aria-label="Termix Logo" alt="Termix Logo">
-        </a>
+        <div class="d-flex align-items-center">
+            <!-- TerMix Logo -->
+            <a href="{{ url_for('home', lang=lang) }}">
+                <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="navbar-brand"
+                     id="header_logo"
+                     role="img" aria-label="Termix Logo" alt="Termix Logo">
+            </a>
+
+            <!-- Facebook Logo -->
+            <a href="https://www.facebook.com/club.termix/" target="_blank"
+               class="nav-link px-3 text-body-secondary">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <!-- Instagram Logo -->
+            <a href="https://www.instagram.com/termix_club/" target="_blank"
+               class="nav-link px-3 text-body-secondary">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
 
         <!-- Language Switcher and Toggler Button -->
         <div class="d-flex align-items-center">
@@ -57,10 +71,12 @@
             <ul class="navbar-nav me-auto mb-2">
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('home', lang=lang) }}">{{
                     translations.navbar.home }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('about', lang=lang) }}">{{ translations.navbar.about }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('about', lang=lang) }}">{{
+                    translations.navbar.about }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('contacts', lang=lang) }}">{{
                     translations.navbar.contacts }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('drink_menu', lang=lang) }}">{{ translations.navbar.drinks }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('drink_menu', lang=lang) }}">{{
+                    translations.navbar.drinks }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('gallery', lang=lang) }}">{{
                     translations.navbar.gallery }}</a></li>
             </ul>
@@ -91,13 +107,13 @@
             <li class="nav-item footer-logo">
                 <a href="https://www.facebook.com/club.termix/" target="_blank"
                    class="nav-link px-3 text-body-secondary">
-                   <i class="bi bi-facebook"></i>
+                    <i class="bi bi-facebook"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="https://www.instagram.com/termix_club/" target="_blank"
                    class="nav-link px-3 text-body-secondary">
-                     <i class="bi bi-instagram"></i>
+                    <i class="bi bi-instagram"></i>
                 </a>
             </li>
         </ul>
