@@ -98,7 +98,7 @@
     <div class="d-flex justify-content-center">
         <ul class="mt-5 mb-0">
             {% for disclaimer in translations.drink_menu.disclaimers %}
-            <li>{{ disclaimer }}</li>
+            <li>{{ disclaimer | safe }}</li>
             {% endfor %}
         </ul>
     </div>
