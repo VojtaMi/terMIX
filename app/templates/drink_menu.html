@@ -27,13 +27,17 @@
                 data-bs-custom-class="custom-tooltip"
                 data-bs-title="{{ product.info }}">
             {{ product.name }}
+            {% if product.measure %}
             <span class="measure_text">({{ product.measure }})</span>
+            {% endif %}
             <i class="bi bi-info-circle normal-icon" id="info_inline"></i>
         </button>
         {% else %}
         <span class="btn button-style-blank">
             {{ product.name }}
+            {% if product.measure %}
             <span class="measure_text">({{ product.measure }})</span>
+            {% endif %}
         </span>
         {% endif %}
     </td>
@@ -57,7 +61,7 @@
                             aria-controls="{{ subsection.name | replace(' ', '_') | replace(',', '') }}"
                             aria-label="Toggle {{ subsection.name }}">
                         {{ subsection.name }}
-                        <i class="bi bi-caret-down normal-icon"></i>
+                        <i class="bi bi-caret-down toggle-icon normal-icon"></i>
                     </button>
                 </div>
                 <div class="card-body pt-1 collapse"
@@ -66,7 +70,7 @@
                         <table class="table table-bordered mb-2">
                             <tbody>
                             {% for product in subsection.products %}
-                                {{ render_product(product) }}
+                            {{ render_product(product) }}
                             {% endfor %}
                             </tbody>
                         </table>
