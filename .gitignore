@@ -129,5 +129,5 @@ pipenv.lock
 cython_debug/
 
 
-static/assets/backup_img
+app/static/assets/backup_img
 keep_only_black.py
