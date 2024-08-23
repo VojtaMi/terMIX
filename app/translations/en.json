@@ -196,7 +196,7 @@
                 "name": "Martini",
                 "measure": "0.1 l",
                 "price": "80",
-                "info": "Dry, Bianco, Fiero"
+                "info": "Dry/Bianco/Fiero"
               },
               {
                 "name": "Aperol",
@@ -312,7 +312,7 @@
                 "name": "FLIRT vodka",
                 "measure": "0.04 l",
                 "price": "75",
-                "info": "dle nabídky"
+                "info": "As available"
               },
               {
                 "name": "Grey goose premium",
@@ -441,7 +441,7 @@
                 "name": "Ferner Stock",
                 "measure": "0.04 l",
                 "price": "70",
-                "info": "Stock Citrus"
+                "info": "Stock/Citrus"
               },
               {
                 "name": "Karlovarská Becherovka",
