@@ -50,3 +50,12 @@
     border-color: var(--whitey-purple); /* Border color on hover */
     color: white; /* Text color on hover */
 }
+
+#facebook-albums-link{
+    --facebook-blue:#0165E1;
+    font-size: 2rem;
+    background-color: var(--facebook-blue);
+}
+#facebook-icon-large{
+    font-size: 3rem;
+}
