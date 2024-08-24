@@ -20,7 +20,7 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-.instagram-frame {
+.socials-frame {
     position: relative;
     width: 100%;
     padding-top: 65.56%; /* Aspect ratio (341.5 / 521 * 100) */
@@ -40,12 +40,22 @@
     font-size: 2rem;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
+
+#gallery_btn{
+    font-size: 2rem;
+}
+
+#plus-btn-icon-large{
+    font-size: 3rem;
+}
+
 #ig-frame-btn {
-    background-color: var(--dark-purple); /* Background color on hover */
+    --instagram-purple:#c13584;
+    background-color: var(--instagram-purple); /* Background color on hover */
 }
 
 #ig-frame-btn:hover {
-    background-color: var(--purple); /* Background color */
+    background-color: #d2639c; /* Background color */
     color: white; /* Text color on hover */
 }
 
