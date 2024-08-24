@@ -168,7 +168,9 @@
     "operator": "Provozovatel"
   },
   "gallery": {
-    "title": "Galerie"
+    "title": "Galerie",
+    "alt_text": "TerMix club obrázek galerie",
+    "fb_albums": "Alba"
   },
   "drink_menu": {
     "title": "Nápojový lístek",

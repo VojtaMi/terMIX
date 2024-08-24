@@ -13,43 +13,25 @@
         <div class="col-12 col-lg-10">
             <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
                 <div class="carousel-indicators">
+                    <!-- First Indicator Button (Active) -->
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1"
                             class="active" aria-current="true"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
-                            aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
-                            aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"
-                            aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6"
-                            aria-label="Slide 6"></button>
+
+                    <!-- Loop for the Remaining Indicators -->
+                    {% for i in range(2, 8) %}
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="{{ i - 1 }}"
+                            aria-label="Slide {{ i }}"></button>
+                    {% endfor %}
                 </div>
                 <div class="carousel-inner gallery-slide">
+                    {% for i in range(1, 8) %}
                     <div class="carousel-item active gallery-slide">
-                        <img class="gallery-picture" src="static/assets/gallery/1.avif" width="100%" height="100%">
+                        <img class="gallery-picture"
+                             src="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.avif') }}"
+                             alt="{{ translations.gallery.alt_text }}"
+                             width="100%" height="100%">
                     </div>
-                    <div class="carousel-item gallery-slide">
-                        <img class="gallery-picture" src="static/assets/gallery/2.avif" width="100%" height="100%">
-                    </div>
-                    <div class="carousel-item gallery-slide">
-                        <img class="gallery-picture" src="static/assets/gallery/3.avif" width="100%" height="100%">
-                    </div>
-                    <div class="carousel-item gallery-slide">
-                        <img class="gallery-picture" src="static/assets/gallery/4.avif" width="100%" height="100%">
-                    </div>
-                    <div class="carousel-item gallery-slide">
-                        <img class="gallery-picture" src="static/assets/gallery/5.avif" width="100%" height="100%">
-                    </div>
-                    <div class="carousel-item gallery-slide">
-                        <img class="gallery-picture" src="static/assets/gallery/6.avif" width="100%" height="100%">
-                    </div>
-                    <div class="carousel-item gallery-slide">
-                        <img class="gallery-picture" src="static/assets/gallery/7.avif" width="100%" height="100%">
-                    </div>
+                    {% endfor %}
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -72,7 +54,7 @@
         <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
             <img
                     src="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.avif') }}"
-                    alt=""
+                    alt="{{ translations.gallery.alt_text }}"
                     class="w-100 shadow-1-strong rounded mb-4"
             />
         </div>
@@ -83,7 +65,7 @@
             <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
                 <img
                         src="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.avif') }}"
-                        alt=""
+                        alt="{{ translations.gallery.alt_text }}"
                         class="w-100 shadow-1-strong rounded mb-4"
                 />
             </div>

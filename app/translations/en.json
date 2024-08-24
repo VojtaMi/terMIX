@@ -168,7 +168,9 @@
     "operator": "Operator"
   },
   "gallery": {
-    "title": "Gallery"
+    "title": "Gallery",
+    "alt_text": "TerMix club gallery picture",
+    "fb_albums": "Albums"
   },
   "drink_menu": {
     "title": "Drink Menu",
