@@ -170,7 +170,9 @@
   "gallery": {
     "title": "Gallery",
     "alt_text": "TerMix club gallery picture",
-    "fb_albums": "Albums"
+    "more_pictures": "More pictures",
+    "fb_albums": "Albums",
+    "ig_follow": "Follow us"
   },
   "drink_menu": {
     "title": "Drink Menu",

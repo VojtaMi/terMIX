@@ -170,7 +170,9 @@
   "gallery": {
     "title": "Galerie",
     "alt_text": "TerMix club obrázek galerie",
-    "fb_albums": "Alba"
+    "more_pictures": "Další obrázky",
+    "fb_albums": "Alba",
+    "ig_follow": "Sledujte nás"
   },
   "drink_menu": {
     "title": "Nápojový lístek",
