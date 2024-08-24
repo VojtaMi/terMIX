@@ -1,13 +1,6 @@
 {
-  "navbar": {
-    "label": "Show navigation",
-    "home": "Home",
-    "about": "About Us",
-    "contacts": "Contacts",
-    "drinks": "Drink Menu",
-    "gallery": "Gallery"
-  },
   "home": {
+    "title": "Home",
     "poster": {
       "altText": "Bar",
       "caption": {
@@ -37,8 +30,8 @@
           "Dance to the popular songs.",
           "Wed-Sat, from 10 PM."
         ],
-        "buttonText": "Contacts »",
-        "buttonLink": "contacts",
+        "buttonText": "Info »",
+        "buttonLink": "information",
         "image": "karaoke.jpg"
       },
       {
@@ -101,14 +94,6 @@
       }
     ]
   },
-  "info": {
-    "ageRestriction": "Entry 18+",
-    "payments": [
-      "Cash only",
-      "ATM"
-    ],
-    "cloakroom": "Cloakroom"
-  },
   "about": {
     "title": "About Us",
     "quote": [
@@ -139,8 +124,8 @@
       "hours": "10:00 PM - 6:00 AM"
     }
   ],
-  "contact": {
-    "title": "Contacts",
+  "information": {
+    "title": "Information",
     "connections": "Connection",
     "location": {
       "address": "Třebízského 4a, Prague 2",
@@ -162,6 +147,12 @@
     "opening_hours": {
       "heading": "Opening Hours"
     },
+    "ageRestriction": "Entry 18+",
+    "payments": [
+      "Cash only",
+      "ATM"
+    ],
+    "cloakroom": "Cloakroom",
     "additional_info": {
       "heading": "Additional info"
     },
@@ -966,5 +957,8 @@
         ]
       }
     ]
+  },
+  "navbar": {
+    "aria_label": "Show navigation"
   }
 }

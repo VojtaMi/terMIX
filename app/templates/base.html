@@ -61,7 +61,7 @@
                 <a class="nav-link lang-link px-3" href="{{ en_url }}">en</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
-                    aria-controls="navbarsExample01" aria-expanded="false" aria-label="{{ translations.navbar.label }}">
+                    aria-controls="navbarsExample01" aria-expanded="false" aria-label="{{ translations.navbar.aria_label }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
@@ -70,15 +70,15 @@
         <div class="collapse navbar-collapse" id="navbarsExample01">
             <ul class="navbar-nav me-auto mb-2">
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('home', lang=lang) }}">{{
-                    translations.navbar.home }}</a></li>
+                    translations.home.title }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('about', lang=lang) }}">{{
-                    translations.navbar.about }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('contacts', lang=lang) }}">{{
-                    translations.navbar.contacts }}</a></li>
+                    translations.about.title }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('information', lang=lang) }}">{{
+                    translations.information.title }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('drink_menu', lang=lang) }}">{{
-                    translations.navbar.drinks }}</a></li>
+                    translations.drink_menu.title }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('gallery', lang=lang) }}">{{
-                    translations.navbar.gallery }}</a></li>
+                    translations.gallery.title }}</a></li>
             </ul>
         </div>
     </div>
