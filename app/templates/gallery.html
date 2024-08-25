@@ -26,14 +26,22 @@
                 </div>
                 <div class="carousel-inner gallery-slide">
                     <div class="carousel-item active gallery-slide">
-                        {{ macros.render_picture('gallery', '1', translations.gallery.alt_text,
-                        ['gallery-picture', 'w-100', 'h-100']) }}
+                        {{ macros.render_picture(
+                        base_path='gallery',
+                        base_filename='1',
+                        alt_text=translations.gallery.alt_text,
+                        classes=['gallery-picture', 'w-100', 'h-100']
+                        ) }}
                     </div>
 
                     {% for i in range(2, 8) %}
                     <div class="carousel-item gallery-slide">
-                        {{ macros.render_picture('gallery', i|string, translations.gallery.alt_text,
-                        ['gallery-picture', 'w-100', 'h-100']) }}
+                        {{ macros.render_picture(
+                        base_path='gallery',
+                        base_filename=i|string,
+                        alt_text=translations.gallery.alt_text,
+                        classes=['gallery-picture', 'w-100', 'h-100']
+                        ) }}
                     </div>
                     {% endfor %}
                 </div>
@@ -56,50 +64,58 @@
     <div class="row d-flex justify-content-center">
         {% for i in range(8, 14) %}
         <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
-            {{ macros.render_picture('gallery', i|string, translations.gallery.alt_text,
-            ['w-100', 'shadow-1-strong', 'rounded', 'mb-4']) }}
+            {{ macros.render_picture(
+            base_path='gallery',
+            base_filename=i|string,
+            alt_text=translations.gallery.alt_text,
+            classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4']
+            ) }}
         </div>
         {% endfor %}
 
         <div class="row d-none" id="hidden-image-section">
             {% for i in range(14, 23) %}
             <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
-                {{ macros.render_picture('gallery', i|string, translations.gallery.alt_text,
-                ['w-100', 'shadow-1-strong', 'rounded', 'mb-4']) }}
+                {{ macros.render_picture(
+                base_path='gallery',
+                base_filename=i|string,
+                alt_text=translations.gallery.alt_text,
+                classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4']
+                ) }}
             </div>
             {% endfor %}
         </div>
+    </div>
 
-        <div class="col-12 d-flex justify-content-center mb-5">
-            <button class="btn btn-primary-purple d-flex align-items-center justify-content-center" id="gallery_btn">
-                <i class="bi bi-plus-circle" id="plus-btn-icon-large"></i>
-                <span class="ms-2">{{ translations.gallery.more_pictures }}</span>
-            </button>
+    <div class="col-12 d-flex justify-content-center mb-5">
+        <button class="btn btn-primary-purple d-flex align-items-center justify-content-center" id="gallery_btn">
+            <i class="bi bi-plus-circle" id="plus-btn-icon-large"></i>
+            <span class="ms-2">{{ translations.gallery.more_pictures }}</span>
+        </button>
+    </div>
+
+    <hr class="mb-5">
+
+    <div class="col-11 col-sm-10 col-xl-5 col-xxl-4  mb-4 mb-lg-0 ">
+        <div class="w-100 socials-frame">
+            <a href="https://www.instagram.com/termix_club/" target="_blank">
+                <button type="button" class="btn frame-btn d-flex align-items-center justify-content-center"
+                        id="ig-frame-btn">
+                    <i class="bi bi-instagram large-icon"></i>
+                    <span class="ms-2">{{ translations.gallery.ig_follow }}</span>
+                </button>
+            </a>
         </div>
-
-        <hr class="mb-5">
-
-        <div class="col-11 col-sm-10 col-xl-5 col-xxl-4  mb-4 mb-lg-0 ">
-            <div class="w-100 socials-frame">
-                <a href="https://www.instagram.com/termix_club/" target="_blank">
-                    <button type="button" class="btn frame-btn d-flex align-items-center justify-content-center"
-                            id="ig-frame-btn">
-                        <i class="bi bi-instagram large-icon"></i>
-                        <span class="ms-2">{{ translations.gallery.ig_follow }}</span>
-                    </button>
-                </a>
-            </div>
-        </div>
-        <div class="col-11 col-sm-10 col-xl-5 col-xxl-4  mb-4 mb-lg-0 ">
-            <div class="w-100 socials-frame">
-                <a href="https://www.facebook.com/club.termix/photos_albums" target="_blank">
-                    <button type="button" class="btn frame-btn d-flex align-items-center justify-content-center"
-                            id="fb-frame-btn">
-                        <i class="bi bi-facebook large-icon"></i>
-                        <span class="ms-2">{{ translations.gallery.fb_albums }}</span>
-                    </button>
-                </a>
-            </div>
+    </div>
+    <div class="col-11 col-sm-10 col-xl-5 col-xxl-4  mb-4 mb-lg-0 ">
+        <div class="w-100 socials-frame">
+            <a href="https://www.facebook.com/club.termix/photos_albums" target="_blank">
+                <button type="button" class="btn frame-btn d-flex align-items-center justify-content-center"
+                        id="fb-frame-btn">
+                    <i class="bi bi-facebook large-icon"></i>
+                    <span class="ms-2">{{ translations.gallery.fb_albums }}</span>
+                </button>
+            </a>
         </div>
     </div>
 </div>

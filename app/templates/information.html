@@ -65,8 +65,12 @@
     <div class="container mt-5">
         <div class="row d-flex align-items-stretch">
             <div class="col-12 col-md-6">
-                {{ macros.render_picture('img', 'entrance', translations.gallery.alt_text,
-                ['large-information-content', 'img-fluid']) }}
+                {{ macros.render_picture(
+                base_path='img',
+                base_filename='entrance',
+                alt_text=translations.gallery.alt_text,
+                classes=['large-information-content', 'img-fluid']
+                ) }}
             </div>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
                 <h2 class="information-heading">{{ information.opening_hours.heading }}</h2>
