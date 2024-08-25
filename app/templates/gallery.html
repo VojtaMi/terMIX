@@ -3,11 +3,33 @@
 {% block extra_styles %}
 <!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/gallery_styles.css') }}" rel="stylesheet">
+
+<!-- jQuery (needed for Lightbox2) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<!-- Lightbox2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Custom JS -->
 <script src="{{ url_for('static', filename='js/script_gallery.js') }}"></script>
+
+<!-- Lightbox2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
 {% endblock %}
 
 {% block content %}
 {% import 'macros.html' as macros %}
+{% macro gallery_picture(base_filename='', alt_text='') %}
+<a href="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}" data-lightbox="gallery"
+   data-title="{{ translations.gallery.alt_text }}">
+    {{ macros.render_picture(
+    base_path='gallery',
+    base_filename=base_filename,
+    alt_text=alt_text,
+    classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4']
+    ) }}
+</a>
+{% endmacro %}
 <div class="container">
     <h1 class="heading mt-0 text-center">{{ translations.gallery.title }}</h1>
     <div class="row justify-content-center">
@@ -64,11 +86,9 @@
     <div class="row d-flex justify-content-center">
         {% for i in range(8, 14) %}
         <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
-            {{ macros.render_picture(
-            base_path='gallery',
+            {{ gallery_picture(
             base_filename=i|string,
             alt_text=translations.gallery.alt_text,
-            classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4']
             ) }}
         </div>
         {% endfor %}
@@ -77,11 +97,9 @@
     <div class="row d-none d-flex justify-content-center" id="hidden-image-section">
         {% for i in range(14, 23) %}
         <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
-            {{ macros.render_picture(
-            base_path='gallery',
+            {{ gallery_picture(
             base_filename=i|string,
             alt_text=translations.gallery.alt_text,
-            classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4']
             ) }}
         </div>
         {% endfor %}
