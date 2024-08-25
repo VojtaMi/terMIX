@@ -72,55 +72,58 @@
             ) }}
         </div>
         {% endfor %}
+    </div>
 
-        <div class="row d-none" id="hidden-image-section">
-            {% for i in range(14, 23) %}
-            <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
-                {{ macros.render_picture(
-                base_path='gallery',
-                base_filename=i|string,
-                alt_text=translations.gallery.alt_text,
-                classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4']
-                ) }}
-            </div>
-            {% endfor %}
+    <div class="row d-none d-flex justify-content-center" id="hidden-image-section">
+        {% for i in range(14, 23) %}
+        <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
+            {{ macros.render_picture(
+            base_path='gallery',
+            base_filename=i|string,
+            alt_text=translations.gallery.alt_text,
+            classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4']
+            ) }}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-center mb-5">
+            <button class="btn btn-primary-purple d-flex align-items-center justify-content-center" id="gallery_btn">
+                <i class="bi bi-plus-circle" id="plus-btn-icon-large"></i>
+                <span class="ms-2">{{ translations.gallery.more_pictures }}</span>
+            </button>
         </div>
     </div>
 
-    <div class="col-12 d-flex justify-content-center mb-5">
-        <button class="btn btn-primary-purple d-flex align-items-center justify-content-center" id="gallery_btn">
-            <i class="bi bi-plus-circle" id="plus-btn-icon-large"></i>
-            <span class="ms-2">{{ translations.gallery.more_pictures }}</span>
-        </button>
-    </div>
 
     <hr class="mb-5">
 
-    <div class="col-11 col-sm-10 col-xl-5 col-xxl-4  mb-4 mb-lg-0 ">
-        <div class="w-100 socials-frame">
-            <a href="https://www.instagram.com/termix_club/" target="_blank">
-                <button type="button" class="btn frame-btn d-flex align-items-center justify-content-center"
-                        id="ig-frame-btn">
-                    <i class="bi bi-instagram large-icon"></i>
-                    <span class="ms-2">{{ translations.gallery.ig_follow }}</span>
-                </button>
-            </a>
+    <div class="row d-flex justify-content-center">
+        <div class="col-11 col-sm-10 col-xl-5 col-xxl-4  mb-4 mb-lg-0 ">
+            <div class="w-100 socials-frame">
+                <a href="https://www.instagram.com/termix_club/" target="_blank">
+                    <button type="button" class="btn frame-btn d-flex align-items-center justify-content-center"
+                            id="ig-frame-btn">
+                        <i class="bi bi-instagram large-icon"></i>
+                        <span class="ms-2">{{ translations.gallery.ig_follow }}</span>
+                    </button>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="col-11 col-sm-10 col-xl-5 col-xxl-4  mb-4 mb-lg-0 ">
-        <div class="w-100 socials-frame">
-            <a href="https://www.facebook.com/club.termix/photos_albums" target="_blank">
-                <button type="button" class="btn frame-btn d-flex align-items-center justify-content-center"
-                        id="fb-frame-btn">
-                    <i class="bi bi-facebook large-icon"></i>
-                    <span class="ms-2">{{ translations.gallery.fb_albums }}</span>
-                </button>
-            </a>
+        <div class="col-11 col-sm-10 col-xl-5 col-xxl-4  mb-4 mb-lg-0 ">
+            <div class="w-100 socials-frame">
+                <a href="https://www.facebook.com/club.termix/photos_albums" target="_blank">
+                    <button type="button" class="btn frame-btn d-flex align-items-center justify-content-center"
+                            id="fb-frame-btn">
+                        <i class="bi bi-facebook large-icon"></i>
+                        <span class="ms-2">{{ translations.gallery.fb_albums }}</span>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 </div>
-
-
 {% endblock %}
 
 
