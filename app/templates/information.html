@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-
+{% import 'macros.html' as macros %}
 <div class="container">
     {% set information = translations.information %}
     <h1 class="heading mt-0 text-center">{{ information.title }}</h1>
@@ -65,15 +65,8 @@
     <div class="container mt-5">
         <div class="row d-flex align-items-stretch">
             <div class="col-12 col-md-6">
-                <picture>
-                    <!-- Source for AVIF format -->
-                    <source srcset="static/assets/img/entrance.avif" type="image/avif">
-
-                    <!-- Fallback to JPG format -->
-                    <img src="static/assets/img/entrance.jpg"
-                         alt="{{ information.entrance_image.alt }}"
-                         class="large-information-content img-fluid">
-                </picture>
+                {{ macros.render_picture('img', 'entrance', translations.gallery.alt_text,
+                ['large-information-content', 'img-fluid']) }}
             </div>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
                 <h2 class="information-heading">{{ information.opening_hours.heading }}</h2>

@@ -7,6 +7,7 @@
 {% endblock %}
 
 {% block content %}
+{% import 'macros.html' as macros %}
 <div class="container">
     <h1 class="heading mt-0 text-center">{{ translations.gallery.title }}</h1>
     <div class="row justify-content-center">
@@ -25,30 +26,14 @@
                 </div>
                 <div class="carousel-inner gallery-slide">
                     <div class="carousel-item active gallery-slide">
-                        <picture>
-                            <!-- Source for AVIF format -->
-                            <source srcset="{{ url_for('static', filename='assets/gallery/1.avif') }}"
-                                    type="image/avif">
-                            <!-- Fallback to JPG format -->
-                            <img class="gallery-picture"
-                                 src="{{ url_for('static', filename='assets/gallery/1.jpg') }}"
-                                 alt="{{ translations.gallery.alt_text }}"
-                                 width="100%" height="100%">
-                        </picture>
+                        {{ macros.render_picture('gallery', '1', translations.gallery.alt_text,
+                        ['gallery-picture', 'w-100', 'h-100']) }}
                     </div>
 
                     {% for i in range(2, 8) %}
                     <div class="carousel-item gallery-slide">
-                        <picture>
-                            <!-- Source for AVIF format -->
-                            <source srcset="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.avif') }}"
-                                    type="image/avif">
-                            <!-- Fallback to JPG format -->
-                            <img class="gallery-picture"
-                                 src="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.jpg') }}"
-                                 alt="{{ translations.gallery.alt_text }}"
-                                 width="100%" height="100%">
-                        </picture>
+                        {{ macros.render_picture('gallery', i|string, translations.gallery.alt_text,
+                        ['gallery-picture', 'w-100', 'h-100']) }}
                     </div>
                     {% endfor %}
                 </div>
@@ -71,35 +56,16 @@
     <div class="row d-flex justify-content-center">
         {% for i in range(8, 14) %}
         <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
-            <picture>
-                <!-- Source for AVIF format -->
-                <source srcset="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.avif') }}" type="image/avif">
-
-                <!-- Fallback to JPG format -->
-                <img
-                        src="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.jpg') }}"
-                        alt="{{ translations.gallery.alt_text }}"
-                        class="w-100 shadow-1-strong rounded mb-4"
-                >
-            </picture>
+            {{ macros.render_picture('gallery', i|string, translations.gallery.alt_text,
+            ['w-100', 'shadow-1-strong', 'rounded', 'mb-4']) }}
         </div>
         {% endfor %}
 
         <div class="row d-none" id="hidden-image-section">
             {% for i in range(14, 23) %}
             <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
-                <picture>
-                    <!-- Source for AVIF format -->
-                    <source srcset="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.avif') }}"
-                            type="image/avif">
-
-                    <!-- Fallback to JPG format -->
-                    <img
-                            src="{{ url_for('static', filename='assets/gallery/' ~ i ~ '.jpg') }}"
-                            alt="{{ translations.gallery.alt_text }}"
-                            class="w-100 shadow-1-strong rounded mb-4"
-                    >
-                </picture>
+                {{ macros.render_picture('gallery', i|string, translations.gallery.alt_text,
+                ['w-100', 'shadow-1-strong', 'rounded', 'mb-4']) }}
             </div>
             {% endfor %}
         </div>
