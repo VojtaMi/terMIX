@@ -53,7 +53,7 @@
             <!-- Display button for small screens -->
             <div class="d-block d-md-none text-center mt-3">
                 <a href="https://mapy.cz/s/dodegamezo" target="_blank" class="btn btn btn-outline-purple"
-                aria-label="Mapy.cz">
+                   aria-label="Mapy.cz">
                     <i class="bi bi-geo-alt-fill normal-icon"></i> {{ location.map_button_text }}
                 </a>
             </div>
@@ -65,8 +65,15 @@
     <div class="container mt-5">
         <div class="row d-flex align-items-stretch">
             <div class="col-12 col-md-6">
-                <img src="static/assets/img/entrance.avif" alt="{{ information.entrance_image.alt }}"
-                     class="large-information-content img-fluid">
+                <picture>
+                    <!-- Source for AVIF format -->
+                    <source srcset="static/assets/img/entrance.avif" type="image/avif">
+
+                    <!-- Fallback to JPG format -->
+                    <img src="static/assets/img/entrance.jpg"
+                         alt="{{ information.entrance_image.alt }}"
+                         class="large-information-content img-fluid">
+                </picture>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
                 <h2 class="information-heading">{{ information.opening_hours.heading }}</h2>
@@ -85,7 +92,7 @@
                 <h2 class="information-heading"> Chat </h2>
                 <a href="https://www.instagram.com/direct/t/17842514916029460" class="btn btn-outline-purple"
                    target="_blank"
-                    aria-label="instagram chat">
+                   aria-label="instagram chat">
                     <i class="bi bi-chat-dots-fill normal-icon"></i> Instagram
                 </a>
             </div>
