@@ -8,16 +8,27 @@
 
 {% block content %}
 <div class="container">
-      <h1 class="heading mt-0 text-center">{{ translations.events.title }}</h1>
+    <h1 class="heading mt-0 text-center">{{ translations.events.title }}</h1>
     <div class="row d-flex justify-content-center">
         {% for event in translations.events.event_list %}
         <div class="col-12 col-sm-6 col-xxl-4 mb-3 d-flex justify-content-center">
-            <img src="{{ url_for('static', filename=('assets/posters/' + event.img_filename + '.avif')) }}"
-                 class="d-block w-100 gallery-picture"
-         alt="{{ event.title }}">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front of the card -->
+                    <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename=('assets/posters/' + event.img_filename + '.avif')) }}"
+                             class="card-picture gallery-picture" alt="{{ event.title }}">
+                    </div>
+                    <!-- Back of the card -->
+                    <div class="flip-card-back text-center">
+                        <h2>{{ event.title }}</h2>
+                        <p class="mb-4">{{ event.date }}</p>
+                        <p>{{ event.description }}</p>
+                    </div>
+                </div>
+            </div>
         </div>
         {% endfor %}
     </div>
 </div>
-
 {% endblock %}
