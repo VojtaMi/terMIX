@@ -58,3 +58,8 @@ def configure_routes(app):
     def about():
         lang = request.args.get('lang')
         return render_template('about.html', translations=get_translations(lang), lang=lang)
+
+    @app.route('/events')
+    def events():
+        lang = request.args.get('lang')
+        return render_template('events.html', translations=get_translations(lang), lang=lang)

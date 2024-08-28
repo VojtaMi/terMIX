@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block extra_scripts %}
+<!-- Custom CSS -->
+<link href="{{ url_for('static', filename='css/events_styles.css') }}" rel="stylesheet">
+<!-- Custom JS -->
+<script src="{{ url_for('static', filename='js/script_events.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+      <h1 class="heading mt-0 text-center">{{ translations.events.title }}</h1>
+    <div class="row d-flex justify-content-center">
+        {% for event in translations.events.event_list %}
+        <div class="col-12 col-sm-6 col-xxl-4 mb-3 d-flex justify-content-center">
+            <img src="{{ url_for('static', filename=('assets/posters/' + event.img_filename + '.avif')) }}"
+                 class="d-block w-100 gallery-picture"
+         alt="{{ event.title }}">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

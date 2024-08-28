@@ -106,6 +106,29 @@
       "Visit also our other clubs in Prague."
     ]
   },
+  "events": {
+    "title": "Events",
+    "event_list": [
+      {
+        "title": "21st birthday of TerMix",
+        "date": "August 24, 2024",
+        "description": "A party celebrating the anniversary of our club's founding.",
+        "img_filename": "birthday-21_24"
+      },
+      {
+        "title": "Karaoke",
+        "date": "Every wednesday",
+        "description": "Join us to sing along to popular hits, or just come to dance.",
+        "img_filename": "karaoke_party_24"
+      },
+      {
+        "title": "Flirt party",
+        "date": "August 10, 2024",
+        "description": "The perfect opportunity to meet someone new. Find a partner for a date, a flirt, or just come to have fun.",
+        "img_filename": "pride-flirt_24"
+      }
+    ]
+  },
   "opening_hours": [
     {
       "day": "Wednesday",
