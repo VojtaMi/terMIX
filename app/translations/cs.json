@@ -131,7 +131,8 @@
         "aria_label": "Pride flirt party, 10. 8. 2024. Vstupné 300 Kč. DJ JFK."
       }
     ],
-    "aria-label-card":"Klikněte pro zobrazení informací"
+    "aria-label-card":"Klikněte pro zobrazení informací",
+    "fb_button_text": ["Sledujte nás", "ať vám nic neunikne."]
   },
   "opening_hours": [
     {

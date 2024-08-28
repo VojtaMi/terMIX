@@ -51,3 +51,11 @@
     width: 100%;
     height: 100%
 }
+
+.btn-primary-purple{
+    font-size: 1.2rem;
+}
+
+.btn-primary-purple .bi-facebook{
+    font-size: 1.7rem;
+}
