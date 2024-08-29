@@ -59,3 +59,27 @@
 .btn-primary-purple .bi-facebook{
     font-size: 1.7rem;
 }
+
+#swap-card-sign {
+    position: absolute;  /* Position it absolutely relative to the .flip-card-front */
+    top: 5%;           /* Adjust this value to move it vertically */
+    right: 5%;         /* Adjust this value to move it horizontally */
+    font-size: 2em;    /* Adjust icon size if needed */
+    background-color: var(--purple-gray-transparent);
+    padding-left: .5rem;  /* Sets padding on the left */
+    padding-right: .5rem; /* Sets padding on the right */
+    border-radius: 50%;           /* Makes the background circular */
+}
+
+@media (min-width: 1200px) {
+    /* Default image styles */
+    .gallery-picture {
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    /* Hover effect with shadow */
+    .gallery-picture:hover {
+        box-shadow: 0 0 10px var(--lighter-purple);
+        transform: scale(1.05); /* Slightly zoom in */
+    }
+}
+

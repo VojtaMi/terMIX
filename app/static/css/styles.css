@@ -116,17 +116,6 @@ h1 {
     max-width: 100%;
 }
 
-/* Default image styles */
-.gallery-picture {
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover effect with shadow */
-.gallery-picture:hover {
-    box-shadow: 0 0 10px var(--lighter-purple);
-    transform: scale(1.05); /* Slightly zoom in */
-}
-
 
 #disclaimer{
     color: var(--light-gray);
