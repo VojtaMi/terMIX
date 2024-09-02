@@ -54,6 +54,15 @@
 </a>
 {% endmacro %}
 
+{% macro home_link_logo(class) %}
+<a href="{{ url_for('home', lang=lang) }} "
+   class="home-scroll-up"
+   aria-label="{{ translations.home.title }}">
+    <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="{{ class }}"
+         alt="Termix Logo">
+</a>
+{% endmacro %}
+
 {% macro nav_link(endpoint, label) %}
 <li class="nav-item"><a class="nav-link" href="{{ url_for(endpoint, lang=lang) }}">{{ label }}</a></li>
 {% endmacro %}
@@ -62,13 +71,7 @@
 <nav class="navbar navbar-dark bg-dark" aria-label="Navigation">
     <div class="container-fluid">
         <div class="d-flex align-items-center">
-            <!-- TerMix Logo -->
-            <a href="{{ url_for('home', lang=lang) }}" aria-label="{{ translations.home.title }}">
-                <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="navbar-brand"
-                     id="header_logo"
-                     role="img" alt="Termix Logo">
-            </a>
-
+            {{ home_link_logo('header_brand') }}
             {{ facebook_link() }}
             {{ instagram_link() }}
         </div>
@@ -109,12 +112,7 @@
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">© 2003–{{ current_year }} Termix Praha s.r.o.</p>
-        <a href="{{ url_for('home', lang=lang) }} "
-           class="col-md-4 d-flex justify-content-center home-scroll-up"
-           aria-label="{{ translations.home.title }}">
-            <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="bi me-2" width="40"
-                 alt="Termix Logo">
-        </a>
+        {{ home_link_logo('footer_brand') }}
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item footer-logo">
                 {{ home_link_house() }}

@@ -16,10 +16,17 @@
     font-size: 1.25rem; /* Increase the font size */
 }
 
-#header_logo{
+.header_brand{
     width: 3rem;
-
+    margin-right: 1rem;
 }
+
+.footer_brand{
+    width: 40px;
+    margin-right: 1rem;
+}
+
+
 footer{
     margin-top: 5rem;
 }
