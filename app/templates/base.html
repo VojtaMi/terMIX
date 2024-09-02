@@ -29,6 +29,35 @@
 </head>
 
 <body>
+
+{% macro facebook_link() %}
+<a href="https://www.facebook.com/club.termix/" target="_blank"
+   class="nav-link px-3 text-body-secondary"
+   aria-label="facebook">
+    <i class="bi bi-facebook normal-icon"></i>
+</a>
+{% endmacro %}
+
+{% macro instagram_link() %}
+<a href="https://www.instagram.com/termix_club/" target="_blank"
+   class="nav-link px-3 text-body-secondary"
+   aria-label="instagram">
+    <i class="bi bi-instagram normal-icon"></i>
+</a>
+{% endmacro %}
+
+{% macro home_link_house() %}
+<a href="{{ url_for('home', lang=lang) }}"
+   class="nav-link px-3 text-body-secondary home-scroll-up"
+   aria-label="{{ translations.home.title }}">
+    <i class="bi bi-house normal-icon"></i>
+</a>
+{% endmacro %}
+
+{% macro nav_link(endpoint, label) %}
+<li class="nav-item"><a class="nav-link" href="{{ url_for(endpoint, lang=lang) }}">{{ label }}</a></li>
+{% endmacro %}
+
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="Navigation">
     <div class="container-fluid">
@@ -40,19 +69,8 @@
                      role="img" alt="Termix Logo">
             </a>
 
-            <!-- Facebook Logo -->
-            <a href="https://www.facebook.com/club.termix/" target="_blank"
-               class="nav-link px-3 text-body-secondary"
-                aria-label="facebook">
-                <i class="bi bi-facebook normal-icon"></i>
-            </a>
-
-            <!-- Instagram Logo -->
-            <a href="https://www.instagram.com/termix_club/" target="_blank"
-               class="nav-link px-3 text-body-secondary"
-                aria-label="instagram">
-                <i class="bi bi-instagram normal-icon"></i>
-            </a>
+            {{ facebook_link() }}
+            {{ instagram_link() }}
         </div>
 
         <!-- Language Switcher and Toggler Button -->
@@ -62,7 +80,8 @@
                 <a class="nav-link lang-link px-3" href="{{ en_url }}">en</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
-                    aria-controls="navbarsExample01" aria-expanded="false" aria-label="{{ translations.navbar.aria_label }}">
+                    aria-controls="navbarsExample01" aria-expanded="false"
+                    aria-label="{{ translations.navbar.aria_label }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
@@ -70,18 +89,12 @@
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarsExample01">
             <ul class="navbar-nav me-auto mb-2">
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('home', lang=lang) }}">{{
-                    translations.home.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('about', lang=lang) }}">{{
-                    translations.about.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('events', lang=lang) }}">{{
-                    translations.events.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('information', lang=lang) }}">{{
-                    translations.information.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('drink_menu', lang=lang) }}">{{
-                    translations.drink_menu.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('gallery', lang=lang) }}">{{
-                    translations.gallery.title }}</a></li>
+                {{ nav_link('home', translations.home.title) }}
+                {{ nav_link('about', translations.about.title) }}
+                {{ nav_link('events', translations.events.title) }}
+                {{ nav_link('information', translations.information.title) }}
+                {{ nav_link('drink_menu', translations.drink_menu.title) }}
+                {{ nav_link('gallery', translations.gallery.title) }}
             </ul>
         </div>
     </div>
@@ -98,31 +111,19 @@
         <p class="col-md-4 mb-0 text-body-secondary">© 2003–{{ current_year }} Termix Praha s.r.o.</p>
         <a href="{{ url_for('home', lang=lang) }} "
            class="col-md-4 d-flex justify-content-center home-scroll-up"
-            aria-label="{{ translations.home.title }}">
+           aria-label="{{ translations.home.title }}">
             <img src="{{ url_for('static', filename='assets/logos/dark_gray_logo.svg') }}" class="bi me-2" width="40"
-                  alt="Termix Logo">
+                 alt="Termix Logo">
         </a>
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item footer-logo">
-                <a href="{{ url_for('home', lang=lang) }}"
-                   class="nav-link px-3 text-body-secondary home-scroll-up"
-                    aria-label="{{ translations.home.title }}">
-                    <i class="bi bi-house normal-icon"></i>
-                </a>
+                {{ home_link_house() }}
             </li>
             <li class="nav-item footer-logo">
-                <a href="https://www.facebook.com/club.termix/" target="_blank"
-                   class="nav-link px-3 text-body-secondary"
-                    aria-label="facebook">
-                    <i class="bi bi-facebook normal-icon"></i>
-                </a>
+                {{ facebook_link() }}
             </li>
             <li class="nav-item">
-                <a href="https://www.instagram.com/termix_club/" target="_blank"
-                   class="nav-link px-3 text-body-secondary"
-                    aria-label="instagram">
-                    <i class="bi bi-instagram normal-icon"></i>
-                </a>
+                {{ instagram_link() }}
             </li>
         </ul>
     </footer>
