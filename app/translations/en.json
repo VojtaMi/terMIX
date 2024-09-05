@@ -170,7 +170,7 @@
       "map_button_text": "Open with mapy.cz"
     },
     "entrance_image": {
-      "alt": "Main entrance"
+      "alt_text": "Main entrance"
     },
     "opening_hours": {
       "heading": "Opening Hours"
