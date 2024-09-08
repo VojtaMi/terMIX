@@ -14,3 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
             button.addEventListener('click', scrollToTop);
         });
     });
+
+// set uld for title picture
+document.addEventListener('DOMContentLoaded', function() {
+    var poster = document.getElementById('poster');
+    var imageUrl = poster.getAttribute('data-poster-url');
+    poster.style.backgroundImage = 'url(' + imageUrl + ')';
+});

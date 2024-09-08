@@ -7,10 +7,8 @@
 
 {% block content %}
 <!-- Poster Image -->
-<div id="poster" class="mb-5">
+<div id="poster" class="mb-5" data-poster-url="{{ url_for('static', filename='assets/img/poster.jpg') }}">
     {% set poster = translations.home.poster %}
-    <img src="{{ url_for('static', filename='assets/img/poster.jpg') }}" class="d-block w-100 poster-img"
-         alt="{{ poster.altText }}">
     <div class="poster-caption">
         <h1>Club Termix</h1>
         <p>{{ poster.caption.subtitle[0] }} <span class="responsive-br"><br></span>{{ poster.caption.subtitle[1] }}</p>
