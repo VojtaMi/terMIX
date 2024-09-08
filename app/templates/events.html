@@ -10,7 +10,7 @@
 
 {% macro event_card(event) %}
 <div class="col-12 col-sm-6 col-xxl-4 mb-3 d-flex justify-content-center">
-    <div class="flip-card" tabindex="0" role="button" aria-label="Click to flip the card" aria-live="polite">
+    <div class="flip-card" tabindex="0" role="button" aria-label="{{ translations.events.aria_label_card }}" aria-live="polite">
         <div class="flip-card-inner">
             <!-- Front of the card -->
             <div class="flip-card-front">
@@ -39,7 +39,8 @@
             {{ event_card(event) }}
             {% endfor %}
         {% else %}
-        <p>No events to display</p>
+        <h3 class="text-center" id="no-event-heading" >{{ translations.events.no_events_message[0] }}</h3>
+        <p class="text-center" id="no-event-message">{{ translations.events.no_events_message[1] }}</p>
         {% endif %}
     </div>
 

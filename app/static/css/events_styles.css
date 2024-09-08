@@ -71,6 +71,16 @@
     border-radius: 50%;           /* Makes the background circular */
 }
 
+#no-event-heading{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+#no-event-message{
+    font-size: 1.3rem; /* Default size */
+    font-family: 'Nunito', sans-serif;
+}
+
 @media (min-width: 1200px) {
     /* Default image styles */
     .gallery-picture {
