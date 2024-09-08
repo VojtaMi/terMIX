@@ -34,9 +34,13 @@
 <div class="container">
     <h1 class="heading mt-0 text-center">{{ translations.events.title }}</h1>
     <div class="row d-flex justify-content-center">
-        {% for event in translations.events.event_list %}
-        {{ event_card(event) }}
-        {% endfor %}
+        {% if translations.events.event_list %}
+            {% for event in translations.events.event_list %}
+            {{ event_card(event) }}
+            {% endfor %}
+        {% else %}
+        <p>No events to display</p>
+        {% endif %}
     </div>
 
     <!--facebook button-->

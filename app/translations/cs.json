@@ -109,13 +109,6 @@
   "events": {
     "title": "Akce",
     "event_list": [
-      {
-        "title": "Karaoke",
-        "date": "Každou středu",
-        "description": "Pojď se připojit ke známým hitům, nebo si jen zatančit.",
-        "img_filename": "karaoke_party_24",
-        "aria-label": "Karaoke party, každou středu. DJ Marty Blue"
-      }
     ],
     "aria-label-card": "Klikněte pro zobrazení informací",
     "fb_button_text": [

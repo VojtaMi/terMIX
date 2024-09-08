@@ -109,13 +109,6 @@
   "events": {
     "title": "Events",
     "event_list": [
-      {
-        "title": "Karaoke",
-        "date": "Every wednesday",
-        "description": "Join us to sing along to popular hits, or just come to dance.",
-        "img_filename": "karaoke_party_24",
-        "aria-label": "Karaoke party, every wednesday. DJ Marty Blue"
-      }
     ],
     "aria-label-card": "Click to see details",
     "fb_button_text": [
