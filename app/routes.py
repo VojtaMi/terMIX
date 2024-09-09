@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for, Response
+from flask import render_template, request, redirect, url_for, Response, send_from_directory
 from datetime import date
 
 def configure_routes(app):
@@ -71,3 +71,8 @@ def configure_routes(app):
             "Sitemap: https://club-termix.cz/sitemap.xml"  # Link to your sitemap
         ]
         return Response("\n".join(lines), mimetype="text/plain")
+
+    @app.route('/sitemap.xml')
+    def sitemap():
+        # Serve sitemap.xml from the project root directory
+        return send_from_directory(directory='.', path='sitemap.xml', mimetype='application/xml')
