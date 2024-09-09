@@ -109,6 +109,13 @@
   "events": {
     "title": "Akce",
     "event_list": [
+        {
+        "title": "Hawaii Party",
+        "date": "13. a 14. 9.",
+        "description": "Léto už je pomalu pryč. Někdo se na konec netěší, někdo zase odpočítává dny do teplot pod 25°. Proto vás zveme 13. a 14. k nám do klubu Termix, kde se společně rozloučíme s létem",
+        "img_filename": "hawaii_party",
+        "aria-label": "Hawaii party, 13. a 14. září. DJ JFK, DJ Whitecat, beach outfit = sleva na vstup"
+      },
       {
         "title": "Karaoke",
         "date": "Každou středu",

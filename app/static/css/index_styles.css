@@ -1,6 +1,6 @@
 /*homepage title image*/
 #poster{
-    height: 42rem;
+    height: 100vh;
     background-size: cover; /* Ensures the image covers the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating */
