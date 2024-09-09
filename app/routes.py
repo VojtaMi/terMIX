@@ -74,5 +74,5 @@ def configure_routes(app):
 
     @app.route('/sitemap.xml')
     def sitemap():
-        # Serve sitemap.xml from the project root directory
-        return send_from_directory(directory='.', path='sitemap.xml', mimetype='application/xml')
+        # Redirect to the sitemap in the static folder
+        return redirect(url_for('static', filename='sitemap.xml'))
