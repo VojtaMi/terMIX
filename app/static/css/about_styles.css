@@ -27,6 +27,16 @@
     margin-top: 3rem;
 }
 
+.other_bar_title{
+    color: var(--vivid-purple);
+    font-family: 'Nunito', sans-serif;
+}
+
+.other_bar_subtitle{
+    color: #8A7E00;
+    font-family: "Raleway", sans-serif;
+}
+
 #quote-section{
     margin-top: 3rem;
     @media (max-width: 991px) {

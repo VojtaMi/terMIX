@@ -2,6 +2,7 @@
 :root {
     --dark-purple: #6038a7;
     --purple: #6f42c1;
+    --vivid-purple: #9D65FF;
     --lighter-purple: #8354d5;
     --cream-purple: #a490de;
     --whitey-purple: #b9a8e0;
@@ -113,7 +114,6 @@ h1 {
     overflow: hidden;
     display: inline-block;
     margin-bottom: 10px;
-    background-color: white; /* Optional: for a white background inside the circle */
 }
 
 .white-bg{
