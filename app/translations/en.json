@@ -110,13 +110,6 @@
   "events": {
     "title": "Events",
     "event_list": [
-       {
-        "title": "Hawaii Party",
-        "date": "September 13th and 14th",
-        "description": "Summer is slowly coming to an end. Some people are not looking forward to it, while others are counting down the days to temperatures below 25°C. That's why we invite you to join us on the 13th and 14th at Termix Club, where we will say goodbye to summer together.",
-        "img_filename": "hawaii_party",
-        "aria-label": "Hawaii Party, September 13th and 14th. DJ JFK, DJ Whitecat, beach outfit = discount on entry"
-      },
       {
         "title": "Karaoke",
         "date": "Every wednesday",
