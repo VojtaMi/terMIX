@@ -22,8 +22,10 @@
     <link rel="icon" href="{{ url_for('static', filename='assets/logos/bar_glass.svg') }}" type="image/svg+xml">
 
     <!-- Hreflang tags for language versions -->
-    <link rel="alternate" href="https://club-termix.cz/?lang=en" hreflang="en"/>
-    <link rel="alternate" href="https://club-termix.cz/?lang=cs" hreflang="cs"/>
+    <link rel="canonical" href="{{ url_for(request.endpoint, lang=lang, _external=True) }}"/>
+    <link rel="alternate" href="{{ url_for(request.endpoint, lang='en', _external=True) }}" hreflang="en"/>
+    <link rel="alternate" href="{{ url_for(request.endpoint, lang='cs', _external=True) }}" hreflang="cs"/>
+
 
     <!-- Preconnect for Google Fonts (improves loading speed) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
