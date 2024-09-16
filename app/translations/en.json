@@ -21,7 +21,7 @@
         ],
         "buttonText": "Drinks »",
         "buttonLink": "drink_menu",
-        "image": "drinks.jpg"
+        "image": "drinks.avif"
       },
       {
         "altText": "Microphone",
@@ -32,7 +32,7 @@
         ],
         "buttonText": "Info »",
         "buttonLink": "information",
-        "image": "karaoke.jpg"
+        "image": "karaoke.avif"
       },
       {
         "altText": "Man with devil mask",
@@ -43,7 +43,7 @@
         ],
         "buttonText": "Gallery »",
         "buttonLink": "gallery",
-        "image": "party.jpg"
+        "image": "party.avif"
       }
     ],
     "featurettes": [
@@ -58,8 +58,8 @@
         ],
         "image": {
           "altText": "bartender",
-          "src": "assets/img/barman.jpg",
-          "src_wide": "assets/img/barman_wide.jpg"
+          "src": "assets/img/barman.avif",
+          "src_wide": "assets/img/barman_wide.avif"
         }
       },
       {
@@ -73,8 +73,8 @@
         ],
         "image": {
           "altText": "Interior",
-          "src": "assets/img/car.jpg",
-          "src_wide": "assets/img/car_wide.jpg"
+          "src": "assets/img/car.avif",
+          "src_wide": "assets/img/car_wide.avif"
         }
       },
       {
@@ -88,8 +88,8 @@
         ],
         "image": {
           "altText": "Party",
-          "src": "assets/img/night_life.jpg",
-          "src_wide": "assets/img/night_life_wide.jpg"
+          "src": "assets/img/night_life.avif",
+          "src_wide": "assets/img/night_life_wide.avif"
         }
       }
     ],
