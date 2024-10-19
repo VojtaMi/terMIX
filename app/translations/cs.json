@@ -111,6 +111,13 @@
     "title": "Akce",
     "event_list": [
       {
+        "title": "Inkognito Party - TerMax",
+        "date": "26. 10. 2024",
+        "description": "",
+        "img_filename": "incognito",
+        "aria-label": ""
+      },
+      {
         "title": "Karaoke",
         "date": "Každou středu",
         "description": "Pojď se připojit ke známým hitům, nebo si jen zatančit.",
