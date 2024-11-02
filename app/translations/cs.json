@@ -111,13 +111,6 @@
     "title": "Akce",
     "event_list": [
       {
-        "title": "Halloween Party",
-        "date": "1.11. a 2.11. 2024",
-        "description": "A rovnou si tu naplánujeme i akci na příští víkend - HALLOWEEN V TERMIXU🎃 Budeme se těšit na vás a na vaše outfity🧙‍♂️",
-        "img_filename": "halloween",
-        "aria-label": ""
-      },
-      {
         "title": "Karaoke",
         "date": "Každou středu",
         "description": "Pojď se připojit ke známým hitům, nebo si jen zatančit.",

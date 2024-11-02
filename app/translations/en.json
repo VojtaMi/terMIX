@@ -111,13 +111,6 @@
     "title": "Events",
     "event_list": [
       {
-        "title": "Halloween Party",
-        "date": "November 1st and 2nd, 2024",
-        "description": "Let’s plan an event for next weekend too - HALLOWEEN AT TERMIX 🎃 We’re looking forward to seeing you and your outfits 🧙‍♂️",
-        "img_filename": "halloween",
-        "aria-label": ""
-      },
-      {
         "title": "Karaoke",
         "date": "Every wednesday",
         "description": "Join us to sing along to popular hits, or just come to dance.",
