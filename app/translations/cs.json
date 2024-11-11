@@ -111,6 +111,13 @@
     "title": "Akce",
     "event_list": [
       {
+        "title": "UV Party",
+        "date": "15. a 16. listopadu",
+        "description": "Akcička na příští víkend \ud83e\udd2a UV party v klubu Termax, čím více bílé barvy oblečete, tím lépe 🤍 Takže se na Vás budeme těšit v Termaxu, klub Termix bude 15.-16.11. zavřený ❌",
+        "img_filename": "uv",
+        "aria-label": "UV Party 15. a 16. listopadu, klub TerMax, pro plný zážitek přijďte v bílém, Termix zavřený"
+      },      
+      {
         "title": "Karaoke",
         "date": "Každou středu",
         "description": "Pojď se připojit ke známým hitům, nebo si jen zatančit.",

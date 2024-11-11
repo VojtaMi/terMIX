@@ -111,6 +111,13 @@
     "title": "Events",
     "event_list": [
       {
+        "title": "UV Party",
+        "date": "November 15th and 16th",
+        "description": "Party next weekend \ud83e\udd2a UV party at Club Termax! The more white clothes you wear, the better 🤍 So we look forward to seeing you at Termax! Club Termix will be closed on 15th-16th ❌",
+        "img_filename": "uv",
+        "aria-label": "UV Party November 15th and 16th, for the full experience come dressed in white, club Termax, Termix is closed"
+      },
+      {
         "title": "Karaoke",
         "date": "Every wednesday",
         "description": "Join us to sing along to popular hits, or just come to dance.",
