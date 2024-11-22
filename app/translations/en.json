@@ -111,6 +111,20 @@
     "title": "Events",
     "event_list": [
       {
+        "title": "Mikuláš Party",
+        "date": "December 6th - 7th",
+        "description": "Come and enjoy St. Nicholas and the devil. This event takes place at Club TerMax.",
+        "img_filename": "mikulas",
+        "aria_label": "Mikuláš Party at Club TerMax, December 6th - 7th"
+      },
+      {
+        "title": "December Program",
+        "date": "",
+        "description": "December 6th - 7th: Mikuláš Party (TerMax), December 20th - 21st: Christmas Party (Termix), December 24th: Christmas Eve Party (Termix) - 11:00 PM - 6:00 AM, December 25th - 26th: Closed, December 31st: New Year's Eve 2025 (TerMax), January 1st - 2nd 2025: Closed.",
+        "img_filename": "december",
+        "aria_label": "December Program: Mikuláš Party, Christmas Party, Christmas Eve Party, and other events."
+      },
+      {
         "title": "Karaoke",
         "date": "Every wednesday",
         "description": "Join us to sing along to popular hits, or just come to dance.",

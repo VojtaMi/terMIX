@@ -111,6 +111,20 @@
     "title": "Akce",
     "event_list": [  
       {
+        "title": "Mikulášská párty",
+        "date": "6. - 7. prosince",
+        "description": "Přijďte si užít Mikuláše a čerta. Tato akce se koná v klubu TerMax.",
+        "img_filename": "mikulas",
+        "aria_label": "Mikulášská párty v klubu TerMax, 6. - 7. prosince"
+      },
+      {
+        "title": "Prosincový program",
+        "date": "",
+        "description": "6. - 7. 12. Mikulášská párty (TerMax), 20. - 21. 12. Vánoční párty (Termix), 24. 12. Štědrovečerní párty (Termix) - 23:00 - 6:00, 25. - 26. 12. Zavřeno, 31. 12. Silvestr 2025 (TerMax), 1. - 2. 1. 2025 Zavřeno.",
+        "img_filename": "december",
+        "aria_label": "Prosincový program: Mikulášská párty, Vánoční párty, Štědrovečerní párty a další akce."
+      },
+      {
         "title": "Karaoke",
         "date": "Každou středu",
         "description": "Pojď se připojit ke známým hitům, nebo si jen zatančit.",
