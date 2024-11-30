@@ -118,6 +118,27 @@
         "aria_label": "Mikulášská párty v klubu TerMax, 6. - 7. prosince"
       },
       {
+        "title": "Víkendová vánoční párty",
+        "date": "20. - 21. prosince",
+        "description": "Oslavte víkend plný zábavy a vánoční atmosféry.",
+        "img_filename": "christmas_weekend",
+        "aria_label": "Víkendová vánoční párty v Clubu TerMix, 20. - 21. prosince"
+      },
+      {
+        "title": "Vánoční párty",
+        "date": "24. prosince",
+        "description": "Připojte se k nám na kouzelnou vánoční oslavu plnou sváteční nálady a hudby.",
+        "img_filename": "christmas",
+        "aria_label": "Vánoční párty v Clubu TerMix, 24. prosince"
+      },
+      {
+        "title": "Silvestrovská párty",
+        "date": "31. prosince - 1. ledna",
+        "description": "Přivítejte nový rok ve stylu s hudbou a vzrušením na Silvestrovské párty v Clubu TerMax.",
+        "img_filename": "silvester",
+        "aria_label": "Silvestrovská párty v Clubu TerMax, 31. prosince - 1. ledna"
+      },
+      {
         "title": "Prosincový program",
         "date": "",
         "description": "6. - 7. 12. Mikulášská párty (TerMax), 20. - 21. 12. Vánoční párty (Termix), 24. 12. Štědrovečerní párty (Termix) - 23:00 - 6:00, 25. - 26. 12. Zavřeno, 31. 12. Silvestr 2025 (TerMax), 1. - 2. 1. 2025 Zavřeno.",

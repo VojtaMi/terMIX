@@ -118,6 +118,27 @@
         "aria_label": "Mikuláš Party at Club TerMax, December 6th - 7th"
       },
       {
+        "title": "Christmas Weekend Bash",
+        "date": "December 20th - 21st",
+        "description": "Celebrate the holiday weekend with non-stop fun and festive vibes.",
+        "img_filename": "christmas_weekend",
+        "aria_label": "Christmas Weekend Bash at Club TerMix, December 20th - 21st"
+      },
+      {
+        "title": "Christmas Party",
+        "date": "December 24th",
+        "description": "Join us for a magical Christmas celebration, filled with festive cheer and music.",
+        "img_filename": "christmas",
+        "aria_label": "Christmas Party at Club TerMix, December 24th"
+      },
+      {
+        "title": "New Year's Eve Party",
+        "date": "December 31st - January 1st",
+        "description": "Ring in the New Year with style, excitement, and music at the New Year's Eve Party at Club TerMax.",
+        "img_filename": "silvester",
+        "aria_label": "New Year's Eve Party at Club TerMax, December 31st - January 1st"
+      },
+      {
         "title": "December Program",
         "date": "",
         "description": "December 6th - 7th: Mikuláš Party (TerMax), December 20th - 21st: Christmas Party (Termix), December 24th: Christmas Eve Party (Termix) - 11:00 PM - 6:00 AM, December 25th - 26th: Closed, December 31st: New Year's Eve 2025 (TerMax), January 1st - 2nd 2025: Closed.",
