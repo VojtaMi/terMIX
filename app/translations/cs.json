@@ -111,13 +111,6 @@
     "title": "Akce",
     "event_list": [  
       {
-        "title": "Mikulášská párty",
-        "date": "6. - 7. prosince",
-        "description": "Přijďte si užít Mikuláše a čerta. Tato akce se koná v klubu TerMax.",
-        "img_filename": "mikulas",
-        "aria_label": "Mikulášská párty v klubu TerMax, 6. - 7. prosince"
-      },
-      {
         "title": "Víkendová vánoční párty",
         "date": "20. - 21. prosince",
         "description": "Oslavte víkend plný zábavy a vánoční atmosféry.",

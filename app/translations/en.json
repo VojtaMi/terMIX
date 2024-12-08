@@ -111,13 +111,6 @@
     "title": "Events",
     "event_list": [
       {
-        "title": "Mikuláš Party",
-        "date": "December 6th - 7th",
-        "description": "Come and enjoy St. Nicholas and the devil. This event takes place at Club TerMax.",
-        "img_filename": "mikulas",
-        "aria_label": "Mikuláš Party at Club TerMax, December 6th - 7th"
-      },
-      {
         "title": "Christmas Weekend Bash",
         "date": "December 20th - 21st",
         "description": "Celebrate the holiday weekend with non-stop fun and festive vibes.",
