@@ -19,15 +19,10 @@
 
 {% block content %}
 
-{% import 'macros.html' as macros %}
-
 {% macro gallery_picture(base_filename='', alt_text='') %}
-{{ macros.render_picture(
-base_path='gallery',
-base_filename=base_filename,
-alt_text=alt_text,
-classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4', 'gallery-picture']
-) }}
+<img class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
+         src="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}"
+         alt="{{ alt_text }}">
 {% endmacro %}
 
 {% macro gallery_element(base_filename='', alt_text='') %}
@@ -68,24 +63,23 @@ classes=['w-100', 'shadow-1-strong', 'rounded', 'mb-4', 'gallery-picture']
                 </div>
                 <div class="carousel-inner gallery-slide">
                     <div class="carousel-item active gallery-slide">
-                        {{ macros.render_picture(
-                        base_path='gallery',
-                        base_filename='1',
-                        alt_text=translations.gallery.alt_text,
-                        classes=['carousel-picture', 'w-100', 'h-100']
-                        ) }}
+                        <picture>
+                            <img class="carousel-picture w-100 h-100"
+                                 src="{{ url_for('static', filename='assets/gallery/1.avif') }}"
+                                 alt="{{ translations.gallery.alt_text }}">
+                        </picture>
                     </div>
-
+                    
                     {% for i in range(2, 8) %}
                     <div class="carousel-item gallery-slide">
-                        {{ macros.render_picture(
-                        base_path='gallery',
-                        base_filename=i|string,
-                        alt_text=translations.gallery.alt_text,
-                        classes=['carousel-picture', 'w-100', 'h-100']
-                        ) }}
+                        <picture>
+                            <img class="carousel-picture w-100 h-100"
+                                 src="{{ url_for('static', filename='assets/gallery/' + i|string + '.avif') }}"
+                                 alt="{{ translations.gallery.alt_text }}">
+                        </picture>
                     </div>
                     {% endfor %}
+                    
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
