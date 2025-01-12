@@ -110,34 +110,23 @@
   "events": {
     "title": "Events",
     "event_list": [
-      {
-        "title": "New Year's Eve Party",
-        "date": "December 31st - January 1st",
-        "description": "Ring in the New Year with style, excitement, and music at the New Year's Eve Party at Club TerMax.",
-        "img_filename": "silvester",
-        "aria_label": "New Year's Eve Party at Club TerMax, December 31st - January 1st"
-      },
-      {
-        "title": "Farewell to the Old Termix",
-        "date": "January 3 - 4, 2025",
-        "description": "We would be truly delighted if you joined us on January 3-4, 2025, to say goodbye to the original version of Termix and sign our commemorative canvas, which will be displayed in the new Termix club (formerly Termax), opening the very next weekend to keep the fun going! 🤍",
-        "img_filename": "last_weekend",
-        "aria_label": "Farewell to the Old Termix, January 3 - 4, 2025"
-      },      
-      {
-        "title": "December Program",
-        "date": "",
-        "description": "December 6th - 7th: Mikuláš Party (TerMax), December 20th - 21st: Christmas Party (Termix), December 24th: Christmas Eve Party (Termix) - 11:00 PM - 6:00 AM, December 25th - 26th: Closed, December 31st: New Year's Eve 2025 (TerMax), January 1st - 2nd 2025: Closed.",
-        "img_filename": "december",
-        "aria_label": "December Program: Mikuláš Party, Christmas Party, Christmas Eve Party, and other events."
-      },
-      {
-        "title": "Karaoke",
-        "date": "Every wednesday",
-        "description": "Join us to sing along to popular hits, or just come to dance.",
-        "img_filename": "karaoke_party_24",
-        "aria-label": "Karaoke party, every wednesday. DJ Marty Blue"
-      }
+      [
+        {
+          "title": "New Address",
+          "date": "",
+          "description": "Club Termix can now be found at a new address: Vinohradská 40, in the space previously occupied by TerMax.",
+          "img_filename": "newAdress",
+          "aria_label": "New address for Club Termix"
+        },
+        {
+          "title": "Oldies Nights",
+          "date": "Every Thursday",
+          "description": "Come and enjoy an evening full of oldies music.",
+          "img_filename": "oldies",
+          "aria_label": "Oldies Nights every Thursday"
+        }
+      ]
+      
     ],
     "aria_label_card": "Click to see details",
     "fb_button_text": [
