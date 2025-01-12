@@ -110,7 +110,7 @@
   "events": {
     "title": "Events",
     "event_list": [
-      [
+
         {
           "title": "New Address",
           "date": "",
@@ -125,8 +125,6 @@
           "img_filename": "oldies",
           "aria_label": "Oldies Nights every Thursday"
         }
-      ]
-      
     ],
     "aria_label_card": "Click to see details",
     "fb_button_text": [

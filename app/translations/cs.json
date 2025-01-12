@@ -110,7 +110,6 @@
   "events": {
     "title": "Akce",
     "event_list": [
-      [
         {
           "title": "Nová Adresa",
           "date": "",
@@ -125,8 +124,6 @@
           "img_filename": "oldies",
           "aria_label": "Oldies Nights každý čtvrtek"
         }
-      ]
-      
     ],
     "aria_label_card": "Klikněte pro zobrazení informací",
     "fb_button_text": [
