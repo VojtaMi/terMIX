@@ -167,14 +167,14 @@
     "title": "Informace",
     "connections": "Spojení",
     "location": {
-      "address": "Třebízského 4a, Praha 2",
+      "address": "Vinohradská 1789/40, Praha 2",
       "tram_stop": {
         "name": "Vinohradská tržnice (tram)",
         "distance": "100m"
       },
       "metro": {
-        "name": "Jiřího z Poděbrad",
-        "distance": "500m"
+        "name": "Náměstí Míru",
+        "distance": "350m"
       },
       "map_frame_button_text": "Zobrazit mapu zde",
       "cookie_disclaimer": "používá cookies",
