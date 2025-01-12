@@ -151,10 +151,6 @@
   },
   "opening_hours": [
     {
-      "day": "Wednesday",
-      "hours": "10:00 PM - 5:00 AM"
-    },
-    {
       "day": "Thursday",
       "hours": "10:00 PM - 5:00 AM"
     },
