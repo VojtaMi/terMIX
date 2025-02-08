@@ -110,7 +110,13 @@
   "events": {
     "title": "Events",
     "event_list": [
-
+      {
+        "title": "Valentine's Flirt Party",
+        "date": "February 14 – 15",
+        "description": "When else to enjoy a fun flirt party than on Valentine's Day – the holiday of love? 🥰 And if you're still single, just wear a green or yellow band, and love might find you! 🤩\n\nCome join the fun, we can't wait to see you! ❣️",
+        "img_filename": "valentin",
+        "aria_label": "Valentine's Party February 14 – 15"
+      },      
         {
           "title": "New Address",
           "date": "",

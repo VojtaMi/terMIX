@@ -110,6 +110,13 @@
   "events": {
     "title": "Akce",
     "event_list": [
+      {
+        "title": "Valentýnská Flirt Party",
+        "date": "14. – 15. února",
+        "description": "Kdy jindy si užít pořádnou flirt party než na Valentýna – svátek zamilovaných? 🥰 A pokud jsi zatím single, hoď na sebe zelený nebo žlutý pásek a láska si tě najde! 🤩\n\nPřijď se bavit, těšíme se na tebe! ❣️",
+        "img_filename": "valentin",
+        "aria_label": "Valentýnská party 14. – 15. února"
+      },
         {
           "title": "Nová Adresa",
           "date": "",
