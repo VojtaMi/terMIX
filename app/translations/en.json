@@ -93,7 +93,7 @@
         }
       }
     ],
-     "meta_description": "Dance & Night Club in Central Prague. All are welcome! 🌈 Great music, fun atmosphere, and amazing cocktails."
+    "meta_description": "Dance & Night Club in Central Prague. All are welcome! 🌈 Great music, fun atmosphere, and amazing cocktails."
   },
   "about": {
     "title": "About Us",
@@ -111,26 +111,19 @@
     "title": "Events",
     "event_list": [
       {
-        "title": "Valentine's Flirt Party",
-        "date": "February 14 – 15",
-        "description": "When else to enjoy a fun flirt party than on Valentine's Day – the holiday of love? 🥰 And if you're still single, just wear a green or yellow band, and love might find you! 🤩\n\nCome join the fun, we can't wait to see you! ❣️",
-        "img_filename": "valentin",
-        "aria_label": "Valentine's Party February 14 – 15"
-      },      
-        {
-          "title": "New Address",
-          "date": "",
-          "description": "Club Termix can now be found at a new address: Vinohradská 40, in the space previously occupied by TerMax.",
-          "img_filename": "newAdress",
-          "aria_label": "New address for Club Termix"
-        },
-        {
-          "title": "Oldies Nights",
-          "date": "Every Thursday",
-          "description": "Come and enjoy an evening full of oldies music.",
-          "img_filename": "oldies",
-          "aria_label": "Oldies Nights every Thursday"
-        }
+        "title": "Mysterious Nights at Termix",
+        "date": "7th-8th March",
+        "description": "Join us for mysterious nights full of fun and surprises! 🎭 Every visitor will get a free mask at the entrance. We can’t wait to see you! 🤩",
+        "img_filename": "incognito",
+        "aria_label": "Mysterious Nights at Termix with free masks"
+      },
+      {
+        "title": "Oldies Nights",
+        "date": "Every Thursday",
+        "description": "Come and enjoy an evening full of oldies music.",
+        "img_filename": "oldies",
+        "aria_label": "Oldies Nights every Thursday"
+      }
     ],
     "aria_label_card": "Click to see details",
     "fb_button_text": [

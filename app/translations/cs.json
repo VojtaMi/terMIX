@@ -111,26 +111,19 @@
     "title": "Akce",
     "event_list": [
       {
-        "title": "Valentýnská Flirt Party",
-        "date": "14. – 15. února",
-        "description": "Kdy jindy si užít pořádnou flirt party než na Valentýna – svátek zamilovaných? 🥰 A pokud jsi zatím single, hoď na sebe zelený nebo žlutý pásek a láska si tě najde! 🤩\n\nPřijď se bavit, těšíme se na tebe! ❣️",
-        "img_filename": "valentin",
-        "aria_label": "Valentýnská party 14. – 15. února"
+        "title": "Tajemné dny v Termixu",
+        "date": "7.-8.3.",
+        "description": "Přijďte si s námi užít tajemné večery plné zábavy a překvapení! 🎭 Každý návštěvník dostane masku zdarma ke vstupu. Těšíme se na vás! 🤩",
+        "img_filename": "incognito",
+        "aria_label": "Tajemné dny v Termixu s maskami zdarma"
       },
-        {
-          "title": "Nová Adresa",
-          "date": "",
-          "description": "Club Termix nově najdete na nové adrese Vinohradská 40. V prostorách kde býval dosud TerMax.",
-          "img_filename": "newAdress",
-          "aria_label": "Nová adresa pro Club Termix"
-        },
-        {
-          "title": "Oldies Nights",
-          "date": "Každý čtvrtek",
-          "description": "Přijďte si užít večer plný oldies hudby.",
-          "img_filename": "oldies",
-          "aria_label": "Oldies Nights každý čtvrtek"
-        }
+      {
+        "title": "Oldies Nights",
+        "date": "Každý čtvrtek",
+        "description": "Přijďte si užít večer plný oldies hudby.",
+        "img_filename": "oldies",
+        "aria_label": "Oldies Nights každý čtvrtek"
+      }
     ],
     "aria_label_card": "Klikněte pro zobrazení informací",
     "fb_button_text": [
