@@ -111,13 +111,6 @@
     "title": "Events",
     "event_list": [
       {
-        "title": "Mysterious Nights at Termix",
-        "date": "7th-8th March",
-        "description": "Join us for mysterious nights full of fun and surprises! 🎭 Every visitor will get a free mask at the entrance. We can’t wait to see you! 🤩",
-        "img_filename": "incognito",
-        "aria_label": "Mysterious Nights at Termix with free masks"
-      },
-      {
         "title": "Oldies Nights",
         "date": "Every Thursday",
         "description": "Come and enjoy an evening full of oldies music.",

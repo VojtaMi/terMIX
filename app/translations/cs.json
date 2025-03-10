@@ -111,13 +111,6 @@
     "title": "Akce",
     "event_list": [
       {
-        "title": "Tajemné dny v Termixu",
-        "date": "7.-8.3.",
-        "description": "Přijďte si s námi užít tajemné večery plné zábavy a překvapení! 🎭 Každý návštěvník dostane masku zdarma ke vstupu. Těšíme se na vás! 🤩",
-        "img_filename": "incognito",
-        "aria_label": "Tajemné dny v Termixu s maskami zdarma"
-      },
-      {
         "title": "Oldies Nights",
         "date": "Každý čtvrtek",
         "description": "Přijďte si užít večer plný oldies hudby.",
