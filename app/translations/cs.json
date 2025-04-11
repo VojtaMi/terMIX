@@ -111,6 +111,20 @@
     "title": "Akce",
     "event_list": [
       {
+        "title": "Velikonoční párty",
+        "date": "17.-19.4.",
+        "description": "Velikonoce ve znamení zábavy, hudby a skvělé atmosféry. Přijď s přáteli a oslav to stylově!",
+        "img_filename": "easter_party",
+        "aria_label": "Plakát k Velikonoční párty v baru, konané 17. až 19. dubna"
+      },
+      {
+        "title": "Sport party",
+        "date": "2.5. & 3.5.",
+        "description": "Párty plná energie, taneční hudby a nezapomenutelné barové atmosféry. Přijď si užít Sport party po svém!",
+        "img_filename": "sport_party",
+        "aria_label": "Plakát ke Sport party v baru, konané 2. a 3. května"
+      },
+      {
         "title": "Oldies Nights",
         "date": "Každý čtvrtek",
         "description": "Přijďte si užít večer plný oldies hudby.",
