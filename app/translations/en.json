@@ -110,13 +110,7 @@
   "events": {
     "title": "Events",
     "event_list": [
-      {
-        "title": "Easter Party",
-        "date": "April 17–19",
-        "description": "Celebrate Easter with great music, good vibes, and unforgettable bar nights. Bring your friends and join the fun!",
-        "img_filename": "easter_party",
-        "aria_label": "Poster for the Easter Party at the bar, taking place April 17 to 19"
-      },
+
       {
         "title": "Sport Party",
         "date": "May 2 & 3",
