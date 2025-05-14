@@ -36,7 +36,9 @@
     <div class="row d-flex justify-content-center">
         {% if translations.events.event_list %}
             {% for event in translations.events.event_list %}
-            {{ event_card(event) }}
+                {% if isValid(event) %}
+                    {{ event_card(event) }}
+                {% endif %}
             {% endfor %}
         {% else %}
         <h3 class="text-center" id="no-event-heading" >{{ translations.events.no_events_message[0] }}</h3>

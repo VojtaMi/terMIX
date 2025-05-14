@@ -116,7 +116,8 @@
         "date": "May 2 & 3",
         "description": "A party full of energy, dance beats, and vibrant bar atmosphere. Come enjoy the Sport Party your way!",
         "img_filename": "sport_party",
-        "aria_label": "Poster for the Sport Party at the bar, taking place May 2 and 3"
+        "aria_label": "Poster for the Sport Party at the bar, taking place May 2 and 3",
+        "expire": "2025-05-04"
       },
       {
         "title": "Oldies Nights",

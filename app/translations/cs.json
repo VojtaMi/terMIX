@@ -116,7 +116,8 @@
         "date": "2.5. & 3.5.",
         "description": "Párty plná energie, taneční hudby a nezapomenutelné barové atmosféry. Přijď si užít Sport party po svém!",
         "img_filename": "sport_party",
-        "aria_label": "Plakát ke Sport party v baru, konané 2. a 3. května"
+        "aria_label": "Plakát ke Sport party v baru, konané 2. a 3. května",
+        "expire": "2025-05-04"
       },
       {
         "title": "Oldies Nights",
