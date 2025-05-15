@@ -10,12 +10,13 @@
 
 {% macro event_card(event) %}
 <div class="col-12 col-sm-6 col-xxl-4 mb-3 d-flex justify-content-center">
-    <div class="flip-card" tabindex="0" role="button" aria-label="{{ translations.events.aria_label_card }}" aria-live="polite">
+    <div class="flip-card" tabindex="0" role="button" aria-label="{{ translations.events.aria_label_card }}"
+        aria-live="polite">
         <div class="flip-card-inner">
             <!-- Front of the card -->
             <div class="flip-card-front">
                 <img src="{{ url_for('static', filename=('assets/posters/' + event.img_filename + '.avif')) }}"
-                     class="card-picture gallery-picture" alt="{{ event.aria_label }}">
+                    class="card-picture gallery-picture" alt="{{ event.aria_label }}">
                 <i class="bi bi-arrow-left-right d-xl-none" id="swap-card-sign"></i>
             </div>
             <!-- Back of the card -->
@@ -34,14 +35,17 @@
 <div class="container">
     <h1 class="heading mt-0 text-center">{{ translations.events.title }}</h1>
     <div class="row d-flex justify-content-center">
-        {% if translations.events.event_list %}
-            {% for event in translations.events.event_list %}
-                {% if isValid(event) %}
-                    {{ event_card(event) }}
-                {% endif %}
-            {% endfor %}
+        {% set valid_events = validEvents(translations.events.event_list) %}
+        {% if valid_events %}
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                {% for event in valid_events %}
+                {{ event_card(event) }}
+                {% endfor %}
+            </div>
+        </div>
         {% else %}
-        <h3 class="text-center" id="no-event-heading" >{{ translations.events.no_events_message[0] }}</h3>
+        <h3 class="text-center" id="no-event-heading">{{ translations.events.no_events_message[0] }}</h3>
         <p class="text-center" id="no-event-message">{{ translations.events.no_events_message[1] }}</p>
         {% endif %}
     </div>
@@ -51,7 +55,7 @@
     <div class="row justify-content-center mt-5">
         <div class="col-12 col-md-6 text-center">
             <a href="https://www.facebook.com/club.termix" class="btn btn-primary-purple px-3 py-3"
-               aria-label="facebook" target="_blank">
+                aria-label="facebook" target="_blank">
                 <i class="bi bi-facebook"></i>
                 {{ fb_button_text[0] }}
                 <br>
