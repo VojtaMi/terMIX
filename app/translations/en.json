@@ -118,13 +118,6 @@
         "img_filename": "sport_party",
         "aria_label": "Poster for the Sport Party at the bar, taking place May 2 and 3",
         "expire": "2025-05-04"
-      },
-      {
-        "title": "Oldies Nights",
-        "date": "Every Thursday",
-        "description": "Come and enjoy an evening full of oldies music.",
-        "img_filename": "oldies",
-        "aria_label": "Oldies Nights every Thursday"
       }
     ],
     "aria_label_card": "Click to see details",

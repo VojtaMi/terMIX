@@ -110,22 +110,6 @@
   "events": {
     "title": "Akce",
     "event_list": [
-  
-      {
-        "title": "Sport party",
-        "date": "2.5. & 3.5.",
-        "description": "Párty plná energie, taneční hudby a nezapomenutelné barové atmosféry. Přijď si užít Sport party po svém!",
-        "img_filename": "sport_party",
-        "aria_label": "Plakát ke Sport party v baru, konané 2. a 3. května",
-        "expire": "2025-05-04"
-      },
-      {
-        "title": "Oldies Nights",
-        "date": "Každý čtvrtek",
-        "description": "Přijďte si užít večer plný oldies hudby.",
-        "img_filename": "oldies",
-        "aria_label": "Oldies Nights každý čtvrtek"
-      }
     ],
     "aria_label_card": "Klikněte pro zobrazení informací",
     "fb_button_text": [
