@@ -139,10 +139,6 @@
   },
   "opening_hours": [
     {
-      "day": "Čtvrtek",
-      "hours": "22:00 - 5:00"
-    },
-    {
       "day": "Pátek",
       "hours": "22:00 - 6:00"
     },
