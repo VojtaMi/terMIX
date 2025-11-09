@@ -15,40 +15,41 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-// set uld for title picture
-document.addEventListener('DOMContentLoaded', function() {
-    var poster = document.getElementById('poster');
-    var imageUrl = poster.getAttribute('data-poster-url');
-    poster.style.backgroundImage = 'url(' + imageUrl + ')';
-});
-
 // Poster image slideshow
 document.addEventListener("DOMContentLoaded", () => {
     const el = document.getElementById("poster");
+    if (!el) return;
+
+    const background = el.querySelector(".poster-background") || el;
     const posters = JSON.parse(el.dataset.posters || "[]");
 
     if (!posters.length) return;
 
     let index = 0;
 
+    const setBackground = (url) => {
+        background.style.backgroundImage = `url('${url}')`;
+    };
+
     // Set initial image
-    el.style.backgroundImage = `url('${posters[0]}')`;
+    setBackground(posters[0]);
 
     const intervalMs = 6000;      // time each image is shown
     const fadeMs = 600;           // must match CSS transition
 
+    if (posters.length === 1) return;
+
     setInterval(() => {
-        // next index
         index = (index + 1) % posters.length;
         const nextUrl = posters[index];
 
         // fade out
-        el.classList.add("fade-out");
+        background.classList.add("fade-out");
 
         // after fade-out, switch image and fade back in
         setTimeout(() => {
-            el.style.backgroundImage = `url('${nextUrl}')`;
-            el.classList.remove("fade-out");
+            setBackground(nextUrl);
+            background.classList.remove("fade-out");
         }, fadeMs);
     }, intervalMs);
 });

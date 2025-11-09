@@ -12,10 +12,10 @@
 {% block content %}
 <!-- Poster Image -->
 <div id="poster" class="mb-5" data-posters='{{ posters|tojson }}'>
+    <div class="poster-background" aria-hidden="true"></div>
     {% set poster = translations.home.poster %}
     <div class="poster-caption">
         <h1>Club Termix</h1>
-        <p>{{ poster.caption.subtitle[0] }} <span class="responsive-br"><br></span>{{ poster.caption.subtitle[1] }}</p>
     </div>
 </div>
 

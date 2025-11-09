@@ -1,15 +1,24 @@
 /*homepage title image*/
-#poster{
+#poster {
     height: 100vh;
-    background-size: cover; /* Ensures the image covers the entire div */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
     position: relative;
     overflow: hidden;
-    transition: opacity 0.6s ease-in-out;
 }
 
-#poster.fade-out {
+.poster-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents repeating */
+    transition: opacity 0.6s ease-in-out;
+    z-index: 0;
+}
+
+.poster-background.fade-out {
     opacity: 0;
 }
 
@@ -20,7 +29,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--purple-gray-transparent);
+    z-index: 1;
     height: 40%;
     width: 50%;
     display: flex;
@@ -33,19 +42,24 @@
 .poster-caption h1 {
     font-family: 'Edu AU VIC WA NT Hand', sans-serif;
     font-weight: bold;
+    text-shadow:
+        0 0 10px var(--dark-purple),
+        0 0 20px var(--dark-purple);
 }
-.poster-caption p {
-    font-size: 1.5rem; /* Default size */
-    font-family: 'Nunito', sans-serif;
+
+.poster-caption h1 {
+    font-size: 7rem;
 }
 
 /* split title  */
 .responsive-br {
-    display: none; /* Hide line break on larger screens */
+    display: none;
+    /* Hide line break on larger screens */
 }
 
 .featurette-divider {
-  margin: 5rem; /* Space out the Bootstrap <hr> more */
+    margin: 5rem;
+    /* Space out the Bootstrap <hr> more */
 }
 
 
@@ -55,14 +69,16 @@
 }
 
 .text-body-secondary-custom {
-    color: var(--lighter-purple); /* Sets the text color */
-}
-.lead{
-     padding-top: 1rem;
-     font-size: 1.7rem;
+    color: var(--lighter-purple);
+    /* Sets the text color */
 }
 
-.img-fluid{
+.lead {
+    padding-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.img-fluid {
     height: auto;
     width: 100%;
     object-fit: cover;
@@ -70,39 +86,38 @@
 
 @media (max-width: 991px) {
     .featurette-heading {
-    font-size: 40px;
-  }
-  .lead{
-     font-size: 1.25rem;
+        font-size: 40px;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+    }
+
+    .poster-caption h1 {
+        font-size: 5rem;
     }
 }
 
 
 @media (max-width: 767px) {
+
     /*homepage title text splits for smaller screens*/
     .responsive-br {
         display: inline;
     }
 
-    .lead{
-     padding-top: 0;
+    .lead {
+        padding-top: 0;
     }
 }
 
-@media (max-width: 630px){
-     /*home page title text field is wider for smaller screens*/
-    .poster-caption{
-        width: 70%;
-    }
-    .poster-caption h1 {
-    font-weight: bold;
-}
- }
 @media (max-width: 576px) {
-  .featurette-heading {
-    font-size: 30px;
-  }
-  .featurette-divider {
-  margin: 2rem; /* Space out the Bootstrap <hr> more */
-  }
+    .featurette-heading {
+        font-size: 30px;
+    }
+
+    .featurette-divider {
+        margin: 2rem;
+        /* Space out the Bootstrap <hr> more */
+    }
 }
