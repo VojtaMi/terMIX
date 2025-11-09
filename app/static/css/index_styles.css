@@ -6,6 +6,11 @@
     background-repeat: no-repeat; /* Prevents repeating */
     position: relative;
     overflow: hidden;
+    transition: opacity 0.6s ease-in-out;
+}
+
+#poster.fade-out {
+    opacity: 0;
 }
 
 

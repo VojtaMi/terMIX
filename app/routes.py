@@ -1,5 +1,6 @@
 from flask import render_template, request, redirect, url_for, Response, send_from_directory
 from datetime import date
+import os
 
 def configure_routes(app):
 
@@ -35,7 +36,20 @@ def configure_routes(app):
 
     @app.route('/<lang>/')
     def home(lang):
-        return render_template('index.html', translations=get_translations(lang), lang=lang)
+        mainpage_posters_folder = os.path.join(app.static_folder, "assets/mainpage_posters")
+        posters = []
+
+        for fn in sorted(os.listdir(mainpage_posters_folder)):
+            if fn.lower().endswith(".avif"):
+                posters.append(
+                url_for("static", filename=f"assets/mainpage_posters/{fn}")
+                )
+        return render_template(
+            'index.html',
+            translations=get_translations(lang),
+            lang=lang,
+            posters=posters
+        )
 
     @app.route('/<lang>/gallery')
     def gallery(lang):
