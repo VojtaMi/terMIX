@@ -106,6 +106,46 @@
   "events": {
     "title": "Akce",
     "event_list": [
+      {
+        "title": "Drag Night",
+        "date": "22. listopadu",
+        "description": "22. listopadu vás v Termixu čeká další Drag Night🤩 Na pódiu vystoupí TiFanny BiGest a Miss Chief, které přivezou show plnou energie, humoru a výrazných výkonů. Pokud máte chuť na večer, který trochu vybočuje z běžných plánů, tohle je dobrá volba. ✨",
+        "img_filename": "dragNight22",
+        "aria_label": "Drag Night 22. listopadu",
+        "expire": "2025-11-23"
+      },
+      {
+        "title": "Drag Night",
+        "date": "28. listopadu",
+        "description": "✨ Večer, který tě posadí na zadek! Na pódiu se objeví TiFanny BiGest a Paloma Eifel — dvě královny, které rozsvítí celou noc 🔥 Připrav se na show plnou energie, elegance a attitude.",
+        "img_filename": "dragNight28",
+        "aria_label": "Drag Night 28. listopadu",
+        "expire": "2025-11-29"
+      },
+      {
+        "title": "Mikuláš",
+        "date": "5. prosince",
+        "description": "Letos přijde Mikuláš… a bude mít podpatky🤭 Vlasta Wild a Madonna Daniela Maxová ti nadělí show, po který budeš chtít být zlobivej každej rok 😏 Připrav se na čerty, anděly a hlavně extrémní dávku drag chaosu 💥",
+        "img_filename": "mikulas",
+        "aria_label": "Mikuláš 5. prosince",
+        "expire": "2025-12-6"
+      },
+      {
+        "title": "Silvestrovská párty",
+        "date": "31. prosince",
+        "description": "Společně zakončíme rok 2025 tam, kde to máme nejradši – na parketu Clubu Termix!Přijď s přáteli, poznej nové tváře a oslav příchod 2026 ve velkém stylu! 🥳 Informace o předprodeji na našem Facebooku.",
+        "img_filename": "newYear",
+        "aria_label": "Silvestrovská párty 31. prosince",
+        "expire": "2026-1-1"
+      },
+      {
+        "title": "Kinky techno rave",
+        "date": "6. února",
+        "description": "Přijď na Kinky Techno Rave — noc inspirovanou berlínskou scénou, plnou kreativity, fetishe a autentického projevu 🔥 Latex, leather, lace, pup, dom/sub… KINKY dresscode je povinný 😈 Čeká tě tvrdé techno, temná atmosféra, respekt, souhlas a bezpečný prostor pro všechny 🌑✨ Žádné telefony — jen rytmus, energie a tvoje pravé já 🖤 DJs KOBØV & PAUL KRIST ovládnou noc 🎧",
+        "img_filename": "kinkyTechno",
+        "aria_label": "Kinky techno rave 6. února",
+        "expire": "2026-2-7"
+      }
     ],
     "aria_label_card": "Klikněte pro zobrazení informací",
     "fb_button_text": [

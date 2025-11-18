@@ -106,14 +106,45 @@
   "events": {
     "title": "Events",
     "event_list": [
-
       {
-        "title": "Sport Party",
-        "date": "May 2 & 3",
-        "description": "A party full of energy, dance beats, and vibrant bar atmosphere. Come enjoy the Sport Party your way!",
-        "img_filename": "sport_party",
-        "aria_label": "Poster for the Sport Party at the bar, taking place May 2 and 3",
-        "expire": "2025-05-04"
+        "title": "Drag Night",
+        "date": "22 November",
+        "description": "On 22 November, another Drag Night awaits you at Termix 🤩 On stage you’ll see TiFanny BiGest and Miss Chief, bringing a show full of energy, humor, and bold performances. If you’re in the mood for an evening that breaks out of the ordinary, this is your best choice. ✨",
+        "img_filename": "dragNight22",
+        "aria_label": "Drag Night 22 November",
+        "expire": "2025-11-23"
+      },
+      {
+        "title": "Drag Night",
+        "date": "28 November",
+        "description": "✨ An evening that will blow you away! TiFanny BiGest and Paloma Eifel are taking the stage — two queens who will light up the whole night 🔥 Get ready for a show full of energy, elegance, and attitude.",
+        "img_filename": "dragNight28",
+        "aria_label": "Drag Night 28 November",
+        "expire": "2025-11-29"
+      },
+      {
+        "title": "Mikuláš",
+        "date": "5 December",
+        "description": "This year, Mikuláš is coming… and he’ll be wearing heels 🤭 Vlasta Wild and Madonna Daniela Maxová will deliver a show that’ll make you wish to be naughty every year 😏 Get ready for devils, angels, and a huge dose of drag chaos 💥",
+        "img_filename": "mikulas",
+        "aria_label": "Mikuláš 5 December",
+        "expire": "2025-12-06"
+      },
+      {
+        "title": "New Year’s Eve Party",
+        "date": "31 December",
+        "description": "We’ll end 2025 together in the place we love most — on the dance floor of Club Termix! Come with friends, meet new faces, and celebrate the arrival of 2026 in style! 🥳 More information about presale on our Facebook.",
+        "img_filename": "newYear",
+        "aria_label": "New Year's Eve Party 31 December",
+        "expire": "2026-01-01"
+      },
+      {
+        "title": "Kinky Techno Rave",
+        "date": "6 February",
+        "description": "Join us for the Kinky Techno Rave — a Berlin-inspired night of creativity, fetish and pure expression 🔥 Latex, leather, lace, pup, dom/sub… KINKY dress code is required 😈 Expect hard techno, a dark vibe, respect, consent and a truly safe space for all 🌑✨ No phones — just rhythm, energy and your real self 🖤 DJs KOBØV & PAUL KRIST will take over the night 🎧",
+        "img_filename": "kinkyTechno",
+        "aria_label": "Kinky Techno Rave 6 February",
+        "expire": "2026-02-07"
       }
     ],
     "aria_label_card": "Click to see details",
@@ -127,7 +158,6 @@
     ]
   },
   "opening_hours": [
-
     {
       "day": "Friday",
       "hours": "10:00 PM - 6:00 AM"
