@@ -214,9 +214,9 @@
     "download": "Stáhnout",
     "disclaimers": [
       "Seznam alergenů u obsluhy na baru.",
-      "Veškeré nápoje jsou podávány s ledem.",
-      "Platnost k 1.5. 2022.",
-      "Ceny a dostupnost se mohou změnit. <br> Nejaktuálnější informace si prosím ověřte u našeho personálu."
+      "Veškeré nápoje jsou podávány s ledem!",
+      "Platnost od 1.10.2025.",
+      "Ceny a dostupnost se mohou změnit. Nejnovější informace vám sdělí naši zaměstnanci."
     ],
     "sections": [
       {
@@ -232,15 +232,15 @@
                 "info": ""
               },
               {
-                "name": "Martini",
-                "measure": "0.1 l",
+                "name": "Martini Dry, Bianco, Fiero",
+                "measure": "0.10 l",
                 "price": "80",
-                "info": "Dry/Bianco/Fiero"
+                "info": ""
               },
               {
                 "name": "Aperol",
                 "measure": "0.04 l",
-                "price": "60",
+                "price": "70",
                 "info": ""
               }
             ]
@@ -251,20 +251,26 @@
               {
                 "name": "Jim Beam White",
                 "measure": "0.04 l",
-                "price": "85",
+                "price": "90",
                 "info": ""
               },
               {
                 "name": "Four Roses",
                 "measure": "0.04 l",
-                "price": "85",
+                "price": "90",
                 "info": ""
               },
               {
                 "name": "Jack Daniel's",
                 "measure": "0.04 l",
                 "price": "100",
-                "info": "Original/Fire/Honey"
+                "info": ""
+              },
+              {
+                "name": "Jack Daniel's Fire/Honey",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
               }
             ]
           },
@@ -274,25 +280,25 @@
               {
                 "name": "Johny Walker Red Label",
                 "measure": "0.04 l",
-                "price": "85",
+                "price": "90",
                 "info": ""
               },
               {
                 "name": "Ballantine's",
                 "measure": "0.04 l",
-                "price": "85",
+                "price": "90",
                 "info": ""
               },
               {
                 "name": "Tullamore Dew",
                 "measure": "0.04 l",
-                "price": "85",
+                "price": "90",
                 "info": ""
               },
               {
                 "name": "Jameson",
                 "measure": "0.04 l",
-                "price": "85",
+                "price": "90",
                 "info": ""
               },
               {
@@ -309,31 +315,31 @@
               {
                 "name": "SAVOY Dry Gin",
                 "measure": "0.04 l",
-                "price": "75",
+                "price": "80",
                 "info": ""
               },
               {
                 "name": "RIVES Pink",
                 "measure": "0.04 l",
-                "price": "75",
+                "price": "80",
                 "info": ""
               },
               {
                 "name": "Bombay Sapphire",
                 "measure": "0.04 l",
-                "price": "90",
+                "price": "95",
                 "info": ""
               },
               {
                 "name": "Botega Bacur Gin",
                 "measure": "0.04 l",
-                "price": "100",
+                "price": "105",
                 "info": ""
               },
               {
                 "name": "Star of Bombay 47,5%",
                 "measure": "0.04 l",
-                "price": "100",
+                "price": "105",
                 "info": ""
               }
             ]
@@ -344,13 +350,13 @@
               {
                 "name": "MARY JANE",
                 "measure": "0.04 l",
-                "price": "75",
+                "price": "80",
                 "info": ""
               },
               {
                 "name": "FLIRT vodka",
                 "measure": "0.04 l",
-                "price": "75",
+                "price": "80",
                 "info": "dle nabídky"
               },
               {
@@ -371,27 +377,27 @@
             "name": "Rum",
             "products": [
               {
-                "name": "Arehucas",
+                "name": "AREHUCAS BLANCO, ORO",
                 "measure": "0.04 l",
-                "price": "75",
-                "info": "Blanco/Oro"
+                "price": "80",
+                "info": ""
               },
               {
                 "name": "Bacardi Spiced",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Ypióca Prata",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Malibu",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
@@ -403,13 +409,13 @@
               {
                 "name": "Legendario Elixir de Cuba",
                 "measure": "0.04 l",
-                "price": "95",
+                "price": "100",
                 "info": ""
               },
               {
                 "name": "Zacapa Centenario 23YO",
                 "measure": "0.04 l",
-                "price": "160",
+                "price": "170",
                 "info": ""
               }
             ]
@@ -418,15 +424,15 @@
             "name": "Tequila",
             "products": [
               {
-                "name": "Sierra silver",
+                "name": "Silver dle nabídky",
                 "measure": "0.04 l",
-                "price": "95",
+                "price": "100",
                 "info": ""
               },
               {
-                "name": "Sierra reposado",
+                "name": "Reposado dle nabídky",
                 "measure": "0.04 l",
-                "price": "95",
+                "price": "100",
                 "info": ""
               },
               {
@@ -449,61 +455,61 @@
               {
                 "name": "Jägermeister",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Baileys",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Kahlua",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Sambuca Antica",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Cointreau",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Ferner Stock",
                 "measure": "0.04 l",
-                "price": "70",
+                "price": "75",
                 "info": "Stock/Citrus"
               },
               {
                 "name": "Karlovarská Becherovka",
                 "measure": "0.04 l",
-                "price": "70",
+                "price": "75",
                 "info": "Original/Lemond"
               },
               {
                 "name": "Bartida Zelená",
                 "measure": "0.04 l",
-                "price": "70",
+                "price": "75",
                 "info": ""
               },
               {
                 "name": "Koskenkorva Peach",
                 "measure": "0.04 l",
-                "price": "70",
+                "price": "75",
                 "info": ""
               },
               {
                 "name": "Trojka Pink",
                 "measure": "0.04 l",
-                "price": "60",
+                "price": "75",
                 "info": ""
               }
             ]
@@ -514,29 +520,23 @@
               {
                 "name": "Slivovice R.Jelínek 3YO",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Hruškovice Wiliams R. J.",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Absinth",
                 "measure": "0.04 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               },
               {
                 "name": "Tuzemák Bartida",
-                "measure": "0.04 l",
-                "price": "70",
-                "info": ""
-              },
-              {
-                "name": "TATRATEA 22%, 32%, 42%",
                 "measure": "0.04 l",
                 "price": "75",
                 "info": ""
@@ -550,13 +550,7 @@
               {
                 "name": "Metaxa 5*",
                 "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Smirnoff Ice",
-                "measure": "0.275 l",
-                "price": "105",
+                "price": "85",
                 "info": ""
               }
             ]
@@ -566,15 +560,15 @@
             "products": [
               {
                 "name": "PEPSI-COLA",
-                "measure": "0.1 l",
-                "price": "22",
-                "info": "točená"
+                "measure": "0.10 l",
+                "price": "25",
+                "info": "postmix"
               },
               {
                 "name": "Tonic, 7UP, soda",
-                "measure": "0.1 l",
-                "price": "22",
-                "info": "točená"
+                "measure": "0.10 l",
+                "price": "25",
+                "info": "postmix"
               },
               {
                 "name": "Mirinda",
@@ -590,31 +584,25 @@
               },
               {
                 "name": "Ice tea",
-                "measure": "0.33 l",
+                "measure": "0.25 l",
                 "price": "75",
                 "info": "dle nabídky"
               },
               {
                 "name": "Juice rozlévané",
-                "measure": "0.1 l",
-                "price": "22",
+                "measure": "0.10 l",
+                "price": "25",
                 "info": "dle nabídky"
               },
               {
                 "name": "Juice TOMA",
                 "measure": "0.25 l",
-                "price": "55",
+                "price": "60",
                 "info": "sklo (dle nabídky)"
               },
               {
-                "name": "AQUILA – neperlivá",
-                "measure": "0.33 l",
-                "price": "45",
-                "info": ""
-              },
-              {
-                "name": "MATTONI  – minerální voda jemně perlivá",
-                "measure": "0.33 l",
+                "name": "Dobrá voda",
+                "measure": "0.25 l",
                 "price": "45",
                 "info": ""
               },
@@ -625,15 +613,9 @@
                 "info": ""
               },
               {
-                "name": "Nespresso, mléko",
-                "measure": "bal",
-                "price": "45",
-                "info": ""
-              },
-              {
                 "name": "RED BULL Energy drink",
                 "measure": "0.25 l",
-                "price": "80",
+                "price": "85",
                 "info": "Original/Bez cukru/Tropical edition"
               }
             ]
@@ -670,21 +652,9 @@
                 "info": ""
               },
               {
-                "name": "Moët & Chandon Ice Impérial",
-                "measure": "0.75 l",
-                "price": "2190",
-                "info": ""
-              },
-              {
                 "name": "Moët & Chandon Rosé",
                 "measure": "0.75 l",
                 "price": "2190",
-                "info": ""
-              },
-              {
-                "name": "Moët & Chandon N.I.R",
-                "measure": "0.75 l",
-                "price": "2490",
                 "info": ""
               }
             ]
@@ -707,7 +677,7 @@
               {
                 "name": "Bohemia Sekt",
                 "measure": "0.75 l",
-                "price": "360",
+                "price": "380",
                 "info": "demi sec, brut"
               },
               {
@@ -730,7 +700,7 @@
               {
                 "name": "Vinný střik 2:1",
                 "measure": "0.3 l",
-                "price": "80",
+                "price": "85",
                 "info": ""
               }
             ]
@@ -741,24 +711,18 @@
         "name": "Pivo",
         "subsections": [
           {
-            "name": "Točené",
+            "name": "Pivo točené/draft",
             "products": [
               {
-                "name": "Staropramen 10°",
+                "name": "Staropramen 12°",
                 "measure": "0.5 l",
                 "price": "70",
-                "info": ""
-              },
-              {
-                "name": "Carling Cider",
-                "measure": "0.3 l",
-                "price": "55",
                 "info": ""
               }
             ]
           },
           {
-            "name": "Láhev",
+            "name": "Pivo láhev/bottle",
             "products": [
               {
                 "name": "Stella Artois ležák 12°",
@@ -775,19 +739,13 @@
               {
                 "name": "Corona",
                 "measure": "0.33 l",
-                "price": "105",
-                "info": ""
-              },
-              {
-                "name": "Desperado",
-                "measure": "0.33 l",
-                "price": "105",
+                "price": "110",
                 "info": ""
               },
               {
                 "name": "Frisco",
                 "measure": "0.33 l",
-                "price": "60",
+                "price": "70",
                 "info": ""
               }
             ]
@@ -801,15 +759,9 @@
             "name": "Special coctail",
             "products": [
               {
-                "name": "MARTINI FIERO & TONIC",
-                "measure": "",
-                "price": "113",
-                "info": ""
-              },
-              {
                 "name": "AMARANCIO",
                 "measure": "",
-                "price": "150",
+                "price": "165",
                 "info": "Savoy gin, Campari, Red Bull Tropical Edition"
               }
             ]
@@ -820,139 +772,133 @@
               {
                 "name": "SPRITZ",
                 "measure": "",
-                "price": "143",
+                "price": "148",
                 "info": "Art spritz aperitivo, prosecco, soda, pomeranč"
               },
               {
                 "name": "PINK PARADISE",
                 "measure": "",
-                "price": "93",
+                "price": "105",
                 "info": "Trojka PINK, soda, limetka"
               },
               {
                 "name": "B 52",
                 "measure": "",
-                "price": "108",
+                "price": "120",
                 "info": "Bailey´s, Kahlúa, El Commandante rum"
               },
               {
                 "name": "Bavorák",
                 "measure": "",
-                "price": "103",
+                "price": "108",
                 "info": "Fernet Stock, tonic"
               },
               {
                 "name": "Beton",
                 "measure": "",
-                "price": "103",
+                "price": "108",
                 "info": "Becherovka, tonic"
               },
               {
                 "name": "Black Russian",
                 "measure": "",
-                "price": "118",
+                "price": "128",
                 "info": "Vodka, Kahlúa"
-              },
-              {
-                "name": "Bloody Mary",
-                "measure": "",
-                "price": "130",
-                "info": "Vodka, rajčatový džus, tabasco"
               },
               {
                 "name": "Caipirinha",
                 "measure": "",
-                "price": "95",
+                "price": "135",
                 "info": "Ypióca Prata, limetka, cukr"
               },
               {
                 "name": "Campari Orange",
                 "measure": "",
-                "price": "98",
+                "price": "110",
                 "info": ""
               },
               {
                 "name": "Cosmopolitan",
                 "measure": "",
-                "price": "145",
+                "price": "150",
                 "info": "Vodka, Cointreau, cranberry juice, limetkový džus"
               },
               {
                 "name": "Cuba libre",
                 "measure": "",
-                "price": "108",
+                "price": "118",
                 "info": "Arehucas Rum, pepsi-cola, limetkový džus"
               },
               {
                 "name": "Gin Tonic",
                 "measure": "",
-                "price": "108",
+                "price": "118",
                 "info": ""
               },
               {
                 "name": "Strawberry Gin Tonic",
                 "measure": "",
-                "price": "108",
+                "price": "118",
                 "info": "Rives Pink gin, Tonic"
               },
               {
                 "name": "Long Beach Ice Tea",
                 "measure": "",
-                "price": "205",
+                "price": "210",
                 "info": "Gin, Vodka, Rum, Tequila, Triple sec, citrónový džus, cukr, brusinkový džus"
               },
               {
                 "name": "Long Island Ice Tea",
                 "measure": "",
-                "price": "205",
+                "price": "210",
                 "info": "Gin, Vodka, Rum, Tequila, Triple sec, citrónový džus, cukr, cola"
               },
               {
                 "name": "Tokyo Ice Tea",
                 "measure": "",
-                "price": "205",
+                "price": "210",
                 "info": "Gin, Vodka, Rum, Tequila, Melon liqueur, citrónový džus, cukr, sprite"
               },
               {
                 "name": "Margarita",
                 "measure": "",
-                "price": "135",
+                "price": "150",
                 "info": "Tequila, Cointreau, citrónový džus"
               },
               {
                 "name": "Mojito",
                 "measure": "",
-                "price": "170",
+                "price": "180",
                 "info": "Arehucas rum, limetka, máta, třtinový cukr, soda"
               },
               {
                 "name": "Red Bull + Mary Jane vodka",
                 "measure": "",
-                "price": "155",
+                "price": "160",
                 "info": ""
               },
               {
                 "name": "Screwdriver",
                 "measure": "",
-                "price": "108",
+                "price": "118",
                 "info": "Mary Jane vodka, pomerančový džus"
               },
               {
                 "name": "Sex on the Beach",
                 "measure": "",
-                "price": "143",
+                "price": "145",
                 "info": "Vodka, Peach Tree, pomerančový džus, grenadine"
               },
               {
                 "name": "Tequila Sunrise",
                 "measure": "",
-                "price": "135",
+                "price": "145",
                 "info": "Tequila, pomerančový džus, grenadine"
               },
               {
                 "name": "Chupito",
                 "measure": "",
-                "price": "60",
+                "price": "65",
                 "info": "Vodka, limetkový džus, třešnička"
               }
             ]
@@ -963,13 +909,13 @@
               {
                 "name": "Cuba libre",
                 "measure": "",
-                "price": "1080",
+                "price": "1200",
                 "info": "0,4 l A. Blanco, 1,5 l Pepsi, limetka"
               },
               {
                 "name": "Mojito",
                 "measure": "",
-                "price": "1455",
+                "price": "1555",
                 "info": "0,6 l A. Blanco, 1,5 l Soda, limetka, máta, cukr"
               }
             ]
@@ -980,19 +926,19 @@
               {
                 "name": "Mary Jane vodka 0,5 l + 6x Red Bull",
                 "measure": "",
-                "price": "1418",
+                "price": "1510",
                 "info": ""
               },
               {
                 "name": "Mary Jane vodka 0,7 l + 6x Red Bull",
                 "measure": "",
-                "price": "1793",
+                "price": "1910",
                 "info": ""
               },
               {
                 "name": "Grey Goose 1 l + 6x Red Bull",
                 "measure": "",
-                "price": "3480",
+                "price": "3510",
                 "info": ""
               }
             ]
