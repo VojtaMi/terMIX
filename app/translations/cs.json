@@ -69,8 +69,8 @@
         ],
         "image": {
           "altText": "Interiér",
-          "src": "assets/img/car.avif",
-          "src_wide": "assets/img/car_wide.avif"
+          "src": "assets/img/inter.avif",
+          "src_wide": "assets/img/inter_wide.avif"
         }
       },
       {
