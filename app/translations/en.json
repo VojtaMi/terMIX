@@ -107,36 +107,52 @@
     "title": "Events",
     "event_list": [
       {
-        "title": "Drag Night",
-        "date": "22 November",
-        "description": "On 22 November, another Drag Night awaits you at Termix 🤩 On stage you’ll see TiFanny BiGest and Miss Chief, bringing a show full of energy, humor, and bold performances. If you’re in the mood for an evening that breaks out of the ordinary, this is your best choice. ✨",
-        "img_filename": "dragNight22",
-        "aria_label": "Drag Night 22 November",
-        "expire": "2025-11-23"
-      },
-      {
-        "title": "Drag Night",
-        "date": "28 November",
-        "description": "✨ An evening that will blow you away! TiFanny BiGest and Paloma Eifel are taking the stage — two queens who will light up the whole night 🔥 Get ready for a show full of energy, elegance, and attitude.",
-        "img_filename": "dragNight28",
-        "aria_label": "Drag Night 28 November",
-        "expire": "2025-11-29"
-      },
-      {
-        "title": "Mikuláš",
-        "date": "5 December",
-        "description": "This year, Mikuláš is coming… and he’ll be wearing heels 🤭 Vlasta Wild and Madonna Daniela Maxová will deliver a show that’ll make you wish to be naughty every year 😏 Get ready for devils, angels, and a huge dose of drag chaos 💥",
-        "img_filename": "mikulas",
-        "aria_label": "Mikuláš 5 December",
-        "expire": "2025-12-06"
-      },
-      {
         "title": "New Year’s Eve Party",
         "date": "31 December",
         "description": "We’ll end 2025 together in the place we love most — on the dance floor of Club Termix! Come with friends, meet new faces, and celebrate the arrival of 2026 in style! 🥳 More information about presale on our Facebook.",
         "img_filename": "newYear",
         "aria_label": "New Year's Eve Party 31 December",
         "expire": "2026-01-01"
+      },
+      {
+        "title": "January Program",
+        "date": "",
+        "description": "Termix – January\n\nJan 2 – Feel the Bass with DJ JFK (soft techno party)\nJan 3 – Party with DJ JFK\nJan 9 – Party with DJ Viki Valda\nJan 10 – Summer Party with Tifanny BiGest\nJan 16 – Crazy Goddess – Vlasta Wild & Madonna Daniela Maxová\nJan 17 – Party with DJ White Cat\nJan 23 – Party with DJ Kistenn\nJan 24 – Party with DJ Dominique\nJan 30 – Oldies with DJ JFK\nJan 31 – Oldies with DJ Marty Blue",
+        "img_filename": "january",
+        "aria_label": "January program of Termix club",
+        "expire": "2026-02-01"
+      },      
+      {
+        "title": "Feel the Bass | soft techno DJ JFK",
+        "date": "2 January",
+        "description": "✨ A night where the bass speaks for you. DJ JFK takes you on a journey through soft techno, hypnotic beats and smooth flow 🔊 Close your eyes, let the rhythm carry you and let the night flow until morning 🔥",
+        "img_filename": "bass",
+        "aria_label": "Feel the Bass soft techno DJ JFK 2 January",
+        "expire": "2026-01-03"
+      },
+      {
+        "title": "Summer Party with TuFanny",
+        "date": "10 January",
+        "description": "☀️ Summer in the middle of winter! TuFanny brings vibrant energy, colorful vibes and an unstoppable party atmosphere 🌴 Dance, laugh and forget it’s January outside 🔥",
+        "img_filename": "summer",
+        "aria_label": "Summer Party with TuFanny 10 January",
+        "expire": "2026-01-11"
+      },
+      {
+        "title": "Crazy Goddess – Vlasta Wild & Madonna Daniela Maxová",
+        "date": "16 January",
+        "description": "💄 A show that pulls you in from the very first minute. Glitter, extravagance and a powerful dose of emotions ✨ Get ready for a night full of humor, provocation and iconic moments 🔥",
+        "img_filename": "goddess",
+        "aria_label": "Crazy Goddess Vlasta Wild Madonna Daniela Maxová 16 January",
+        "expire": "2026-01-17"
+      },
+      {
+        "title": "Oldies Night",
+        "date": "30–31 January",
+        "description": "🕺 A return to the golden days. Timeless hits everyone knows and a dancefloor full of energy 💃 Jan 30 – DJ JFK gets every generation moving 🎶 Jan 31 – DJ Marty Blue delivers legendary classics ✨",
+        "img_filename": "oldies",
+        "aria_label": "Oldies Night DJ JFK DJ Marty Blue 30 31 January",
+        "expire": "2026-02-01"
       },
       {
         "title": "Kinky Techno Rave",

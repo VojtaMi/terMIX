@@ -59,6 +59,9 @@
 .btn-primary-purple .bi-facebook{
     font-size: 1.7rem;
 }
+.description {
+    white-space: pre-line;
+  }
 
 #swap-card-sign {
     position: absolute;  /* Position it absolutely relative to the .flip-card-front */

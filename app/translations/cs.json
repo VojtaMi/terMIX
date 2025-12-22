@@ -107,36 +107,52 @@
     "title": "Akce",
     "event_list": [
       {
-        "title": "Drag Night",
-        "date": "22. listopadu",
-        "description": "22. listopadu vás v Termixu čeká další Drag Night🤩 Na pódiu vystoupí TiFanny BiGest a Miss Chief, které přivezou show plnou energie, humoru a výrazných výkonů. Pokud máte chuť na večer, který trochu vybočuje z běžných plánů, tohle je dobrá volba. ✨",
-        "img_filename": "dragNight22",
-        "aria_label": "Drag Night 22. listopadu",
-        "expire": "2025-11-23"
-      },
-      {
-        "title": "Drag Night",
-        "date": "28. listopadu",
-        "description": "✨ Večer, který tě posadí na zadek! Na pódiu se objeví TiFanny BiGest a Paloma Eifel — dvě královny, které rozsvítí celou noc 🔥 Připrav se na show plnou energie, elegance a attitude.",
-        "img_filename": "dragNight28",
-        "aria_label": "Drag Night 28. listopadu",
-        "expire": "2025-11-29"
-      },
-      {
-        "title": "Mikuláš",
-        "date": "5. prosince",
-        "description": "Letos přijde Mikuláš… a bude mít podpatky🤭 Vlasta Wild a Madonna Daniela Maxová ti nadělí show, po který budeš chtít být zlobivej každej rok 😏 Připrav se na čerty, anděly a hlavně extrémní dávku drag chaosu 💥",
-        "img_filename": "mikulas",
-        "aria_label": "Mikuláš 5. prosince",
-        "expire": "2025-12-6"
-      },
-      {
         "title": "Silvestrovská párty",
         "date": "31. prosince",
         "description": "Společně zakončíme rok 2025 tam, kde to máme nejradši – na parketu Clubu Termix!Přijď s přáteli, poznej nové tváře a oslav příchod 2026 ve velkém stylu! 🥳 Informace o předprodeji na našem Facebooku.",
         "img_filename": "newYear",
         "aria_label": "Silvestrovská párty 31. prosince",
         "expire": "2026-1-1"
+      },
+      {
+        "title": "Lednový program",
+        "date": "",
+        "description": "Termix – leden\n\n2. 1. – Feel the Bass with DJ JFK (soft techno party)\n3. 1. – Party with DJ JFK\n9. 1. – Party with DJ Viki Valda\n10. 1. – Summer Party with Tifanny BiGest\n16. 1. – Crazy Goddess – Vlasta Wild & Madonna Daniela Maxová\n17. 1. – Party with DJ White Cat\n23. 1. – Party with DJ Kistenn\n24. 1. – Party with DJ Dominique\n30. 1. – Oldies with DJ JFK\n31. 1. – Oldies with DJ Marty Blue",
+        "img_filename": "january",
+        "aria_label": "Lednový program klubu Termix",
+        "expire": "2026-02-01"
+      },      
+      {
+        "title": "Feel the Bass | soft techno DJ JFK",
+        "date": "2. 1.",
+        "description": "✨ Noc, kdy basy mluví za tebe. DJ JFK tě vezme na cestu jemného techna, hypnotických beatů a plynulého flow 🔊 Zavři oči, nech se unést rytmem a nech noc plynout až do rána 🔥",
+        "img_filename": "bass",
+        "aria_label": "Feel the Bass soft techno DJ JFK 2. 1.",
+        "expire": "2026-01-03"
+      },
+      {
+        "title": "Summer Party s TuFanny",
+        "date": "10. 1.",
+        "description": "☀️ Léto uprostřed zimy! TuFanny přináší vibes plné energie, barev a nespoutané party nálady 🌴 Tancuj, směj se a zapomeň, že je venku leden 🔥",
+        "img_filename": "summer",
+        "aria_label": "Summer Party s TuFanny 10. 1.",
+        "expire": "2026-01-11"
+      },
+      {
+        "title": "Crazy Goddess – Vlasta Wild & Madonna Daniela Maxová",
+        "date": "16. 1.",
+        "description": "💄 Show, která tě pohltí od první minuty. Třpyt, extravagance a pořádná dávka emocí ✨ Připrav se na večer plný humoru, provokace a ikonických momentů 🔥",
+        "img_filename": "goddess",
+        "aria_label": "Crazy Goddess Vlasta Wild Madonna Daniela Maxová 16. 1.",
+        "expire": "2026-01-17"
+      },
+      {
+        "title": "Oldies Night",
+        "date": "30.–31. 1.",
+        "description": "🕺 Návrat do zlatých časů. Nestárnoucí hity, které znáš nazpaměť, a parket plný energie 💃 30. 1. DJ JFK roztančí každou generaci 🎶 31. 1. DJ Marty Blue servíruje legendární pecky ✨",
+        "img_filename": "oldies",
+        "aria_label": "Oldies Night DJ JFK a DJ Marty Blue 30.–31. 1.",
+        "expire": "2026-02-01"
       },
       {
         "title": "Kinky techno rave",
