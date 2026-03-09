@@ -31,7 +31,7 @@
         "image": "karaoke.avif"
       },
       {
-        "altText": "Muž s maskou čerta",
+        "altText": "Drag queen",
         "title": "Tématické párty",
         "description": [
           "O akce u nás není nouze.",
@@ -93,6 +93,7 @@
   },
   "about": {
     "title": "O Nás",
+    "meta_description": "O klubu Termix v Praze: otevreny 18+ dance a night club s pratelskou atmosferou, hudbou a tematickymi vecery.",
     "quote": [
       "Jsme otevřený bar, kde si užije zábavu každý bez ohledu na původ, nebo orientaci.",
       "Přátelské prostředí a skvělá muzika."
@@ -105,6 +106,7 @@
   },
   "events": {
     "title": "Akce",
+    "meta_description": "Aktualni akce a tematicke party v Clubu Termix Praha. Sledujte program a terminy vecernich eventu.",
     "event_list": [
       {
         "title": "Silvestrovská párty",
@@ -112,7 +114,7 @@
         "description": "Společně zakončíme rok 2025 tam, kde to máme nejradši – na parketu Clubu Termix!Přijď s přáteli, poznej nové tváře a oslav příchod 2026 ve velkém stylu! 🥳 Informace o předprodeji na našem Facebooku.",
         "img_filename": "newYear",
         "aria_label": "Silvestrovská párty 31. prosince",
-        "expire": "2026-1-1"
+        "expire": "2026-01-01"
       },
       {
         "title": "Lednový program",
@@ -160,7 +162,7 @@
         "description": "Přijď na Kinky Techno Rave — noc inspirovanou berlínskou scénou, plnou kreativity, fetishe a autentického projevu 🔥 Latex, leather, lace, pup, dom/sub… KINKY dresscode je povinný 😈 Čeká tě tvrdé techno, temná atmosféra, respekt, souhlas a bezpečný prostor pro všechny 🌑✨ Žádné telefony — jen rytmus, energie a tvoje pravé já 🖤 DJs KOBØV & PAUL KRIST ovládnou noc 🎧",
         "img_filename": "kinkyTechno",
         "aria_label": "Kinky techno rave 6. února",
-        "expire": "2026-2-7"
+        "expire": "2026-02-07"
       }
     ],
     "aria_label_card": "Klikněte pro zobrazení informací",
@@ -185,6 +187,7 @@
   ],
   "information": {
     "title": "Informace",
+    "meta_description": "Prakticke informace o Clubu Termix Praha: adresa, doprava, oteviraci doba, kontakt a pravidla vstupu.",
     "connections": "Spojení",
     "location": {
       "address": "Vinohradská 1789/40, Praha 2",
@@ -219,6 +222,7 @@
   },
   "gallery": {
     "title": "Galerie",
+    "meta_description": "Fotogalerie z Clubu Termix v Praze. Projdete si atmosferu klubu, party i nocni zabavu.",
     "alt_text": "TerMix club obrázek galerie",
     "more_pictures": "Další obrázky",
     "fb_albums": "Alba",
@@ -226,6 +230,7 @@
   },
   "drink_menu": {
     "title": "Nápojový lístek",
+    "meta_description": "Napojovy listek Clubu Termix: koktejly, destilaty a barovy vyber pro nocni klub v Praze.",
     "altText": "Servítování vína",
     "download": "Stáhnout",
     "disclaimers": [

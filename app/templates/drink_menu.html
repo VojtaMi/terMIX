@@ -1,15 +1,16 @@
 {% extends "base.html" %}
+{% set seo_title = 'Club Termix | ' ~ translations.drink_menu.title %}
+{% set seo_description = translations.drink_menu.meta_description %}
+{% set seo_image_url = url_for('static', filename='assets/img/wine.jpg', _external=True) %}
 
 {% block extra_styles %}
-<!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/drink_menu_styles.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 <img src="{{ url_for('static', filename='assets/img/wine.jpg') }}" class="d-block w-100 poster-img"
-     alt="{{ translations.drink_menu.altText }}">
+     alt="{{ translations.drink_menu.altText }}" fetchpriority="high">
 
-<!-- main menu -->
 <div class="container">
     <div class="row justify-content-center align-items-center">
         <h1 class="heading mt-5 text-center">
@@ -83,16 +84,14 @@
 </div>
 {% endfor %}
 
-
 <div class="container mt-5">
     <div class="d-flex justify-content-center">
         <a href="{{ url_for('static', filename='assets/drink_menu.pdf') }}" target="_blank"
-           class="text-center btn btn-primary-purple" id="pdf-logo-large">
+           class="text-center btn btn-primary-purple" id="pdf-logo-large" rel="noopener noreferrer">
             {{ translations.drink_menu.download }} <i class="bi bi-filetype-pdf"></i>
         </a>
     </div>
 </div>
-
 
 <div class="container" id="menu_disclaimer">
     <div class="d-flex justify-content-center">
@@ -106,5 +105,5 @@
 {% endblock %}
 
 {% block extra_scripts %}
-<script src="{{ url_for('static', filename='js/script_drink_menu.js') }}"></script>
+<script defer src="{{ url_for('static', filename='js/script_drink_menu.js') }}"></script>
 {% endblock %}

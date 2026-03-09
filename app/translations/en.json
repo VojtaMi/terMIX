@@ -31,7 +31,7 @@
         "image": "karaoke.avif"
       },
       {
-        "altText": "Man with devil mask",
+        "altText": "Drag queen",
         "title": "Themed Parties",
         "description": [
           "No shortage of events.",
@@ -93,6 +93,7 @@
   },
   "about": {
     "title": "About Us",
+    "meta_description": "About Club Termix in Prague: inclusive 18+ dance and night club with friendly atmosphere, music and themed nights.",
     "quote": [
       "We are an open bar where everyone can have fun, regardless of their background or orientation.",
       "A friendly atmosphere and great music."
@@ -105,6 +106,7 @@
   },
   "events": {
     "title": "Events",
+    "meta_description": "Upcoming events and themed parties at Club Termix Prague. Check program updates and party dates.",
     "event_list": [
       {
         "title": "New Year’s Eve Party",
@@ -185,6 +187,7 @@
   ],
   "information": {
     "title": "Information",
+    "meta_description": "Practical info for Club Termix Prague: address, transport, opening hours, contact and entry rules.",
     "connections": "Connection",
     "location": {
       "address": "Vinohradská 1789/40, Prague 2",
@@ -219,6 +222,7 @@
   },
   "gallery": {
     "title": "Gallery",
+    "meta_description": "Photo gallery from Club Termix in Prague. Explore atmosphere, parties and nights at the club.",
     "alt_text": "TerMix club gallery picture",
     "more_pictures": "More pictures",
     "fb_albums": "Albums",
@@ -226,6 +230,7 @@
   },
   "drink_menu": {
     "title": "Drink Menu",
+    "meta_description": "Club Termix drink menu: cocktails, spirits and bar selection in Prague night club.",
     "altText": "Wine Serving",
     "download": "Download",
     "disclaimers": [

@@ -1,16 +1,13 @@
 {% extends "base.html" %}
-
-{% block meta_description %}
-<meta name="description" lang="{{ lang }}" content="{{ translations.home.meta_description }}">
-{% endblock %}
+{% set seo_title = 'Club Termix | ' ~ translations.home.title %}
+{% set seo_description = translations.home.meta_description %}
+{% set seo_image_url = url_for('static', filename='assets/img/night_life_wide.avif', _external=True) %}
 
 {% block extra_styles %}
-<!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/index_styles.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-<!-- Poster Image -->
 <div id="poster" class="mb-5" data-posters='{{ posters|tojson }}'>
     <div class="poster-background" aria-hidden="true"></div>
     {% set poster = translations.home.poster %}
@@ -20,22 +17,19 @@
 </div>
 
 <div class="container marketing pt-3">
-    <!-- Feature List -->
     <div id="feature_list" class="row justify-content-center">
         {% for feature in translations.home.features %}
         <div class="col-lg-4 col-sm-6 text-center">
             <img src="{{ url_for('static', filename='assets/img/' ~ feature.image) }}" alt="{{ feature.altText }}"
-                 class="rounded-circle img-hover">
+                 class="rounded-circle img-hover" loading="lazy" decoding="async">
 
             <h2>{{ feature.title }}</h2>
             <p>{{ feature.description[0] }}<br>{{ feature.description[1] }}</p>
-            <p><a class="btn btn-primary-purple" href="{{ url_for(feature.buttonLink, lang=lang) }}">{{ feature.buttonText
-                }}</a></p>
+            <p><a class="btn btn-primary-purple" href="{{ url_for(feature.buttonLink, lang=lang) }}">{{ feature.buttonText }}</a></p>
         </div>
         {% endfor %}
     </div>
 
-    <!-- Featurette Section -->
     <hr class="featurette-divider">
     {% for featurette in translations.home.featurettes %}
     <div class="row featurette">
@@ -53,14 +47,13 @@
                 <source media="(min-width: 430px) and (max-width: 767.5px)"
                         srcset="{{ url_for('static', filename=featurette.image.src_wide) }}">
                 <img src="{{ url_for('static', filename=featurette.image.src) }}" alt="{{ featurette.image.altText }}"
-                     class="img-fluid mx-auto">
+                     class="img-fluid mx-auto" loading="lazy" decoding="async">
             </picture>
         </div>
     </div>
     <hr class="featurette-divider">
     {% endfor %}
 
-    <!-- Information Section -->
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-12 col-lg-8 col-xl-6">
@@ -98,5 +91,5 @@
 {% endblock %}
 
 {% block extra_scripts %}
-<script src="{{ url_for('static', filename='js/script_home.js') }}"></script>
+<script defer src="{{ url_for('static', filename='js/script_home.js') }}"></script>
 {% endblock %}
