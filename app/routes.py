@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for, Response, abort
+from flask import render_template, request, redirect, url_for, Response, abort, send_from_directory
 from datetime import date
 import os
 
@@ -63,6 +63,22 @@ def configure_routes(app):
         response = redirect(url_for("home", lang=target_lang))
         response.headers['Vary'] = 'Accept-Language'
         return response
+
+    @app.route('/favicon.ico')
+    def favicon_ico():
+        return send_from_directory(
+            app.static_folder,
+            'favicon.ico',
+            mimetype='image/vnd.microsoft.icon'
+        )
+
+    @app.route('/favicon.png')
+    def favicon_png():
+        return send_from_directory(
+            app.static_folder,
+            'favicon.png',
+            mimetype='image/png'
+        )
 
     @app.route('/<lang>/')
     def home(lang):
